@@ -10,4 +10,3 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/wakatime?username=LoveDoLove&layout=compact&theme=onedark&hide=ObjectiveC,Objective-C,Text,Gitignore%20File,Properties">
 </picture>
 <img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
-<img src="https://streak-stats.demolab.com?user=LoveDoLove&theme=dark&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&mode=weekly" alt="GitHub Streak" />
