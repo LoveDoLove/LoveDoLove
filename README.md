@@ -12,20 +12,16 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/wakatime?username=LoveDoLove&layout=compact&theme=onedark&hide=ObjectiveC,Objective-C,Text,Gitignore%20File,Properties">
 </picture>
 
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
-
 <img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=LoveDoLove&theme=onedark" alt="Profile details card
+" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=LoveDoLove&theme=onedark&exclude={exclude}" alt="Top languages used in repository card" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=LoveDoLove&theme=onedark&exclude={exclude}" alt="Top languages in commits card
+" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=LoveDoLove&theme=onedark" alt="GitHub stats card" />
 
-
-http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username={username}&theme={theme_name}&exclude={exclude}
-http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username={username}&theme={theme_name}&exclude={exclude}
-http://github-profile-summary-cards.vercel.app/api/cards/stats?username={username}&theme={theme_name}
-http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username={username}&theme={theme_name}&utcOffset={utcOffset}
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=LoveDoLove&theme=onedark&utcOffset={utcOffset}" alt="Productive time card" />
