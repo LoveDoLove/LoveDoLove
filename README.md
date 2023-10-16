@@ -8,5 +8,5 @@
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/wakatime?username=LoveDoLove&layout=compact&theme=onedark&hide=ObjectiveC,Objective-C,Text,Gitignore%20File,Properties">
-  
 </picture>
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=LoveDoLove&theme=dark&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&mode=weekly" alt="GitHub Streak" /></a>
