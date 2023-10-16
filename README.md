@@ -13,15 +13,3 @@
 </picture>
 
 <img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=LoveDoLove&theme=onedark" alt="Profile details card
-" />
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=LoveDoLove&theme=onedark&exclude={exclude}" alt="Top languages used in repository card" />
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=LoveDoLove&theme=onedark&exclude={exclude}" alt="Top languages in commits card
-" />
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=LoveDoLove&theme=onedark" alt="GitHub stats card" />
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=LoveDoLove&theme=onedark&utcOffset={utcOffset}" alt="Productive time card" />
