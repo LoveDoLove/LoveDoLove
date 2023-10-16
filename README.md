@@ -12,7 +12,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/wakatime?username=LoveDoLove&layout=compact&theme=onedark&hide=ObjectiveC,Objective-C,Text,Gitignore%20File,Properties">
 </picture>
 
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={LoveDoLove}&theme={onedark}" alt="GitHub Profile Trophy" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
 
 <img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark" alt="GitHub Profile Trophy" />
 
