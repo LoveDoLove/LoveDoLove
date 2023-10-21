@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoveDoLove Profile</title>
+  </head>
+  <body>
+    <!-- https://git.io/typing-svg -->
     <h1 align="center">
       <img
         src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&center=true&vCenter=true&width=435&lines=Hi+%2C+I'm+LoveDoLove"
@@ -61,3 +71,5 @@
         </td>
       </tr>
     </table>
+  </body>
+</html>
