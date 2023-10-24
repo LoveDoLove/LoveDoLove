@@ -63,6 +63,15 @@
     </div>
     <!-- 统计卡片end -->
     <br />
+    <!-- 技能start -->
+    <div align="center">
+      <img
+        height="137px"
+        src="https://skillicons.dev/icons?perline=10&i=java,js,html,css,c,php,mysql,sqlite,nodejs,jquery,maven,dotnet,mongodb,firebase,gcp,cmake,androidstudio,visualstudio,vscode,azure,idea,github,gitlab,githubactions,git,linkedin"
+      />
+    </div>
+    <!-- 技能end -->
+    <br />
     <table align="center">
       <tr>
         <td>
