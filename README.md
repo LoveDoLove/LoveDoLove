@@ -67,7 +67,7 @@
     <div align="center">
       <img
         height="137px"
-        src="https://skillicons.dev/icons?perline=10&i=java,js,html,css,c,php,mysql,sqlite,nodejs,jquery,maven,dotnet,mongodb,firebase,gcp,cmake,androidstudio,visualstudio,vscode,azure,idea,github,gitlab,githubactions,git,linkedin"
+        src="https://skillicons.dev/icons?perline=17&i=c,cs,cpp,cmake,dotnet,git,github,githubactions,gitlab,androidstudio,flutter,idea,angular,firebase,java,js,jquery,kotlin,linkedin,nodejs,php,powershell,py,pytorch,r,react,vscode,visualstudio,html,css,cloudflare,docker,gradle,gmail,gcp,aws,azure,discord,instagram,linux,maven,mongodb,mysql,postman,selenium,tailwind,ts,twitter,androidstudio,sqlite,stackoverflow"
       />
     </div>
     <!-- 技能end -->
