@@ -63,10 +63,42 @@
     <br />
     <!-- 技能start -->
     <div align="center">
-      <img
-        height="137px"
-        src="https://skillicons.dev/icons?perline=17&i=c,cs,cpp,cmake,dotnet,git,github,githubactions,gitlab,androidstudio,flutter,idea,angular,firebase,java,js,jquery,kotlin,linkedin,nodejs,php,powershell,py,pytorch,r,react,vscode,visualstudio,html,css,cloudflare,docker,gradle,gmail,gcp,aws,azure,discord,instagram,linux,maven,mongodb,mysql,postman,selenium,tailwind,ts,twitter,androidstudio,sqlite,stackoverflow"
-      />
+      <div align="center">
+        <p>Programming Languages</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=c,cs,java,js,ts,jquery,php,nodejs,bash,dotnet" />
+      </div>
+      <div align="center">
+        <p>Version Control</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=git,github,githubactions,gitlab" />
+      </div>
+      <div align="center">
+        <p>IDEs</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=androidstudio,vscode,visualstudio,idea,rider" />
+      </div>
+      <div align="center">
+        <p>Databases</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=mysql,firebase,redis" />
+      </div>
+      <div align="center">
+        <p>Web Development</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=npm,vue,vite,express,html,css,js,jquery,wordpress" />
+      </div>
+      <div align="center">
+        <p>Cloud Services</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=cf,firebase,gcp,aws,azure,vercel,codepen,supabase" />
+      </div>
+      <div align="center">
+        <p>Development Tools</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=gradle,maven,postman,selenium" />
+      </div>
+      <div align="center">
+        <p>Communication Tools</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=discord,gmail,instagram" />
+      </div>
+      <div align="center">
+        <p>Operating System</p>
+        <img src="https://skillicons.dev/icons?perline=10&i=windows,linux,debian,ubuntu" />
+      </div>
     </div>
     <!-- 技能end -->
     <br />
