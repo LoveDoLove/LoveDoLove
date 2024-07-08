@@ -7,12 +7,12 @@
   </head>
   <body>
     <!-- https://git.io/typing-svg -->
-    <h1 align="center">
+    <p align="center">
       <img
         src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&center=true&vCenter=true&width=435&lines=Hi+%2C+I'm+LoveDoLove"
         alt="Typing SVG"
       />
-    </h1>
+    </p>
     <h3 align="center">A Software System Developer & Reverse Engineer From Malaysia</h3>
     <br />
     <!-- 徽章start -->
