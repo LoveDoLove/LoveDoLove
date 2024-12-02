@@ -13,7 +13,7 @@
         alt="Typing SVG"
       />
     </p>
-    <h3 align="center">A Software System Developer & Reverse Engineer From Malaysia</h3>
+    <h3 align="center">A Software System Developer From Malaysia</h3>
     <br />
     <!-- 徽章start -->
     <p align="center">
