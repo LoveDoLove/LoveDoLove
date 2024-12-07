@@ -1,113 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <!-- https://git.io/typing-svg -->
-    <p align="center">
-      <img
-        src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&center=true&vCenter=true&width=435&lines=Hi+%2C+I'm+LoveDoLove"
-        alt="Typing SVG"
-      />
-    </p>
-    <h3 align="center">A Software System Developer From Malaysia</h3>
-    <br />
-    <!-- 徽章start -->
-    <p align="center">
-      <!-- Github徽章 -->
-      <a href="https://github.com/LoveDoLove" target="_blank"
-        ><img src="https://img.shields.io/badge/GitHub-LoveDoLove-brightgreen"
-      /></a>
-      <!-- Gitee徽章 -->
-      <a href="https://gitee.com/LoveDoLove" target="_blank"
-        ><img src="https://img.shields.io/badge/Gitee-LoveDoLove-orange"
-      /></a>
-      <!-- 个人网站徽章 -->
-      <a href="https://lovedolove.github.io" target="_blank">
-        <img src="https://img.shields.io/badge/website-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-blue" alt="个人网站" />
-      </a>
-    </p>
-    <br />
-    <!-- Github奖杯🏆start -->
-    <div align="center">
-      <img
-        src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=onedark&row=1&column=6&no-frame=true&no-bg=true"
-      />
-    </div>
-    <!-- Github奖杯🏆end -->
-    <br />
-    <!-- Github连续打卡start -->
-    <div align="center">
-      <img
-        align="center"
-        src="https://github-readme-streak-stats.herokuapp.com/?user=LoveDoLove&theme=dark&hide_border=true"
-      />
-    </div>
-    <!-- Github连续打卡end -->
-    <br />
-    <!-- 统计卡片start -->
-    <div align="center">
-      <img
-        height="137px"
-        src="https://github-readme-stats.vercel.app/api?username=LoveDoLove&hide_title=true&hide_border=true&show_icons=trueline_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite"
-      />
-      <img
-        height="137px"
-        src="https://github-readme-stats.vercel.app/api/top-langs?username=LoveDoLove&hide_title=true&hide_border=true&layout=compact&langs_count=6&text_color=000&icon_color=fff&bg_color=0,52fa5a,4dfcff,c64dff&theme=graywhite"
-      />
-    </div>
-    <!-- 统计卡片end -->
-    <br />
-    <!-- 技能start -->
-    <div align="center">
-      <div align="center">
-        <p>Programming Languages</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=c,cs,java,js,ts,jquery,php,nodejs,bash,dotnet" />
-      </div>
-      <div align="center">
-        <p>Version Control</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=git,github,githubactions,gitlab" />
-      </div>
-      <div align="center">
-        <p>IDEs</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=androidstudio,vscode,visualstudio,idea,rider" />
-      </div>
-      <div align="center">
-        <p>Databases</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=mysql,firebase,redis" />
-      </div>
-      <div align="center">
-        <p>Web Development</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=npm,vue,vite,express,html,css,js,jquery,wordpress" />
-      </div>
-      <div align="center">
-        <p>Cloud Services</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=cf,firebase,gcp,aws,azure,vercel,codepen,supabase" />
-      </div>
-      <div align="center">
-        <p>Development Tools</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=gradle,maven,postman,selenium" />
-      </div>
-      <div align="center">
-        <p>Communication Tools</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=discord,gmail,instagram" />
-      </div>
-      <div align="center">
-        <p>Operating System</p>
-        <img src="https://skillicons.dev/icons?perline=10&i=windows,linux,debian,ubuntu" />
-      </div>
-    </div>
-    <!-- 技能end -->
-    <br />
-    <table align="center">
-      <tr>
-        <td>
-          <img src="https://github-readme-activity-graph.vercel.app/graph?username=LoveDoLove&theme=github" />
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
+<div align="center">
+  
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=30&pause=1000&color=3F83F8&background=FFFFFF00&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+LoveDoLove;Full+Stack+System+Developer;DevOps+Enthusiast)](https://git.io/typing-svg)
+
+<img src="https://komarev.com/ghpvc/?username=LoveDoLove&style=for-the-badge&color=3F83F8" alt="Profile Views"/>
+
+![Last Updated](https://img.shields.io/badge/Updated-2024--12--07_06%3A29%3A23_UTC-3F83F8?style=for-the-badge)
+![User](https://img.shields.io/badge/User-LoveDoLove-3F83F8?style=for-the-badge)
+  
+</div>
+
+## 👨‍💻 About Me
+
+> Software System Developer with expertise in full-stack development and server management
+
+- 🎓 **Education**: Bachelor's in Information Technology (Software Systems Development)
+- 💼 **Experience**: Practical Trainee at GHL Systems Berhad
+- 🌱 **Currently**: Building Hotel Management System & Web Research Projects
+- 🚀 **Expertise**: Full Stack Development, System Architecture, DevOps
+
+## 🛠️ Technology Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Core Languages** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white) |
+| **Web Development** | ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) |
+| **Mobile Development** | ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) |
+| **DevOps & Hosting** | ![1Panel](https://img.shields.io/badge/1Panel-000000?style=flat&logo=server&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white) |
+| **Database & Cache** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white) |
+| **Development Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) |
+
+## 🚀 Projects & Deployments
+
+| Project | Description | Stack & Deployment |
+|---------|-------------|-------------------|
+| 🏨 **Hotel Management System** | Full-featured hotel management solution | ![C#](https://img.shields.io/badge/C%23-239120?style=flat) ![.NET](https://img.shields.io/badge/.NET-5C2D91?style=flat) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat) |
+| 🌐 **Laravel Setup Kit** | Development environment & deployment toolkit | ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat) ![1Panel](https://img.shields.io/badge/1Panel-000000?style=flat) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat) |
+| 📱 **Android System Tools** | System utilities for Android devices | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat) |
+
+## 🖥️ DevOps & Server Management
+
+### Server & CDN Management
+- 1Panel Server Administration
+  - Docker Container Management
+  - Web Application Hosting
+  - SSL/TLS Certificate Management
+- Cloudflare Services
+  - DNS Management & CDN
+  - DDoS Protection
+  - Page Rules & Security
+- Database Administration
+  - MySQL Management
+  - Redis Cache Configuration
+
+### Development Workflow
+- Local Development with Docker
+- Git Version Control
+- Continuous Integration with GitHub
+- Production Deployment
+  - Docker Container Orchestration
+  - Nginx Reverse Proxy
+  - Cloudflare CDN Integration
+
+## 📊 GitHub Statistics
+
+<div align="center">
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=LoveDoLove&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=tokyonight&hide_border=true"/>
+</div>
+
+<div align="center">
+
+### 💼 Open for Collaboration
+
+> "Building secure and scalable solutions with modern DevOps practices"
+
+</div>
+
+---
+Last Updated: 2024-12-07 06:29:23 UTC  
+Current User: LoveDoLove
