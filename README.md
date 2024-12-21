@@ -2,11 +2,9 @@
   
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=30&pause=1000&color=3F83F8&background=FFFFFF00&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+LoveDoLove;Full+Stack+System+Developer;DevOps+Enthusiast)](https://git.io/typing-svg)
 
+![User](https://img.shields.io/badge/User-LoveDoLove-3F83F8?style=for-the-badge)
 <img src="https://komarev.com/ghpvc/?username=LoveDoLove&style=for-the-badge&color=3F83F8" alt="Profile Views"/>
 
-![Last Updated](https://img.shields.io/badge/Updated-2024--12--07_06%3A29%3A23_UTC-3F83F8?style=for-the-badge)
-![User](https://img.shields.io/badge/User-LoveDoLove-3F83F8?style=for-the-badge)
-  
 </div>
 
 ## 👨‍💻 About Me
@@ -77,5 +75,5 @@
 </div>
 
 ---
-Last Updated: 2024-12-07 06:29:23 UTC  
+Last Updated: 2024-12-31 01:48:04 UTC  
 Current User: LoveDoLove
