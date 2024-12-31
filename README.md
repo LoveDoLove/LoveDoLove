@@ -13,7 +13,7 @@
 
 - 🎓 **Education**: Bachelor's in Information Technology (Software Systems Development)
 - 💼 **Experience**: Practical Trainee at GHL Systems Berhad
-- 🌱 **Currently**: Building Hotel Management System & Web Research Projects
+- 🌱 **Currently**: Exploring new projects after completing the Hotel Management System
 - 🚀 **Expertise**: Full Stack Development, System Architecture, DevOps
 
 ## 🛠️ Technology Stack
