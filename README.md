@@ -24,7 +24,7 @@ This section covers everything I've learned, split into core (main) skills and a
 
 #### Programming & Scripting
 
-- **Languages:** JavaScript, Java, C#, PHP, Python
+- **Languages:** C#, PHP, Java, JavaScript, Python
 - **Scripting:** Bash Scripting
 
 #### Web Development (Main Frameworks)
@@ -35,7 +35,7 @@ This section covers everything I've learned, split into core (main) skills and a
 
 #### Cloud, DevOps & Infrastructure (Main)
 
-- **Cloud Platforms:** Microsoft Azure, AWS, Google Cloud
+- **Cloud Platforms:** Microsoft Azure, AWS, Google Cloud, Firebase
 - **Containerization & Orchestration:** Docker
 - **DevOps Practices:** Git (GitHub, GitLab, Bitbucket), CI/CD Pipelines, Web Hosting & Server Management
 
