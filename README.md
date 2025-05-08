@@ -72,7 +72,7 @@ This section covers everything I've learned, split into core (main) skills and a
 | ------------------------------ | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🏨 **Hotel Management System** | Full-featured hotel management solution      | ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white) ![.NET](https://img.shields.io/badge/.NET-5C2D91?style=flat) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat) |
 | 🌐 **Laravel Setup Kit**       | Development environment & deployment toolkit | ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat) ![1Panel](https://img.shields.io/badge/1Panel-000000?style=flat) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat)                   |
-| 📱 **Android System Tools**    | System utilities for Android devices         | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat)                                                                                      |
+| 📱 **VueXpressPro**            | Full stack environment for web developers    | ![NodeJs](https://img.shields.io/badge/NodeJs-ED8B00?style=flat) ![Vue](https://img.shields.io/badge/Vue-3DDC84?style=flat) ![ExpressJs](https://img.shields.io/badge/Express-FF2D20?style=flat)                     |
 
 ---
 
@@ -126,5 +126,5 @@ I'm always excited to connect and collaborate on new projects, innovative ideas,
 
 ---
 
-Last Updated: 2025-03-16 02:00:58 UTC  
+Last Updated: 2025-06-19 02:09:27 UTC  
 Current User: LoveDoLove
