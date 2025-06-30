@@ -84,8 +84,8 @@ Here are some of my most notable public/open-source projects:
 
 <!-- 3D Contribution Graph -->
 <p align="center">
-  <a href="https://github.com/yoshi389111/github-profile-3d-contrib">
-    <img src="https://raw.githubusercontent.com/LoveDoLove/github-profile-3d-contrib/main/profile-night-rainbow.svg" alt="3D Contributions" width="700"/>
+  <a href="https://github.com/LoveDoLove/LoveDoLove">
+    <img src="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contributions" width="700"/>
   </a>
 </p>
 
