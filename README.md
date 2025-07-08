@@ -1,7 +1,7 @@
 
-<!-- Profile Header (Best Practice Template, Context7 sourced) -->
+<!-- Profile Header (Context7 best practice, 2025) -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&pause=1000&color=3F83F8&background=FFFFFF00&center=true&vCenter=true&random=false&width=700&lines=Hi%2C+I'm+LoveDoLove;Innovative+Full-Stack+Developer;Cloud+%26+DevOps+Engineer;Automation+%26+Open+Source+Enthusiast" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&pause=1000&color=3F83F8&background=FFFFFF00&center=true&vCenter=true&random=false&width=700&lines=Hi%2C+I'm+LoveDoLove;Full-Stack+Developer+%7C+Cloud+%26+DevOps+Engineer;Automation+%26+Open+Source+Enthusiast" alt="Typing SVG"/>
   <br/>
   <img src="https://img.shields.io/badge/Developer-LoveDoLove-3F83F8?style=for-the-badge"/>
   <img src="https://komarev.com/ghpvc/?username=LoveDoLove&style=for-the-badge&color=3F83F8" alt="Profile Views"/>
@@ -25,35 +25,41 @@ Passionate about open source, DevOps, and cross-platform engineering.</i>
 
 ---
 
+## � Summary
 
+Hi, I'm **LoveDoLove** (Chong Jun Xiang), a results-driven Full-Stack Developer and System Architect with a proven track record in building robust web applications, automation tools, and scalable cloud solutions. I thrive on solving real-world problems with clean code, modern design patterns, and a user-centric approach. My work spans open source, DevOps, and cross-platform engineering, with a focus on developer productivity and automation.
 
-## 👋 About Me
+---
 
-Welcome! I'm **LoveDoLove**, a passionate **Full-Stack Developer** and **System Architect** with a strong foundation in **Information Technology (Software Systems Development)**. I specialize in building innovative solutions across web, desktop, automation, and cloud platforms.
+## 👨‍💻 Professional Experience
 
-### 🎓 Education & Experience
-- **BSc in Information Technology** (Software Systems Development)
-- **Industrial Training**: GHL Systems Berhad (Enterprise hotel management system)
-- **Open Source Contributor**: Developer tools, automation, and cross-platform projects
-- **System Architect**: Specializing in automation, DevOps, and scalable cloud solutions
-- **Full-Stack Developer**: Modern web, desktop, and IoT applications
+- **Full-Stack Developer & System Architect**  
+  *Specializing in automation, DevOps, and scalable cloud solutions for enterprise and open-source projects.*
+- **Industrial Training:** GHL Systems Berhad (Enterprise hotel management system)
+- **Open Source Contributor:** Developer tools, automation, and cross-platform projects
+- **Education:** BSc in Information Technology (Software Systems Development)
 
-### 🏆 Achievements
+---
+
+## 🏆 Notable Achievements
+
 - Built **EasyKit**: Advanced Windows automation toolkit
 - Developed **VueXpressPro**: Full-stack boilerplate ecosystem (Vue.js + Express)
 - Engineered **FreeBSD automation workflows** for open-source projects
 - Designed a comprehensive **hotel management system** (with payment & admin dashboard)
 - Created an **IoT face recognition attendance system**
+- Published multiple cross-platform build pipelines for FreeBSD, Go, and Node.js projects
 
-### 🎯 Current Focus
+---
+
+## 🎯 Current Focus
+
 - Cloud-native architecture & microservices
 - AI/ML integration in web & automation
 - Open-source developer productivity tools
 - Scalable enterprise solutions
 
-### 💡 Philosophy
-I believe in building **practical, scalable solutions** that solve real-world problems. My approach combines clean code, modern design patterns, and user-centric thinking to deliver impactful software.
-
+---
 ---
 
 
@@ -68,12 +74,14 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 </div>
 
 
+
 ## 🛠️ Key Skills & Technology Stack
 
 <div align="center">
-  <!-- Ordered by mastery and frequency (Context7 best practice) -->
-  <img src="https://skillicons.dev/icons?i=js,ts,vue,nodejs,express,cs,dotnet,windows,githubactions,docker,php,java,py,go,html,css,tailwind,bootstrap,laravel,flask,mysql,sqlite,sqlserver,freebsd,bash,raspberrypi,opencv,solidity,postman,git,vscode,visualstudio,md&perline=11"/>
+  <!-- Ordered by mastery and frequency (Context7 best practice, 2025) -->
+  <img src="https://skillicons.dev/icons?i=js,ts,vue,nodejs,express,cs,dotnet,windows,githubactions,docker,go,php,java,py,html,css,tailwind,bootstrap,laravel,flask,mysql,sqlite,sqlserver,freebsd,bash,raspberrypi,opencv,solidity,postman,git,vscode,visualstudio,md&perline=11"/>
 </div>
+
 
 ### 💻 **Programming Languages**
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -83,10 +91,11 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=flat-square&logo=gnu-bash&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![Assembly](https://img.shields.io/badge/Assembly-525252?style=flat-square&logo=assemblyscript&logoColor=white)
+
 
 ### 🎨 **Frontend Development**
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
@@ -94,6 +103,7 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+
 
 ### ⚙️ **Backend Development**
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
@@ -103,11 +113,13 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP_Backend-777BB4?style=flat-square&logo=php&logoColor=white)
 
+
 ### 💾 **Database Technologies**
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft%20sql%20server&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white)
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?style=flat-square&logo=.net&logoColor=white)
+
 
 ### 🔧 **Specialized Technologies**
 ![Windows Automation](https://img.shields.io/badge/Windows_Automation-0078D4?style=flat-square&logo=windows&logoColor=white)
@@ -116,12 +128,14 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ![Face Recognition](https://img.shields.io/badge/Face_Recognition-4285F4?style=flat-square&logo=python&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 
+
 ### 🚀 **DevOps & Infrastructure**
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![FreeBSD](https://img.shields.io/badge/FreeBSD-AB2B28?style=flat-square&logo=freebsd&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Cross Compilation](https://img.shields.io/badge/Cross_Compilation-FF6C37?style=flat-square&logo=gnu&logoColor=white)
+
 
 ### 🔨 **Development Tools**
 ![Visual Studio Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
@@ -137,6 +151,7 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ---
 
 
+
 ## 🚀 Featured Projects
 
 Here are some of my most impactful and recent projects:
@@ -150,7 +165,7 @@ Here are some of my most impactful and recent projects:
 | 🧰 [CS_CommonUtilities](https://github.com/LoveDoLove/CS_CommonUtilities) | Modular C#/.NET utility library for rapid development | C#, .NET Core |
 | ⚡ [UsefulGithubCICD](https://github.com/LoveDoLove/UsefulGithubCICD) | Ready-to-use GitHub Actions workflows and CI/CD automation | GitHub Actions, YAML |
 | ☁️ [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) | Automated FreeBSD build system for Cloudreve cloud storage | Shell, FreeBSD, Go |
-| � [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) | Automated build scripts for alist file sharing on FreeBSD | Shell, FreeBSD, Go |
+| 📦 [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) | Automated build scripts for alist file sharing on FreeBSD | Shell, FreeBSD, Go |
 | 📝 [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) | Cross-compilation pipeline for Memos note-taking app on FreeBSD | Shell, FreeBSD, Go |
 | 📚 [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) | Documentation for Android utility application | Docs, Android |
 | 🗂️ [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) | FreeBSD automation workflow for PanIndex deployment | Shell, FreeBSD |
@@ -159,6 +174,7 @@ Here are some of my most impactful and recent projects:
 > **See all repositories:** [GitHub Profile →](https://github.com/LoveDoLove?tab=repositories)
 
 ---
+
 
 
 
@@ -178,4 +194,17 @@ Here are some of my most impactful and recent projects:
 
 ---
 
-<sub>Last Updated: 2025-07-08 | Profile template and skills ordering follow Context7 best practices for GitHub profile READMEs.</sub>
+## 📫 How to Reach Me
+
+<div align="center">
+  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/LoveDoLove/LoveDoLove/issues"><img src="https://img.shields.io/badge/GitHub%20Issues-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://lovedolove.github.io/"><img src="https://img.shields.io/badge/Portfolio-3F83F8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.youtube.com/@lovedolove"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+  <a href="https://buymeacoffee.com/lovedolove"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a>
+</div>
+
+---
+
+<sub>Last Updated: 2025-07-08 | Profile template, skills, and project highlights follow Context7 best practices for GitHub profile READMEs. All recommendations and ordering validated with Context7 documentation and trending templates (see [awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)).</sub>
