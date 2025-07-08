@@ -1,6 +1,7 @@
-<!-- Profile Header -->
+
+<!-- Profile Header (Best Practice Template, Context7 sourced) -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&pause=1000&color=3F83F8&background=FFFFFF00&center=true&vCenter=true&random=false&width=700&lines=Hi%2C+I'm+LoveDoLove;Innovative+Full-Stack+Developer;System+Architect;Open+Source+Automation+Enthusiast" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&pause=1000&color=3F83F8&background=FFFFFF00&center=true&vCenter=true&random=false&width=700&lines=Hi%2C+I'm+LoveDoLove;Innovative+Full-Stack+Developer;Cloud+%26+DevOps+Engineer;Automation+%26+Open+Source+Enthusiast" alt="Typing SVG"/>
   <br/>
   <img src="https://img.shields.io/badge/Developer-LoveDoLove-3F83F8?style=for-the-badge"/>
   <img src="https://komarev.com/ghpvc/?username=LoveDoLove&style=for-the-badge&color=3F83F8" alt="Profile Views"/>
@@ -24,13 +25,11 @@ Passionate about open source, DevOps, and cross-platform engineering.</i>
 
 ---
 
----
 
 
-## � About Me
+## 👋 About Me
 
 Welcome! I'm **LoveDoLove**, a passionate **Full-Stack Developer** and **System Architect** with a strong foundation in **Information Technology (Software Systems Development)**. I specialize in building innovative solutions across web, desktop, automation, and cloud platforms.
-
 
 ### 🎓 Education & Experience
 - **BSc in Information Technology** (Software Systems Development)
@@ -39,13 +38,12 @@ Welcome! I'm **LoveDoLove**, a passionate **Full-Stack Developer** and **System 
 - **System Architect**: Specializing in automation, DevOps, and scalable cloud solutions
 - **Full-Stack Developer**: Modern web, desktop, and IoT applications
 
-### � Achievements
+### 🏆 Achievements
 - Built **EasyKit**: Advanced Windows automation toolkit
 - Developed **VueXpressPro**: Full-stack boilerplate ecosystem (Vue.js + Express)
 - Engineered **FreeBSD automation workflows** for open-source projects
 - Designed a comprehensive **hotel management system** (with payment & admin dashboard)
 - Created an **IoT face recognition attendance system**
-
 
 ### 🎯 Current Focus
 - Cloud-native architecture & microservices
@@ -69,26 +67,26 @@ I believe in building **practical, scalable solutions** that solve real-world pr
   <a href="https://buymeacoffee.com/lovedolove"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a>
 </div>
 
----
-
 
 ## 🛠️ Key Skills & Technology Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,php,java,cs,py,c,bash,solidity,vue,nodejs,express,dotnet,laravel,bootstrap,tailwind,mysql,sqlite,sqlserver,docker,githubactions,git,vscode,visualstudio,postman,md,windows,freebsd,raspberrypi,opencv&perline=11"/>
+  <!-- Ordered by mastery and frequency (Context7 best practice) -->
+  <img src="https://skillicons.dev/icons?i=js,ts,vue,nodejs,express,cs,dotnet,windows,githubactions,docker,php,java,py,go,html,css,tailwind,bootstrap,laravel,flask,mysql,sqlite,sqlserver,freebsd,bash,raspberrypi,opencv,solidity,postman,git,vscode,visualstudio,md&perline=11"/>
 </div>
 
 ### 💻 **Programming Languages**
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![Assembly](https://img.shields.io/badge/Assembly-525252?style=flat-square&logo=assemblyscript&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
 ![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=flat-square&logo=gnu-bash&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
+![Assembly](https://img.shields.io/badge/Assembly-525252?style=flat-square&logo=assemblyscript&logoColor=white)
 
 ### 🎨 **Frontend Development**
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
@@ -96,7 +94,6 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/Modern_JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ### ⚙️ **Backend Development**
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
@@ -113,15 +110,15 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?style=flat-square&logo=.net&logoColor=white)
 
 ### 🔧 **Specialized Technologies**
+![Windows Automation](https://img.shields.io/badge/Windows_Automation-0078D4?style=flat-square&logo=windows&logoColor=white)
 ![Computer Vision](https://img.shields.io/badge/Computer_Vision-FF6B6B?style=flat-square&logo=opencv&logoColor=white)
 ![IoT Development](https://img.shields.io/badge/IoT_Development-00979D?style=flat-square&logo=raspberrypi&logoColor=white)
 ![Face Recognition](https://img.shields.io/badge/Face_Recognition-4285F4?style=flat-square&logo=python&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
-![Windows Automation](https://img.shields.io/badge/Windows_Automation-0078D4?style=flat-square&logo=windows&logoColor=white)
 
 ### 🚀 **DevOps & Infrastructure**
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![FreeBSD](https://img.shields.io/badge/FreeBSD-AB2B28?style=flat-square&logo=freebsd&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Cross Compilation](https://img.shields.io/badge/Cross_Compilation-FF6C37?style=flat-square&logo=gnu&logoColor=white)
@@ -134,12 +131,15 @@ I believe in building **practical, scalable solutions** that solve real-world pr
 ![Composer](https://img.shields.io/badge/Composer-885630?style=flat-square&logo=composer&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=flat-square&logo=npm&logoColor=white)
 
+---
+
 
 ---
 
+
 ## 🚀 Featured Projects
 
-Here are some of my most impactful projects:
+Here are some of my most impactful and recent projects:
 
 | Project | Description | Tech Stack |
 | ------- | ----------- | ---------- |
@@ -149,16 +149,17 @@ Here are some of my most impactful projects:
 | 🏨 [HotelManagementSystem](https://github.com/LoveDoLove/HotelManagementSystem) | Comprehensive hotel reservation system with payment processing | C#, ASP.NET Core |
 | 🧰 [CS_CommonUtilities](https://github.com/LoveDoLove/CS_CommonUtilities) | Modular C#/.NET utility library for rapid development | C#, .NET Core |
 | ⚡ [UsefulGithubCICD](https://github.com/LoveDoLove/UsefulGithubCICD) | Ready-to-use GitHub Actions workflows and CI/CD automation | GitHub Actions, YAML |
-| 📦 [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) | Automated build scripts for alist file sharing on FreeBSD | Shell, FreeBSD, Go |
-| 📝 [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) | Cross-compilation pipeline for Memos note-taking app on FreeBSD | Shell, FreeBSD, Go |
 | ☁️ [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) | Automated FreeBSD build system for Cloudreve cloud storage | Shell, FreeBSD, Go |
+| � [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) | Automated build scripts for alist file sharing on FreeBSD | Shell, FreeBSD, Go |
+| 📝 [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) | Cross-compilation pipeline for Memos note-taking app on FreeBSD | Shell, FreeBSD, Go |
 | 📚 [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) | Documentation for Android utility application | Docs, Android |
-| � [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) | FreeBSD automation workflow for PanIndex deployment | Shell, FreeBSD |
+| 🗂️ [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) | FreeBSD automation workflow for PanIndex deployment | Shell, FreeBSD |
 | 👤 [LoveDoLove](https://github.com/LoveDoLove/LoveDoLove) | Personal profile & 3D contribution visualizations | Markdown, GitHub |
 
 > **See all repositories:** [GitHub Profile →](https://github.com/LoveDoLove?tab=repositories)
 
 ---
+
 
 
 ## 📊 GitHub Stats & Contributions
@@ -177,6 +178,4 @@ Here are some of my most impactful projects:
 
 ---
 
----
-
-<sub>Last Updated: 2025-07-08</sub>
+<sub>Last Updated: 2025-07-08 | Profile template and skills ordering follow Context7 best practices for GitHub profile READMEs.</sub>
