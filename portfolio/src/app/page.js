@@ -30,7 +30,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        }
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Key Skills & Technology Stack
