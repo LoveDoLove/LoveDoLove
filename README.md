@@ -1,133 +1,105 @@
-<!-- Profile Header (Context7 best practice, 2025) -->
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&pause=1000&color=3F83F8&background=FFFFFF00&center=true&vCenter=true&random=false&width=700&lines=Hi%2C+I'm+LoveDoLove;Full-Stack+Developer+%7C+Cloud+%26+DevOps+Engineer;Automation+%26+Open+Source+Enthusiast" alt="Typing SVG"/>
-  <br/>
-  <img src="https://img.shields.io/badge/Developer-LoveDoLove-3F83F8?style=for-the-badge"/>
-  <img src="https://komarev.com/ghpvc/?username=LoveDoLove&style=for-the-badge&color=3F83F8" alt="Profile Views"/>
-  <img src="https://img.shields.io/github/followers/LoveDoLove?style=for-the-badge&color=3F83F8" alt="GitHub Followers"/>
-</div>
+# LoveDoLove
 
-<div align="center">
-  <a href="https://portfolio.lovedolove.one/">🌐 Portfolio</a> •
-  <a href="https://www.linkedin.com/in/chong-jun-xiang">💼 LinkedIn</a> •
-  <a href="https://www.youtube.com/@lovedolove">🎥 YouTube</a> •
-  <a href="https://buymeacoffee.com/lovedolove">☕ BuyMeACoffee</a>
-</div>
+[![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=gruvbox&margin-w=10&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LoveDoLove&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=radical&hide=html,css)](https://github.com/anuraghazra/github-readme-stats)
+
+![3D Profile Contributions](profile-3d-contrib/profile-green-animate.svg)
+
+<!-- [![Wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=LoveDoLove&theme=radical)](https://wakatime.com/@LoveDoLove) -->
 
 ---
 
-<div align="center">
-<b>Innovative Full-Stack Developer & System Architect</b><br>
-<i>Building practical web apps, automation tools, and scalable cloud solutions.<br>
-Passionate about open source, DevOps, and cross-platform engineering.</i>
-</div>
+## 👋 About Me
+
+**Innovative Full-Stack Developer & DevOps Engineer** specializing in enterprise-level web applications, cross-platform automation, and scalable cloud infrastructure. Expert in building production-ready systems from concept to deployment.
+
+- 🔭 I’m currently working on: **Hotel Management System, FreeBSD Cross-Compilation Suite, EasyKit - Windows Automation**
+- 🌱 I’m learning: **AI & Machine Learning, Cloud Native DevOps**
+- 💬 Ask me about: **Full-Stack, DevOps, System Architecture, Automation**
+- 📫 How to reach me: [contact@lovedolove.dev](mailto:contact@lovedolove.dev)
+- 🌐 Portfolio: [LoveDoLove Portfolio](https://github.com/LoveDoLove)
 
 ---
 
-## 📝 Summary
+## 🚀 Key Skills & Technology Stack
 
-Hi, I'm **LoveDoLove** (Chong Jun Xiang), a passionate Full-Stack Developer and System Architect. I specialize in building robust web applications, automation tools, and scalable cloud solutions. My approach is grounded in clean code, modern design patterns, and a strong focus on user experience. I am committed to open source, DevOps, and cross-platform engineering, always striving to improve developer productivity and deliver real-world impact.
+![Skills](https://skillicons.dev/icons?i=cs,dotnet,js,nodejs,express,vue,windows,githubactions,cloudflare,nginx,markdown,ci,firebase,azure,aws,selenium,php,py,html,css,tailwind,bootstrap,laravel,flask,mysql,sqlserver,open-source,freebsd,bash,raspberrypi,opencv,postman,git,vscode,visualstudio,apache,jupyter,matplotlib,numpy,pandas,c&perline=11)
 
----
-
-## 👨‍💻 Professional Experience
-
-- **Full-Stack Developer & System Architect**  
-  _Specializing in automation, DevOps, and scalable cloud solutions for enterprise and open-source projects._
-- **Industrial Training:** GHL Systems Berhad (Enterprise hotel management system)
-- **Open Source Contributor:** Developer tools, automation, and cross-platform projects
-- **Education:** BSc in Information Technology (Software Systems Development)
+- **Top Mastery:** C#, .NET Core/ASP.NET Core, Windows, GitHub Actions, Cloudflare, Nginx, Markdown, CI/CD, Firebase, Azure, AWS
+- **Intermediate:** PHP, Python, HTML, CSS, Tailwind, Bootstrap, Laravel, Flask, MySQL, SQL Server, Open Source, JavaScript, Node.js, Express, Vue.js, Selenium
+- **Exploratory/Support:** FreeBSD, Bash, Raspberry Pi, OpenCV, Postman, Git, VS Code, Visual Studio, Apache, Jupyter Notebook, Matplotlib, NumPy, Pandas, C
 
 ---
 
-## 🏆 Notable Achievements
+## 🌟 Featured Projects
 
-- **EasyKit**: Advanced Windows automation toolkit for productivity and system maintenance
-- **VueXpressPro**: Full-stack boilerplate ecosystem (Vue.js + Express)
-- **FreeBSD Automation**: Engineered automation workflows for open-source projects
-- **Hotel Management System**: Designed a comprehensive system with payment & admin dashboard
-- **IoT Face Recognition Attendance**: Created a real-world IoT face recognition attendance system
-- **Cross-Platform Build Pipelines**: Published build pipelines for FreeBSD, Go, and Node.js projects
+### [Hotel Management System](https://hotel.lovedolove.nyc.mn/)
 
----
+Enterprise-grade hotel reservation platform with user registration, room booking, payment processing, admin dashboard, and comprehensive reporting features.
 
-## 🎯 Current Focus
+- **Tech:** C#, .NET Core, Entity Framework, SQL Server, Bootstrap
+- **Status:** Production
 
-- Cloud-native architecture & microservices
-- AI/ML integration in web & automation
-- Open-source developer productivity tools
-- Scalable enterprise solutions
+### FreeBSD Cross-Compilation Suite
 
----
+Automated CI/CD pipelines for building popular applications (Alist, Memos, Cloudreve) for FreeBSD, featuring GitHub Actions and cross-platform toolchains.
 
----
+- **Tech:** Shell, GitHub Actions, FreeBSD, Go, Docker
+- **Status:** Open Source
 
-## 🤝 Connect with Me
+### EasyKit - Windows Automation
 
-<div align="center">
-  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/LoveDoLove/LoveDoLove/issues"><img src="https://img.shields.io/badge/GitHub%20Issues-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://portfolio.lovedolove.one/"><img src="https://img.shields.io/badge/Portfolio-3F83F8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://www.youtube.com/@lovedolove"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
-  <a href="https://buymeacoffee.com/lovedolove"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a>
-</div>
+Comprehensive Windows toolkit for automating common tasks, system maintenance, and productivity enhancement with intuitive GUI and batch processing.
 
-## 🛠️ Key Skills & Technology Stack
+- **Tech:** C#, WinForms, PowerShell, Windows API, Automation
+- **Status:** Active
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,js,nodejs,express,vue,windows,githubactions,cloudflare,nginx,markdown,ci,firebase,azure,aws,selenium,php,py,html,css,tailwind,bootstrap,laravel,flask,mysql,sqlserver,open-source,freebsd,bash,raspberrypi,opencv,postman,git,vscode,visualstudio,apache,jupyter,matplotlib,numpy,pandas,c&perline=11"/>
-  <br/>
-  <sub><b>Legend:</b> Left = Most Mastered → Right = Exploratory/Support</sub>
-  </sub>
-</div>
+### Face Recognition Attendance System
 
-## 🚀 Featured Projects
+AI-powered attendance tracking system using facial recognition technology with real-time processing, database integration, and administrative controls.
 
-Here are some of my most impactful and recent projects:
+- **Tech:** PHP, Python, OpenCV, MySQL, Machine Learning
+- **Status:** Live
 
-| Project                                                                                               | Description                                                                 | Tech Stack           |
-| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | -------------------- |
-| 🛠️ [EasyKit](https://github.com/LoveDoLove/EasyKit)                                                   | Advanced Windows automation toolkit for productivity and system maintenance | C#, .NET, Windows    |
-| 🌐 [VueXpressPro-Backend](https://github.com/LoveDoLove/VueXpressPro-Backend)                         | Scalable Node.js/Express backend boilerplate for web apps                   | Node.js, Express     |
-| 🖥️ [VueXpressPro-Frontend](https://github.com/LoveDoLove/VueXpressPro-Frontend)                       | Modern Vue.js frontend template with routing and state management           | Vue.js, JavaScript   |
-| 🏨 [HotelManagementSystem](https://github.com/LoveDoLove/HotelManagementSystem)                       | Comprehensive hotel reservation system with payment processing              | C#, ASP.NET Core     |
-| 🧰 [CS_CommonUtilities](https://github.com/LoveDoLove/CS_CommonUtilities)                             | Modular C#/.NET utility library for rapid development                       | C#, .NET Core        |
-| ⚡ [UsefulGithubCICD](https://github.com/LoveDoLove/UsefulGithubCICD)                                 | Ready-to-use GitHub Actions workflows and CI/CD automation                  | GitHub Actions, YAML |
-| ☁️ [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd)                               | Automated FreeBSD build system for Cloudreve cloud storage                  | Shell, FreeBSD, Go   |
-| 📦 [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd)                                       | Automated build scripts for alist file sharing on FreeBSD                   | Shell, FreeBSD, Go   |
-| 📝 [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd)                                       | Cross-compilation pipeline for Memos note-taking app on FreeBSD             | Shell, FreeBSD, Go   |
-| 📚 [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) | Documentation for Android utility application                               | Docs, Android        |
-| 🗂️ [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd)                                 | FreeBSD automation workflow for PanIndex deployment                         | Shell, FreeBSD       |
-| 👤 [LoveDoLove](https://github.com/LoveDoLove/LoveDoLove)                                             | Personal profile & 3D contribution visualizations                           | Markdown, GitHub     |
+### CS Common Utilities Library
 
-> **See all repositories:** [GitHub Profile →](https://github.com/LoveDoLove?tab=repositories)
+Production-ready C#/.NET utility library featuring captcha generation, QR codes, email services, image processing, Stripe integration, and security tools.
+
+- **Tech:** C#, .NET 8, NuGet, Stripe API, Image Processing
+- **Status:** Package
+
+### Laravel Setup Kit
+
+Comprehensive Laravel starter template with Firebase integration, Spatie permissions, Stripe payments, SweetAlert2, and modern UI components.
+
+- **Tech:** Laravel, PHP, Firebase, Stripe, Tailwind CSS
+- **Status:** Template
 
 ---
 
-## 📊 GitHub Stats & Contributions
+## 🏆 Development Highlights
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=LoveDoLove&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=tokyonight&hide_border=true"/>
-</div>
+- **Academic Excellence:**
 
-<!-- 3D Contribution Graph -->
-<div align="center">
-  <a href="https://github.com/LoveDoLove/LoveDoLove">
-    <img src="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contributions" width="700"/>
-  </a>
-</div>
+  - Developed 15+ comprehensive academic projects including AI chatbots, face recognition systems, and e-commerce platforms
+  - Expertise in computer systems architecture, data structures & algorithms, and system design
+  - Multiple programming languages: Assembly, Java, C#, PHP, Python, HTML/CSS/JS
+
+- **Open Source Contributions:**
+  - Created specialized FreeBSD build automation for popular open-source projects
+  - Published reusable CI/CD templates and GitHub Actions workflows
+  - Developed cross-platform utilities and starter kits for rapid development
 
 ---
 
-## 📫 How to Reach Me
+## 📫 Contact
 
-<div align="center">
-  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/LoveDoLove/LoveDoLove/issues"><img src="https://img.shields.io/badge/GitHub%20Issues-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://portfolio.lovedolove.one/"><img src="https://img.shields.io/badge/Portfolio-3F83F8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://www.youtube.com/@lovedolove"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
-  <a href="https://buymeacoffee.com/lovedolove"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a>
-</div>
+- [GitHub Portfolio](https://github.com/LoveDoLove)
+- [Academic Projects](https://github.com/LoveDoLove-School-Projects)
+- [Email](mailto:contact@lovedolove.dev)
+
+---
+
+> _Looking for a developer who can handle everything from frontend UX to backend architecture, DevOps automation, and system deployment? Let's discuss your next project!_
