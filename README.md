@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  <a href="https://lovedolove.github.io/">🌐 Portfolio</a> •
+  <a href="https://portfolio.lovedolove.one/">🌐 Portfolio</a> •
   <a href="https://www.linkedin.com/in/chong-jun-xiang">💼 LinkedIn</a> •
   <a href="https://www.youtube.com/@lovedolove">🎥 YouTube</a> •
   <a href="https://buymeacoffee.com/lovedolove">☕ BuyMeACoffee</a>
@@ -67,7 +67,7 @@ Hi, I'm **LoveDoLove** (Chong Jun Xiang), a passionate Full-Stack Developer and 
 <div align="center">
   <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://github.com/LoveDoLove/LoveDoLove/issues"><img src="https://img.shields.io/badge/GitHub%20Issues-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://lovedolove.github.io/"><img src="https://img.shields.io/badge/Portfolio-3F83F8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+  <a href="https://portfolio.lovedolove.one/"><img src="https://img.shields.io/badge/Portfolio-3F83F8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://www.youtube.com/@lovedolove"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
   <a href="https://buymeacoffee.com/lovedolove"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a>
@@ -126,7 +126,7 @@ Here are some of my most impactful and recent projects:
 <div align="center">
   <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://github.com/LoveDoLove/LoveDoLove/issues"><img src="https://img.shields.io/badge/GitHub%20Issues-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://lovedolove.github.io/"><img src="https://img.shields.io/badge/Portfolio-3F83F8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+  <a href="https://portfolio.lovedolove.one/"><img src="https://img.shields.io/badge/Portfolio-3F83F8?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://www.youtube.com/@lovedolove"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
   <a href="https://buymeacoffee.com/lovedolove"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a>
