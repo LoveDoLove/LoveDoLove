@@ -1,0 +1,46 @@
+name: Delete All Workflow Runs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  cleanup_all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete all workflow runs
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const currentRunId = process.env.GITHUB_RUN_ID;
+            let page = 1;
+            let deleted = 0;
+            while (true) {
+              const response = await github.rest.actions.listWorkflowRunsForRepo({
+                owner,
+                repo,
+                per_page: 100,
+                page
+              });
+              const runs = response.data.workflow_runs;
+              if (runs.length === 0) break;
+              for (const run of runs) {
+                if (String(run.id) === String(currentRunId)) {
+                  console.log(`Skipping current run id=${run.id}`);
+                  continue;
+                }
+                console.log(`Deleting run id=${run.id}, name=${run.name}, status=${run.status}, conclusion=${run.conclusion}`);
+                await github.rest.actions.deleteWorkflowRun({ owner, repo, run_id: run.id });
+                deleted++;
+              }
+              page++;
+            }
+            if (deleted === 0) {
+              console.log('No workflow runs found to delete (except current run).');
+            } else {
+              console.log(`Deleted ${deleted} workflow runs (except current run).`);
+            }

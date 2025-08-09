@@ -61,8 +61,13 @@ This repository provides an automated build pipeline to generate FreeBSD binarie
 
 ### [LoveDoLove](https://github.com/LoveDoLove/LoveDoLove) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/LoveDoLove?style=social)](https://github.com/LoveDoLove/LoveDoLove)
 
-Innovative Full-Stack Developer & System Architect Building practical web apps, automation tools, and scalable cloud solutions. Passionate about open source, DevOps, and cross-platform engineering.<br>
+Innovative Full-Stack Developer & DevOps Engineer Building practical web apps, automation tools, and scalable cloud solutions. Passionate about open source, DevOps, and cross-platform engineering.<br>
 <sub>Tech: JavaScript, Python, CSS, TypeScript</sub>
+
+### [Github-Automation-Toolkit](https://github.com/LoveDoLove/Github-Automation-Toolkit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Automation-Toolkit?style=social)](https://github.com/LoveDoLove/Github-Automation-Toolkit)
+
+A collection of practical GitHub Actions workflows, templates, and automation utilities to streamline CI/CD processes for your repositories. This project provides ready-to-use workflows for cleaning up failed runs, resetting all actions, and more, making it easier to maintain healthy and efficient GitHub repositories.<br>
+
 
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
@@ -78,11 +83,6 @@ A modular, production-ready C#/.NET utility library and toolkit for rapid develo
 
 A robust Node.js/Express backend boilerplate for scalable web applications.<br>
 <sub>Tech: JavaScript</sub>
-
-### [UsefulGithubCICD](https://github.com/LoveDoLove/UsefulGithubCICD) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/UsefulGithubCICD?style=social)](https://github.com/LoveDoLove/UsefulGithubCICD)
-
-A collection of practical GitHub Actions workflows, templates, and automation utilities to streamline CI/CD processes for your repositories. This project provides ready-to-use workflows for cleaning up failed runs, resetting all actions, and more, making it easier to maintain healthy and efficient GitHub repositories.<br>
-
 
 ### [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudreve-freebsd?style=social)](https://github.com/LoveDoLove/cloudreve-freebsd)
 
