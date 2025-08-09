@@ -1,0 +1,30 @@
+name: Update Forked Repos to Upstream
+
+on:
+  workflow_dispatch:
+    inputs:
+      github_account:
+        description: "GitHub account username to update forks for"
+        required: true
+        type: string
+
+jobs:
+  update-forks:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_PAT }}
+      GH_ACCOUNT: ${{ github.event.inputs.github_account }}
+    steps:
+      - name: Checkout (no repo needed)
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Update all forked repos
+        run: python -u .github/scripts/update_forks.py
