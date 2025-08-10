@@ -59,6 +59,21 @@ EasyKit is a Windows toolkit designed to automate common tasks, simplify system 
 This repository provides an automated build pipeline to generate FreeBSD binaries for the Memos open-source note-taking application. It leverages GitHub Actions and a custom build.sh script to cross-compile the latest Memos release for FreeBSD, making it easy for FreeBSD users to deploy and run Memos natively.<br>
 <sub>Tech: Shell</sub>
 
+### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
+
+This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
+
+
+### [Github-Action-Cleaner](https://github.com/LoveDoLove/Github-Action-Cleaner) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Action-Cleaner?style=social)](https://github.com/LoveDoLove/Github-Action-Cleaner)
+
+Effortlessly clean up workflow runs in your GitHub repository with ready-to-use GitHub Actions.<br>
+<sub>Tech: Python</sub>
+
+### [Github-Automation-Toolkit](https://github.com/LoveDoLove/Github-Automation-Toolkit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Automation-Toolkit?style=social)](https://github.com/LoveDoLove/Github-Automation-Toolkit)
+
+GitHub Automation Toolkit is a monorepo containing reusable GitHub Actions and automation scripts for managing repositories, cleaning up workflow runs, and automating GitHub profile features. It is designed to streamline repository maintenance, CI/CD hygiene, and profile management for individuals and organizations.<br>
+
+
 ### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
 
 Automate your GitHub profile README with dynamic featured projects and 3D contribution graphs using GitHub Actions workflows.<br>
@@ -69,25 +84,10 @@ Automate your GitHub profile README with dynamic featured projects and 3D contri
 Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
 <sub>Tech: Python</sub>
 
-### [LoveDoLove](https://github.com/LoveDoLove/LoveDoLove) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/LoveDoLove?style=social)](https://github.com/LoveDoLove/LoveDoLove)
-
-Innovative Full-Stack Developer & DevOps Engineer Building practical web apps, automation tools, and scalable cloud solutions. Passionate about open source, DevOps, and cross-platform engineering.<br>
-<sub>Tech: JavaScript, CSS, TypeScript</sub>
-
-### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
-
-This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
-
-
 ### [CS_CommonUtilities](https://github.com/LoveDoLove/CS_CommonUtilities) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/CS_CommonUtilities?style=social)](https://github.com/LoveDoLove/CS_CommonUtilities)
 
 A modular, production-ready C#/.NET utility library and toolkit for rapid development.<br>
 <sub>Tech: C#</sub>
-
-### [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudreve-freebsd?style=social)](https://github.com/LoveDoLove/cloudreve-freebsd)
-
-This project provides scripts and GitHub Actions workflows to automate building the Cloudreve backend for FreeBSD (amd64). It is intended for users who want to run Cloudreve on FreeBSD or automate the build process for this platform.<br>
-<sub>Tech: Shell</sub>
 
 ---
 
