@@ -1,4 +1,4 @@
-name: Update Featured Projects in README
+name: Sync Top Starred Projects
 
 on:
   schedule:
@@ -12,17 +12,21 @@ jobs:
   update-featured:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Set up Python
+      - name: Set Up Python Environment
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Install requests
+      - name: Install Python Dependencies
         run: pip install requests
-      - name: Update featured projects in README
-        run: python .github/scripts/update_featured_projects.py
-      - name: Commit and push if changed
+      - name: Download Featured Projects Sync Script
+        run: curl -fsSL -o sync_top_starred_projects.py https://raw.githubusercontent.com/LoveDoLove/Github-Profile-Manager/refs/heads/main/scripts/sync_top_starred_projects.py
+      - name: Run Featured Projects Sync
+        run: python -u sync_top_starred_projects.py
+        env:
+          EXCLUDE_REPOS: ${{ vars.EXCLUDE_REPOS }}
+      - name: Commit and Push README Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
