@@ -1,0 +1,33 @@
+name: Sync All Forked Repositories with Upstream
+
+on:
+  workflow_dispatch:
+    inputs:
+      github_account:
+        description: "GitHub account username to sync forks for"
+        required: true
+        type: string
+
+jobs:
+  sync-forks:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_PAT }}
+      GH_ACCOUNT: ${{ github.event.inputs.github_account }}
+    steps:
+      - name: Checkout Workflow Files
+        uses: actions/checkout@v4
+
+      - name: Set Up Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Python Dependencies
+        run: pip install requests
+
+      - name: Download Latest github_forks_sync.py
+        run: curl -sSL -o github_forks_sync.py https://raw.githubusercontent.com/LoveDoLove/Github-Forks-Sync-Manager/refs/heads/main/scripts/github_forks_sync.py
+
+      - name: Sync Forked Repositories to Upstream
+        run: python -u github_forks_sync.py

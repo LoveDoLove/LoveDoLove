@@ -59,20 +59,20 @@ EasyKit is a Windows toolkit designed to automate common tasks, simplify system 
 This repository provides an automated build pipeline to generate FreeBSD binaries for the Memos open-source note-taking application. It leverages GitHub Actions and a custom build.sh script to cross-compile the latest Memos release for FreeBSD, making it easy for FreeBSD users to deploy and run Memos natively.<br>
 <sub>Tech: Shell</sub>
 
+### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
+
+Automate your GitHub profile README with dynamic featured projects and 3D contribution graphs using GitHub Actions workflows.<br>
+<sub>Tech: Python</sub>
+
+### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
+
+Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
+<sub>Tech: Python</sub>
+
 ### [LoveDoLove](https://github.com/LoveDoLove/LoveDoLove) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/LoveDoLove?style=social)](https://github.com/LoveDoLove/LoveDoLove)
 
 Innovative Full-Stack Developer & DevOps Engineer Building practical web apps, automation tools, and scalable cloud solutions. Passionate about open source, DevOps, and cross-platform engineering.<br>
 <sub>Tech: JavaScript, CSS, TypeScript</sub>
-
-### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
-
-GitHub Profile Manager automates your GitHub profile README by dynamically updating featured repositories (top-starred), displaying a 3D contribution graph, and providing ready-to-use GitHub Actions workflow templates. No manual script execution is required—just set up the workflows and let automation keep your profile engaging and up-to-date.<br>
-<sub>Tech: Python</sub>
-
-### [Github-Automation-Toolkit](https://github.com/LoveDoLove/Github-Automation-Toolkit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Automation-Toolkit?style=social)](https://github.com/LoveDoLove/Github-Automation-Toolkit)
-
-GitHub Automation Toolkit is a monorepo containing reusable GitHub Actions and automation scripts for managing repositories, cleaning up workflow runs, and automating GitHub profile features. It is designed to streamline repository maintenance, CI/CD hygiene, and profile management for individuals and organizations.<br>
-<sub>Tech: Python</sub>
 
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
