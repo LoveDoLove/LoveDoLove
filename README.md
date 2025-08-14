@@ -92,12 +92,87 @@ A modular, production-ready C#/.NET utility library and toolkit for rapid develo
 
 ## 🛠️ Skills
 
-**Core Languages:** C#, PHP, JavaScript, Python, Shell<br>
-**Web Development:** ASP.NET MVC, Laravel, Node.js<br>
-**DevOps & Hosting:** 1Panel, 寶塔 (BaoTa), aaPanel, Docker, Nginx, Cloudflare, GitHub Actions, CI/CD, Cloudflare Workers<br>
-**Database & Cache:** MySQL, SQL Server<br>
-**Development Tools:** Git, GitHub, VS Code, Visual Studio Community, Android Studio, IntelliJ, Postman, GitHub Actions, Automation Scripts<br>
-**Other:** Web Performance, System Maintenance, API Integration, Open Source
+<!-- Visual skill bar for quick scan. Uses skillicons.dev for consistent icon style. -->
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,php,js,py,nodejs,laravel,html,css,bootstrap,nginx,docker,cloudflare,githubactions,azure,aws,firebase,mysql,git,github,vscode,visualstudio,androidstudio,postman,bash,raspberrypi" alt="Skill Icons" style="max-width: 100%;" />
+</p>
+
+<!-- Grouped skill categories with badges for clarity and visual appeal. -->
+<table>
+  <tr>
+    <td><b>Languages</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white" />
+      <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" />
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnu-bash&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Frameworks & Web</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/ASP.NET-512BD4?style=flat&logo=dotnet&logoColor=white" />
+      <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" />
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+      <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>DevOps & Cloud</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
+      <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
+      <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
+      <img src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" />
+      <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" />
+      <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black" />
+      <img src="https://img.shields.io/badge/CI%2FCD-222222?style=flat&logo=githubactions&logoColor=white" />
+      <img src="https://img.shields.io/badge/1Panel-222222?style=flat" />
+      <img src="https://img.shields.io/badge/寶塔-222222?style=flat" />
+      <img src="https://img.shields.io/badge/aaPanel-222222?style=flat" />
+      <img src="https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat&logo=cloudflare&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Databases</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
+      <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Tools</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" />
+      <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
+      <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat&logo=visualstudio&logoColor=white" />
+      <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=androidstudio&logoColor=white" />
+      <img src="https://img.shields.io/badge/IntelliJ-000000?style=flat&logo=intellijidea&logoColor=white" />
+      <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
+      <img src="https://img.shields.io/badge/Automation%20Scripts-222222?style=flat" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Other</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Web%20Performance-222222?style=flat" />
+      <img src="https://img.shields.io/badge/System%20Maintenance-222222?style=flat" />
+      <img src="https://img.shields.io/badge/API%20Integration-222222?style=flat" />
+      <img src="https://img.shields.io/badge/Open%20Source-222222?style=flat&logo=github&logoColor=white" />
+      <img src="https://img.shields.io/badge/FreeBSD-AB2B28?style=flat&logo=freebsd&logoColor=white" />
+      <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" />
+      <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat&logo=raspberrypi&logoColor=white" />
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
+    </td>
+  </tr>
+</table>
+
+<!-- End of Skills section. Do not edit below this line. -->
 
 ---
 
