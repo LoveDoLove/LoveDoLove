@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LoveDoLove — Full-Stack Developer & DevOps</title>
+    <meta
+      name="description"
+      content="Portfolio of LoveDoLove — Full-Stack Developer & DevOps engineer. Projects, stats, resume and contact."
+    />
+    <style>
+      :root {
+        --bg: #0f1724;
+        --card: #111827;
+        --muted: #9ca3af;
+        --accent: #7c3aed;
+      }
+      body {
+        font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+        line-height: 1.5;
+        margin: 0;
+        background: linear-gradient(180deg, #071023 0%, #081026 100%);
+        color: #e6eef8;
+      }
+      .container {
+        max-width: 980px;
+        margin: 36px auto;
+        padding: 24px;
+      }
+      header {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+      }
+      .avatar {
+        width: 140px;
+        height: 140px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #071022;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero h1 {
+        margin: 0 0 6px 0;
+        font-size: 28px;
+      }
+      .hero p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          transparent
+        );
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        padding: 18px;
+        border-radius: 12px;
+      }
+      a.button {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .widgets img {
+        max-width: 100%;
+        display: block;
+      }
+      footer {
+        margin-top: 28px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.03);
+        color: var(--muted);
+      }
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .avatar {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="avatar card">
+          <!-- main header avatar: use profile.png -->
+          <img
+            src="images/profile.png"
+            alt="LoveDoLove profile"
+            title="LoveDoLove"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="hero">
+          <h1>LoveDoLove</h1>
+          <p>
+            Passionate Full-Stack Developer & DevOps Engineer — automation,
+            cloud, CI/CD, and open source.
+          </p>
+          <p style="margin-top: 8px">
+            <a
+              class="button"
+              href="https://github.com/LoveDoLove"
+              target="_blank"
+              rel="noopener"
+              style="background: #0ea5a4"
+              >GitHub</a
+          </p>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="card">
+            <h2 style="margin-top: 0">About</h2>
+            <p style="color: var(--muted)">
+              I build automation, scalable cloud solutions, and CI/CD pipelines.
+              I work across PHP, .NET Core, Cloudflare, Azure, and AWS. I enjoy
+              open-source and continuous learning.
+            </p>
+            <h3 style="margin-bottom: 6px">Highlights</h3>
+            <ul style="color: var(--muted)">
+              <li>
+                Automated cross-platform workflows for Windows, Linux, and
+                FreeBSD.
+              </li>
+              <li>Built CI/CD pipelines and deployment tooling.</li>
+              <li>
+                Published developer tools and contributed to open-source
+                projects.
+              </li>
+            </ul>
+          </section>
+
+          <section class="card" style="margin-top: 16px">
+            <h2 style="margin-top: 0">Featured / Trending Projects</h2>
+            <p style="color: var(--muted); margin-top: 4px">
+              Selected popular, pinned and high-impact repositories (hot,
+              famous, or pinned). The README's auto-updated featured section
+              remains untouched.
+            </p>
+            <!-- FEATURED_PROJECTS_START -->
+<ul id="featured-projects">
+<li><a href="https://github.com/LoveDoLove/alist-freebsd" target="_blank">alist-freebsd</a> — Shell — This project provides scripts and configuration to build the alist file listing and sharing service for FreeBSD, including cross-compilation support and environment setup.</li>
+<li><a href="https://github.com/LoveDoLove/cloudflare-smart-tools" target="_blank">cloudflare-smart-tools</a> — PHP — Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.</li>
+<li><a href="https://github.com/LoveDoLove/EasyKit" target="_blank">EasyKit</a> — C# — EasyKit is a Windows toolkit designed to automate common tasks, simplify system maintenance, and eliminate repetitive processes.</li>
+<li><a href="https://github.com/LoveDoLove/memos-freebsd" target="_blank">memos-freebsd</a> — Shell — This repository provides an automated build pipeline to generate FreeBSD binaries for the Memos open-source note-taking application. It leverages GitHub Actions and a custom build.sh script to cross-compile the latest Memos release for FreeBSD, making it easy for FreeBSD users to deploy and run Memos natively.</li>
+<li><a href="https://github.com/LoveDoLove/panindex-freebsd" target="_blank">panindex-freebsd</a> — Shell — This repository provides an automated workflow and build environment for compiling the PanIndex project for FreeBSD 14.1 (amd64). It includes GitHub Actions CI/CD, a cross-compilation shell script, and configuration for reproducible builds.</li>
+<li><a href="https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation" target="_blank">SetEdit-LoveDoLove-Documentation</a> — Documentation for SetEdit LoveDoLove, an all-in-one utility application designed to empower Android users with advanced tools for device customization, optimization, and management. With a comprehensive suite of features, our app provides users with unparalleled control over their device&#x27;s performance, system settings, and resource utilization.</li>
+</ul>
+<!-- FEATURED_PROJECTS_END -->
+            <p style="color: var(--muted); font-size: 13px; margin-top: 12px">
+              Note: The pinned/featured projects displayed here were chosen from
+              the README featured list and common popularity—leave the
+              repository workflow to manage the auto-updated featured projects.
+            </p>
+          </section>
+        </main>
+
+        <aside>
+          <div class="card widgets">
+            <h3 style="margin-top: 0">GitHub Trophy</h3>
+            <img
+              src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=gruvbox&margin-w=10&no-frame=true"
+              alt="GitHub Trophy"
+            />
+          </div>
+
+          <div class="card widgets" style="margin-top: 16px">
+            <h3 style="margin-top: 0">GitHub Stats</h3>
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=LoveDoLove&show_icons=true&theme=gruvbox"
+              alt="GitHub Stats"
+            />
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=gruvbox"
+              alt="Top Langs"
+              style="margin-top: 8px"
+            />
+          </div>
+
+          <div class="card widgets" style="margin-top: 16px">
+            <h3 style="margin-top: 0">WakaTime + Views</h3>
+            <img
+              src="https://github-readme-stats.vercel.app/api/wakatime?username=LoveDoLove&theme=gruvbox"
+              alt="WakaTime Stats"
+            />
+            <img
+              src="https://komarev.com/ghpvc/?username=LoveDoLove&color=blue"
+              alt="Profile Views"
+              style="margin-top: 8px"
+            />
+          </div>
+
+          <div class="card widgets" style="margin-top: 16px">
+            <h3 style="margin-top: 0">3D Contribution</h3>
+            <!-- use local 3d svg fallback + link to GitHub profile page that also shows 3D graph -->
+            <a
+              href="https://github.com/LoveDoLove?tab=overview&from=2024-01-01&to=2024-12-31"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-3d-contrib/profile-night-rainbow.svg"
+                alt="3D GitHub Profile"
+                style="width: 100%; border-radius: 6px"
+              />
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <a
+            href="mailto:v0130p5100cuboss@gmail.com"
+            style="color: var(--muted)"
+            >Email</a
+          >
+          <a href="https://lovedolove.github.io" style="color: var(--muted)"
+            >Portfolio</a
+          >
+          <a
+            href="https://www.youtube.com/@lovedolove"
+            style="color: var(--muted)"
+            >YouTube</a
+          >
+          <a
+            href="https://www.linkedin.com/in/chong-jun-xiang"
+            style="color: var(--muted)"
+            >LinkedIn</a
+          >
+        </div>
+        <div style="margin-top: 8px; color: var(--muted); font-size: 13px">
+          Generated from README content — Featured projects list is
+          informational and does not replace the auto-updated workflow-managed
+          section.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

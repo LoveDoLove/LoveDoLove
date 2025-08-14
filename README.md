@@ -1,9 +1,9 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Innovative Full-Stack Developer & DevOps Engineer**<br>
-Building practical web apps, automation tools, and scalable cloud solutions.<br>
-Passionate about open source, DevOps, and cross-platform engineering.<br>
-Lifelong learner dedicated to building impactful solutions and sharing knowledge.
+**Passionate Full-Stack Developer & DevOps Engineer**<br>
+Hands-on experience in automation, scalable cloud solutions, CI/CD, and cross-platform engineering.<br>
+Proficient or familiar with technologies such as PHP, .NET Core, Cloudflare, 1Panel, Git, Azure, and AWS.<br>
+Motivated by a love for open source, continuous learning, and striving to deliver meaningful solutions.
 
 ---
 
@@ -32,7 +32,7 @@ Lifelong learner dedicated to building impactful solutions and sharing knowledge
 	</a>
 	<br>
 	<a href="https://github.com/LoveDoLove?tab=overview&from=2024-01-01&to=2024-12-31">
-		<img src="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-3d-contrib/profile-green-animate.svg" alt="3D GitHub Profile" width="100%"/>
+		<img src="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D GitHub Profile" width="100%"/>
 	</a>
 </p>
 
@@ -64,29 +64,31 @@ This repository provides an automated build pipeline to generate FreeBSD binarie
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
-### [Github-Action-Cleaner](https://github.com/LoveDoLove/Github-Action-Cleaner) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Action-Cleaner?style=social)](https://github.com/LoveDoLove/Github-Action-Cleaner)
-
-Effortlessly clean up workflow runs in your GitHub repository with ready-to-use GitHub Actions.<br>
-<sub>Tech: Python</sub>
-
-### [Github-Automation-Toolkit](https://github.com/LoveDoLove/Github-Automation-Toolkit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Automation-Toolkit?style=social)](https://github.com/LoveDoLove/Github-Automation-Toolkit)
-
-GitHub Automation Toolkit is a monorepo containing reusable GitHub Actions and automation scripts for managing repositories, cleaning up workflow runs, and automating GitHub profile features. It is designed to streamline repository maintenance, CI/CD hygiene, and profile management for individuals and organizations.<br>
-
-### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
-
-Automate your GitHub profile README with dynamic featured projects and 3D contribution graphs using GitHub Actions workflows.<br>
-<sub>Tech: Python</sub>
 
 ### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
 
 Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
 <sub>Tech: Python</sub>
 
+### [Github-Action-Cleaner](https://github.com/LoveDoLove/Github-Action-Cleaner) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Action-Cleaner?style=social)](https://github.com/LoveDoLove/Github-Action-Cleaner)
+
+Effortlessly clean up workflow runs in your GitHub repository with ready-to-use GitHub Actions.<br>
+<sub>Tech: Python</sub>
+
+### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
+
+Automate your GitHub profile README with dynamic featured projects and 3D contribution graphs using GitHub Actions workflows.<br>
+<sub>Tech: Python</sub>
+
 ### [CS_CommonUtilities](https://github.com/LoveDoLove/CS_CommonUtilities) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/CS_CommonUtilities?style=social)](https://github.com/LoveDoLove/CS_CommonUtilities)
 
 A modular, production-ready C#/.NET utility library and toolkit for rapid development.<br>
 <sub>Tech: C#</sub>
+
+### [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudreve-freebsd?style=social)](https://github.com/LoveDoLove/cloudreve-freebsd)
+
+This project provides scripts and GitHub Actions workflows to automate building the Cloudreve backend for FreeBSD (amd64). It is intended for users who want to run Cloudreve on FreeBSD or automate the build process for this platform.<br>
+<sub>Tech: Shell</sub>
 
 ---
 
@@ -149,11 +151,16 @@ A modular, production-ready C#/.NET utility library and toolkit for rapid develo
     <td>
       <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
       <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=gitlab&logoColor=white" />
+      <img src="https://img.shields.io/badge/Bitbucket-0052CC?style=flat&logo=bitbucket&logoColor=white" />
       <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
       <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat&logo=visualstudio&logoColor=white" />
       <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=androidstudio&logoColor=white" />
       <img src="https://img.shields.io/badge/IntelliJ-000000?style=flat&logo=intellijidea&logoColor=white" />
       <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
+      <img src="https://img.shields.io/badge/PhpMyAdmin-6C78AF?style=flat&logo=phpmyadmin&logoColor=white" />
+      <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white" />
+      <img src="https://img.shields.io/badge/JMeter-D22128?style=flat&logo=apachejmeter&logoColor=white" />
       <img src="https://img.shields.io/badge/Automation%20Scripts-222222?style=flat" />
     </td>
   </tr>
@@ -167,7 +174,6 @@ A modular, production-ready C#/.NET utility library and toolkit for rapid develo
       <img src="https://img.shields.io/badge/FreeBSD-AB2B28?style=flat&logo=freebsd&logoColor=white" />
       <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" />
       <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat&logo=raspberrypi&logoColor=white" />
-      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
     </td>
   </tr>
 </table>
@@ -178,11 +184,13 @@ A modular, production-ready C#/.NET utility library and toolkit for rapid develo
 
 ## 🏆 Achievements
 
-- Automated complex workflows and system maintenance for Windows, Linux, and FreeBSD environments
-- Designed and maintained robust CI/CD pipelines, boosting deployment speed and reliability
-- Built and published developer tools, reusable templates, and technical guides for the community
-- Led and contributed to high-impact open-source projects, earning recognition from the developer community
-- Streamlined DevOps processes and cloud infrastructure for scalable, secure web applications
+- ⚡ **Automated cross-platform workflows** for Windows, Linux, and FreeBSD, increasing efficiency and reliability.
+- 🚀 **Built and optimized CI/CD pipelines** to accelerate deployments and ensure robust delivery.
+- 🛠️ **Published developer tools, templates, and guides** adopted by the community.
+- 🌟 **Led and contributed to open-source projects**, earning recognition from developers worldwide.
+- ☁️ **Engineered scalable, secure cloud infrastructure** for high-impact web applications.
+
+<!-- Emojis and bold text highlight key achievements for quick scanning and visual appeal. -->
 
 ---
 
