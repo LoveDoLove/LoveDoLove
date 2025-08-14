@@ -24,7 +24,9 @@ jobs:
           python-version: "3.x"
 
       - name: Install Python Dependencies
-        run: pip install requests
+        run: |
+          pip install requests
+          pip install aiohttp
 
       - name: Download Latest github_forks_sync.py
         run: curl -sSL -o github_forks_sync.py https://raw.githubusercontent.com/LoveDoLove/Github-Forks-Sync-Manager/refs/heads/main/scripts/github_forks_sync.py
