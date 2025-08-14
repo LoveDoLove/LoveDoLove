@@ -2,7 +2,8 @@
 
 **Innovative Full-Stack Developer & DevOps Engineer**<br>
 Building practical web apps, automation tools, and scalable cloud solutions.<br>
-Passionate about open source, DevOps, and cross-platform engineering.
+Passionate about open source, DevOps, and cross-platform engineering.<br>
+Lifelong learner dedicated to building impactful solutions and sharing knowledge.
 
 ---
 
@@ -63,7 +64,6 @@ This repository provides an automated build pipeline to generate FreeBSD binarie
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
-
 ### [Github-Action-Cleaner](https://github.com/LoveDoLove/Github-Action-Cleaner) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Action-Cleaner?style=social)](https://github.com/LoveDoLove/Github-Action-Cleaner)
 
 Effortlessly clean up workflow runs in your GitHub repository with ready-to-use GitHub Actions.<br>
@@ -72,7 +72,6 @@ Effortlessly clean up workflow runs in your GitHub repository with ready-to-use 
 ### [Github-Automation-Toolkit](https://github.com/LoveDoLove/Github-Automation-Toolkit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Automation-Toolkit?style=social)](https://github.com/LoveDoLove/Github-Automation-Toolkit)
 
 GitHub Automation Toolkit is a monorepo containing reusable GitHub Actions and automation scripts for managing repositories, cleaning up workflow runs, and automating GitHub profile features. It is designed to streamline repository maintenance, CI/CD hygiene, and profile management for individuals and organizations.<br>
-
 
 ### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
 
@@ -93,19 +92,22 @@ A modular, production-ready C#/.NET utility library and toolkit for rapid develo
 
 ## 🛠️ Skills
 
-**Languages:** JavaScript, TypeScript, PHP, C#, Java, Python, Shell, C, C++, Assembly<br>
-**Frameworks:** Next.js, Laravel, Node.js, React, Vite<br>
-**DevOps:** GitHub Actions, CI/CD, Docker, Cloudflare Workers<br>
-**Other:** Automation, Web Performance, System Maintenance, API Integration
+**Core Languages:** C#, PHP, JavaScript, Python, Shell<br>
+**Web Development:** ASP.NET MVC, Laravel, Node.js<br>
+**DevOps & Hosting:** 1Panel, 寶塔 (BaoTa), aaPanel, Docker, Nginx, Cloudflare, GitHub Actions, CI/CD, Cloudflare Workers<br>
+**Database & Cache:** MySQL, SQL Server<br>
+**Development Tools:** Git, GitHub, VS Code, Visual Studio Community, Android Studio, IntelliJ, Postman, GitHub Actions, Automation Scripts<br>
+**Other:** Web Performance, System Maintenance, API Integration, Open Source
 
 ---
 
 ## 🏆 Achievements
 
-- Built cross-platform automation tools for Windows and FreeBSD
-- Developed open-source CI/CD pipelines for modern web and desktop apps
-- Created educational content and templates for the developer community
-- Contributed to open-source projects and school assignments
+- Automated complex workflows and system maintenance for Windows, Linux, and FreeBSD environments
+- Designed and maintained robust CI/CD pipelines, boosting deployment speed and reliability
+- Built and published developer tools, reusable templates, and technical guides for the community
+- Led and contributed to high-impact open-source projects, earning recognition from the developer community
+- Streamlined DevOps processes and cloud infrastructure for scalable, secure web applications
 
 ---
 
