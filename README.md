@@ -42,13 +42,8 @@ Motivated by a love for open source, continuous learning, and striving to delive
 
 ### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
 
-This project provides scripts and configuration to build the alist file listing and sharing service for FreeBSD, including cross-compilation support and environment setup.<br>
+This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
 <sub>Tech: Shell</sub>
-
-### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)
-
-Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
-<sub>Tech: PHP, JavaScript, CSS</sub>
 
 ### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
 
@@ -57,13 +52,28 @@ EasyKit is a Windows toolkit designed to automate common tasks, simplify system 
 
 ### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
 
-This repository provides an automated build pipeline to generate FreeBSD binaries for the Memos open-source note-taking application. It leverages GitHub Actions and a custom build.sh script to cross-compile the latest Memos release for FreeBSD, making it easy for FreeBSD users to deploy and run Memos natively.<br>
+This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
 <sub>Tech: Shell</sub>
+
+### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)
+
+Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
+<sub>Tech: PHP, JavaScript, CSS</sub>
 
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
+
+### [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/panindex-freebsd?style=social)](https://github.com/LoveDoLove/panindex-freebsd)
+
+PanIndex FreeBSD provides scripts and automation to build the PanIndex file indexing and sharing server for FreeBSD. It fetches the latest upstream release, configures the build environment, and produces FreeBSD-compatible binaries. This project is not the original PanIndex, but a downstream build/packaging effort for FreeBSD users.<br>
+<sub>Tech: Shell</sub>
+
+### [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudreve-freebsd?style=social)](https://github.com/LoveDoLove/cloudreve-freebsd)
+
+This project provides scripts and GitHub Actions workflows to automate the process of building and packaging the Cloudreve cloud storage system for FreeBSD (amd64). It is not the main Cloudreve repository, but a community-maintained solution for producing up-to-date FreeBSD binaries and release packages.<br>
+<sub>Tech: Shell</sub>
 
 ### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
 
@@ -79,16 +89,6 @@ Effortlessly clean up workflow runs in your GitHub repository with ready-to-use 
 
 Automate your GitHub profile README with dynamic featured projects and 3D contribution graphs using GitHub Actions workflows.<br>
 <sub>Tech: Python</sub>
-
-### [CS_CommonUtilities](https://github.com/LoveDoLove/CS_CommonUtilities) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/CS_CommonUtilities?style=social)](https://github.com/LoveDoLove/CS_CommonUtilities)
-
-A modular, production-ready C#/.NET utility library and toolkit for rapid development.<br>
-<sub>Tech: C#</sub>
-
-### [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudreve-freebsd?style=social)](https://github.com/LoveDoLove/cloudreve-freebsd)
-
-This project provides scripts and GitHub Actions workflows to automate building the Cloudreve backend for FreeBSD (amd64). It is intended for users who want to run Cloudreve on FreeBSD or automate the build process for this platform.<br>
-<sub>Tech: Shell</sub>
 
 ---
 
