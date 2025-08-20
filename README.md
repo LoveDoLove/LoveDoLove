@@ -65,11 +65,6 @@ Modular suite for advanced Cloudflare cache management, edge caching, and flexib
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
 
-### [CS_CommonUtilities](https://github.com/LoveDoLove/CS_CommonUtilities) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/CS_CommonUtilities?style=social)](https://github.com/LoveDoLove/CS_CommonUtilities)
-
-A modular, production-ready C#/.NET utility library and toolkit for rapid development.<br>
-<sub>Tech: C#</sub>
-
 ### [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/panindex-freebsd?style=social)](https://github.com/LoveDoLove/panindex-freebsd)
 
 PanIndex FreeBSD provides scripts and automation to build the PanIndex file indexing and sharing server for FreeBSD. It fetches the latest upstream release, configures the build environment, and produces FreeBSD-compatible binaries. This project is not the original PanIndex, but a downstream build/packaging effort for FreeBSD users.<br>
@@ -88,6 +83,11 @@ Automate the synchronization of all forked repositories for a GitHub account wit
 ### [Github-Action-Cleaner](https://github.com/LoveDoLove/Github-Action-Cleaner) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Action-Cleaner?style=social)](https://github.com/LoveDoLove/Github-Action-Cleaner)
 
 Effortlessly clean up workflow runs in your GitHub repository with ready-to-use GitHub Actions.<br>
+<sub>Tech: Python</sub>
+
+### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
+
+Automate your GitHub profile README with dynamic featured projects and 3D contribution graphs using GitHub Actions workflows.<br>
 <sub>Tech: Python</sub>
 
 ---
