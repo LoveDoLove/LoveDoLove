@@ -40,30 +40,40 @@ Motivated by a love for open source, continuous learning, and striving to delive
 
 ## 🚀 Featured Projects
 
+### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
+
+EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
+<sub>Tech: C#, TypeScript, Inno Setup</sub>
+
 ### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
 
 This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
 <sub>Tech: Shell</sub>
 
-### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
+### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
-EasyKit is a Windows toolkit designed to automate common tasks, simplify system maintenance, and eliminate repetitive processes.<br>
-<sub>Tech: C#, JavaScript, Inno Setup, TypeScript, CSS</sub>
+This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
+
+
+### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
+
+Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, advanced admin controls, API token support, and comprehensive logging.<br>
+<sub>Tech: PHP, TypeScript</sub>
+
+### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)
+
+Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
+<sub>Tech: JavaScript</sub>
+
+### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
+
+The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
+<sub>Tech: JavaScript, HTML, CSS</sub>
 
 ### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
 
 This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
 <sub>Tech: Shell</sub>
-
-### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)
-
-Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
-<sub>Tech: PHP, JavaScript, CSS</sub>
-
-### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
-
-This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
-
 
 ### [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/panindex-freebsd?style=social)](https://github.com/LoveDoLove/panindex-freebsd)
 
@@ -78,16 +88,6 @@ This project provides scripts and GitHub Actions workflows to automate the proce
 ### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
 
 Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
-<sub>Tech: Python</sub>
-
-### [Github-Action-Cleaner](https://github.com/LoveDoLove/Github-Action-Cleaner) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Action-Cleaner?style=social)](https://github.com/LoveDoLove/Github-Action-Cleaner)
-
-Effortlessly clean up workflow runs in your GitHub repository with ready-to-use GitHub Actions.<br>
-<sub>Tech: Python</sub>
-
-### [Github-Profile-Manager](https://github.com/LoveDoLove/Github-Profile-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Profile-Manager?style=social)](https://github.com/LoveDoLove/Github-Profile-Manager)
-
-Automate your GitHub profile README with dynamic featured projects and 3D contribution graphs using GitHub Actions workflows.<br>
 <sub>Tech: Python</sub>
 
 ---
