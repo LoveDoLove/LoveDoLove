@@ -48,7 +48,7 @@ This repository provides a build wrapper and automation for compiling the upstre
 ### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
 
 EasyKit is a Windows toolkit designed to automate common tasks, simplify system maintenance, and eliminate repetitive processes.<br>
-<sub>Tech: C#, JavaScript, Inno Setup, TypeScript, CSS</sub>
+<sub>Tech: C#, HTML, Inno Setup</sub>
 
 ### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
 
