@@ -50,6 +50,11 @@ This repository provides a build wrapper and automation for compiling the upstre
 EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
 <sub>Tech: C#, TypeScript, Inno Setup</sub>
 
+### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
+
+Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, advanced admin controls, API token support, and comprehensive logging.<br>
+<sub>Tech: PHP, TypeScript</sub>
+
 ### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)
 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
@@ -60,20 +65,15 @@ Modular suite for advanced Cloudflare cache management, edge caching, and flexib
 The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
 <sub>Tech: JavaScript, HTML, CSS</sub>
 
-### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
-
-This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
-<sub>Tech: Shell</sub>
-
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
 
-### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
+### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
 
-Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, advanced admin controls, API token support, and comprehensive logging.<br>
-<sub>Tech: PHP, TypeScript</sub>
+This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
+<sub>Tech: Shell</sub>
 
 ### [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/panindex-freebsd?style=social)](https://github.com/LoveDoLove/panindex-freebsd)
 
