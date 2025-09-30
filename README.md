@@ -1,9 +1,8 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Passionate Full-Stack Developer & DevOps Engineer**<br>
-Hands-on experience in automation, scalable cloud solutions, CI/CD, and cross-platform engineering.<br>
-Proficient or familiar with technologies such as PHP, .NET Core, Cloudflare, 1Panel, Git, Azure, and AWS.<br>
-Motivated by a love for open source, continuous learning, and striving to deliver meaningful solutions.
+**Full-Stack Developer | DevOps Engineer | Cloud & Network Specialist**<br>
+AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and Cisco CCNA certified.<br>
+I build secure, scalable solutions and automate workflows across cloud and enterprise networks. Driven by open source, continuous learning, and a passion for impactful technology.
 
 ---
 
@@ -40,15 +39,20 @@ Motivated by a love for open source, continuous learning, and striving to delive
 
 ## 🚀 Featured Projects
 
+### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
+
+This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
+<sub>Tech: Shell</sub>
+
 ### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
 
 EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
 <sub>Tech: C#, TypeScript, Inno Setup</sub>
 
-### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
+### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
 
-This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
-<sub>Tech: Shell</sub>
+The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
+<sub>Tech: JavaScript, HTML, CSS</sub>
 
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
@@ -63,11 +67,6 @@ Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, 
 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
 <sub>Tech: JavaScript</sub>
-
-### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
-
-The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
-<sub>Tech: JavaScript, HTML, CSS</sub>
 
 ### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
 
@@ -190,8 +189,28 @@ Automate the synchronization of all forked repositories for a GitHub account wit
 
 ---
 
+## 🎓 Certifications
+
+<p>
+  <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Architect-blue?logo=amazonaws&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Web%20App%20Builder-blue?logo=amazonaws&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Foundations-blue?logo=amazonaws&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AWS%20Educate-Cloud%20Computing%20101-blue?logo=amazonaws&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cisco-CCNA%20Enterprise%20Networking-blue?logo=cisco&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cisco-CCNA%20Switching%20%26%20Routing-blue?logo=cisco&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cisco-CCNA%20Introduction%20to%20Networks-blue?logo=cisco&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cisco-IT%20Essentials-blue?logo=cisco&style=for-the-badge" />
+</p>
+
+<!-- End of Skills section. Do not edit below this line. -->
+
+---
+
 ## 🏆 Achievements
 
+- 🏅 Achieved AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and AWS Educate Cloud 101 certifications (2024-2025).
+- 🏅 Earned Cisco CCNA (Enterprise Networking, Switching & Routing, Introduction to Networks) and IT Essentials certifications (2024-2025).
+- 🚀 Expanded expertise in cloud architecture, enterprise networking, and IT infrastructure through industry-recognized certifications.
 - ⚡ **Automated cross-platform workflows** for Windows, Linux, and FreeBSD, increasing efficiency and reliability.
 - 🚀 **Built and optimized CI/CD pipelines** to accelerate deployments and ensure robust delivery.
 - 🛠️ **Published developer tools, templates, and guides** adopted by the community.
