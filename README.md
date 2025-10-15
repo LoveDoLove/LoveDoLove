@@ -1,6 +1,6 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Full-Stack Developer | DevOps Engineer | Cloud & Network Specialist**<br>
+**Full-Stack Developer | DevOps Engineer | Cloud & Network Engineer**<br>
 AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and Cisco CCNA certified.<br>
 I build secure, scalable solutions and automate workflows across cloud and enterprise networks. Driven by open source, continuous learning, and a passion for impactful technology.
 
@@ -57,6 +57,7 @@ The Open Source Projects Showcase is a dynamic web application designed to elega
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
+
 
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
