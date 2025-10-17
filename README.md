@@ -59,6 +59,11 @@ The Open Source Projects Showcase is a dynamic web application designed to elega
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
 
+### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
+
+Advanced load balancer using Cloudflare Workers with weighted, backup, and disabled origin support.<br>
+<sub>Tech: JavaScript</sub>
+
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
 Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, advanced admin controls, API token support, and comprehensive logging.<br>
@@ -83,11 +88,6 @@ PanIndex FreeBSD provides scripts and automation to build the PanIndex file inde
 
 This project provides scripts and GitHub Actions workflows to automate the process of building and packaging the Cloudreve cloud storage system for FreeBSD (amd64). It is not the main Cloudreve repository, but a community-maintained solution for producing up-to-date FreeBSD binaries and release packages.<br>
 <sub>Tech: Shell</sub>
-
-### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
-
-Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
-<sub>Tech: Python</sub>
 
 ---
 
