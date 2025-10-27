@@ -1,8 +1,9 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Full-Stack Developer | DevOps Engineer | Cloud & Network Engineer**<br>
-AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and Cisco CCNA certified.<br>
-I build secure, scalable solutions and automate workflows across cloud and enterprise networks. Driven by open source, continuous learning, and a passion for impactful technology.
+**Full-Stack Developer** &nbsp;|&nbsp; **DevOps Engineer**
+🌐 AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations)
+💡 Building secure, scalable solutions and automating workflows across cloud platforms and enterprise environments.
+🚀 Driven by open source, continuous learning, and a passion for impactful technology.
 
 ---
 
@@ -53,7 +54,6 @@ The Open Source Projects Showcase is a dynamic web application designed to elega
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
-
 ### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
 
 EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
@@ -93,12 +93,10 @@ Automate the synchronization of all forked repositories for a GitHub account wit
 
 ## 🛠️ Skills
 
-<!-- Visual skill bar for quick scan. Uses skillicons.dev for consistent icon style. -->
 <p align="center">
   <img src="https://skillicons.dev/icons?i=cs,dotnet,php,js,py,nodejs,laravel,html,css,bootstrap,nginx,docker,cloudflare,githubactions,azure,aws,firebase,mysql,git,github,vscode,visualstudio,androidstudio,postman,bash,raspberrypi,java,flutter,supabase" alt="Skill Icons" style="max-width: 100%;" />
 </p>
 
-<!-- Grouped skill categories with badges for clarity and visual appeal. -->
 <table>
   <tr>
     <td><b>Languages</b></td>
@@ -108,7 +106,6 @@ Automate the synchronization of all forked repositories for a GitHub account wit
       <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnu-bash&logoColor=white" />
-      <!-- Not mastered, placed at end -->
       <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white" />
     </td>
   </tr>
@@ -121,7 +118,6 @@ Automate the synchronization of all forked repositories for a GitHub account wit
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
       <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white" />
-      <!-- Not mastered, placed at end -->
       <img src="https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white" />
       <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white" />
     </td>
@@ -131,17 +127,17 @@ Automate the synchronization of all forked repositories for a GitHub account wit
     <td>
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
       <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black" />
-  <img src="https://img.shields.io/badge/CI%2FCD-222222?style=flat&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/1Panel-222222?style=flat" />
-  <img src="https://img.shields.io/badge/寶塔-222222?style=flat" />
-  <img src="https://img.shields.io/badge/aaPanel-222222?style=flat" />
-  <img src="https://img.shields.io/badge/cPanel-FF6C2C?style=flat&logo=cpanel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat&logo=cloudflare&logoColor=white" />
+      <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
+      <img src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" />
+      <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" />
+      <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black" />
+      <img src="https://img.shields.io/badge/CI%2FCD-222222?style=flat&logo=githubactions&logoColor=white" />
+      <img src="https://img.shields.io/badge/1Panel-222222?style=flat" />
+      <img src="https://img.shields.io/badge/寶塔-222222?style=flat" />
+      <img src="https://img.shields.io/badge/aaPanel-222222?style=flat" />
+      <img src="https://img.shields.io/badge/cPanel-FF6C2C?style=flat&logo=cpanel&logoColor=white" />
+      <img src="https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat&logo=cloudflare&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -158,11 +154,11 @@ Automate the synchronization of all forked repositories for a GitHub account wit
       <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" />
       <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat&logo=gitlab&logoColor=white" />
       <img src="https://img.shields.io/badge/Bitbucket-0052CC?style=flat&logo=bitbucket&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat&logo=visualstudio&logoColor=white" />
-  <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=androidstudio&logoColor=white" />
-  <img src="https://img.shields.io/badge/IntelliJ-000000?style=flat&logo=intellijidea&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jetbrains-000000?style=flat&logo=jetbrains&logoColor=white" />
+      <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
+      <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat&logo=visualstudio&logoColor=white" />
+      <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat&logo=androidstudio&logoColor=white" />
+      <img src="https://img.shields.io/badge/IntelliJ-000000?style=flat&logo=intellijidea&logoColor=white" />
+      <img src="https://img.shields.io/badge/Jetbrains-000000?style=flat&logo=jetbrains&logoColor=white" />
       <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
       <img src="https://img.shields.io/badge/PhpMyAdmin-6C78AF?style=flat&logo=phpmyadmin&logoColor=white" />
       <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white" />
@@ -173,15 +169,15 @@ Automate the synchronization of all forked repositories for a GitHub account wit
   <tr>
     <td><b>Other</b></td>
     <td>
-  <img src="https://img.shields.io/badge/Web%20Performance-222222?style=flat" />
-  <img src="https://img.shields.io/badge/System%20Maintenance-222222?style=flat" />
-  <img src="https://img.shields.io/badge/API%20Integration-222222?style=flat" />
-  <img src="https://img.shields.io/badge/Open%20Source-222222?style=flat&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/FreeBSD-AB2B28?style=flat&logo=freebsd&logoColor=white" />
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
-  <img src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" />
-  <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat&logo=raspberrypi&logoColor=white" />
+      <img src="https://img.shields.io/badge/Web%20Performance-222222?style=flat" />
+      <img src="https://img.shields.io/badge/System%20Maintenance-222222?style=flat" />
+      <img src="https://img.shields.io/badge/API%20Integration-222222?style=flat" />
+      <img src="https://img.shields.io/badge/Open%20Source-222222?style=flat&logo=github&logoColor=white" />
+      <img src="https://img.shields.io/badge/FreeBSD-AB2B28?style=flat&logo=freebsd&logoColor=white" />
+      <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
+      <img src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
+      <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" />
+      <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat&logo=raspberrypi&logoColor=white" />
     </td>
   </tr>
 </table>
@@ -192,45 +188,41 @@ Automate the synchronization of all forked repositories for a GitHub account wit
 
 ## 🎓 Certifications
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Architect-blue?logo=amazonaws&style=for-the-badge" />
   <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Web%20App%20Builder-blue?logo=amazonaws&style=for-the-badge" />
   <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Foundations-blue?logo=amazonaws&style=for-the-badge" />
   <img src="https://img.shields.io/badge/AWS%20Educate-Cloud%20Computing%20101-blue?logo=amazonaws&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cisco-CCNA%20Enterprise%20Networking-blue?logo=cisco&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cisco-CCNA%20Switching%20%26%20Routing-blue?logo=cisco&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cisco-CCNA%20Introduction%20to%20Networks-blue?logo=cisco&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cisco-IT%20Essentials-blue?logo=cisco&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cisco%20Coursework-Completed%20(no%20official%20certification)-lightgrey?logo=cisco&style=for-the-badge" />
 </p>
-
-<!-- End of Skills section. Do not edit below this line. -->
 
 ---
 
 ## 🏆 Achievements
 
-- 🏅 Achieved AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and AWS Educate Cloud 101 certifications (2024-2025).
-- 🏅 Earned Cisco CCNA (Enterprise Networking, Switching & Routing, Introduction to Networks) and IT Essentials certifications (2024-2025).
-- 🚀 Expanded expertise in cloud architecture, enterprise networking, and IT infrastructure through industry-recognized certifications.
-- ⚡ **Automated cross-platform workflows** for Windows, Linux, and FreeBSD, increasing efficiency and reliability.
-- 🚀 **Built and optimized CI/CD pipelines** to accelerate deployments and ensure robust delivery.
-- 🛠️ **Published developer tools, templates, and guides** adopted by the community.
-- 🌟 **Led and contributed to open-source projects**, earning recognition from developers worldwide.
-- ☁️ **Engineered scalable, secure cloud infrastructure** for high-impact web applications.
-
-<!-- Emojis and bold text highlight key achievements for quick scanning and visual appeal. -->
+- 🏅 **AWS Academy Graduate** (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and **AWS Educate Cloud 101** certifications (2024-2025)
+- 📚 Completed Cisco Networking Academy coursework (no official CCNA certification)
+- 🚀 Expanded expertise in cloud architecture, enterprise networking, and IT infrastructure through industry-recognized training and coursework
+- ⚡ Automated cross-platform workflows for Windows, Linux, and FreeBSD, increasing efficiency and reliability
+- 🚀 Built and optimized CI/CD pipelines to accelerate deployments and ensure robust delivery
+- 🛠️ Published developer tools, templates, and guides adopted by the community
+- 🌟 Led and contributed to open-source projects, earning recognition from developers worldwide
+- ☁️ Engineered scalable, secure cloud infrastructure for high-impact web applications
 
 ---
 
 ## 📫 Connect
 
-- [GitHub](https://github.com/LoveDoLove)
-- [Portfolio](https://portfolio.lovedolove.one)
-- [Email](mailto:v0130p5100cuboss@gmail.com)
-- [YouTube](https://www.youtube.com/@lovedolove)
-- [LinkedIn](https://www.linkedin.com/in/chong-jun-xiang)
-- [Jobstreet](https://my.jobstreet.com/profile/junxiang-chong-dkbYnRdjDW)
-- [Buy Me a Coffee](https://buymeacoffee.com/lovedolove)
+<p align="center">
+  <a href="https://github.com/LoveDoLove"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://portfolio.lovedolove.one"><img src="https://img.shields.io/badge/Portfolio-007ACC?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="mailto:v0130p5100cuboss@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.youtube.com/@lovedolove"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://my.jobstreet.com/profile/junxiang-chong-dkbYnRdjDW"><img src="https://img.shields.io/badge/Jobstreet-222222?style=for-the-badge" /></a>
+  <a href="https://www.credly.com/users/chong-jun-xiang"><img src="https://img.shields.io/badge/Credly-00C389?style=for-the-badge&logo=credly&logoColor=white" /></a>
+  <a href="https://buymeacoffee.com/lovedolove"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" /></a>
+</p>
 
 ---
 
