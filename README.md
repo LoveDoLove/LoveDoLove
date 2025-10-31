@@ -2,7 +2,7 @@
 
 **Full-Stack Developer & DevOps/Cloud Engineer**
 <br>
-Proficient in full-stack development, DevOps, and cloud services. I build secure, scalable tools for developers and enterprises and am skilled in network troubleshooting and configuration. I am a graduate of AWS Academy and have completed related courses at Cisco Networking Academy. My open-source projects include EasyKit, TpLinkFirmwareDirectory, and alist-freebsd. I am a Credly certified professional ([see my profile for details](https://www.credly.com/users/chong-jun-xiang)). I am passionate about open source and backend innovation.
+Experience in full-stack development, DevOps, and cloud services. Certified by AWS Academy and Credly, I build secure, scalable solutions and contribute to open-source projects.
 
 ---
 
