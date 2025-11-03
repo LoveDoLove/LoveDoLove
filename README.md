@@ -1,8 +1,8 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Full-Stack Developer & DevOps/Cloud Engineer**
-<br>
-Experience in full-stack development, DevOps, and cloud services. Certified by AWS Academy and Credly, I build secure, scalable solutions and contribute to open-source projects.
+**Full-Stack Developer | DevOps Engineer | Cloud & Network Engineer**<br>
+AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and Cisco CCNA certified.<br>
+I build secure, scalable solutions and automate workflows across cloud and enterprise networks. Driven by open source, continuous learning, and a passion for impactful technology.
 
 ---
 
@@ -52,7 +52,6 @@ The Open Source Projects Showcase is a dynamic web application designed to elega
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
-
 
 ### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
 
