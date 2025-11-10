@@ -59,6 +59,11 @@ This project provides a searchable list of all keys for software downloadable fr
 EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
 <sub>Tech: C#, TypeScript, Inno Setup</sub>
 
+### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
+
+This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
+<sub>Tech: Shell</sub>
+
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
 Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, advanced admin controls, API token support, and comprehensive logging.<br>
@@ -68,11 +73,6 @@ Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, 
 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
 <sub>Tech: JavaScript</sub>
-
-### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
-
-This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
-<sub>Tech: Shell</sub>
 
 ### [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/panindex-freebsd?style=social)](https://github.com/LoveDoLove/panindex-freebsd)
 
