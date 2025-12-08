@@ -66,7 +66,7 @@ Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.
 
 ### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
 
-Advanced load balancer using Cloudflare Workers with weighted, backup, and disabled origin support.<br>
+This repository contains a Cloudflare Worker that implements an advanced HTTP load balancer. It proxies requests to multiple origin servers and includes features useful for production deployments.<br>
 <sub>Tech: JavaScript</sub>
 
 ### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
