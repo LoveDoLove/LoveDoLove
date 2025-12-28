@@ -64,6 +64,11 @@ EasyKit is a comprehensive Windows toolkit designed specifically for web develop
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
 
+### [cloudflare-edge-commander](https://github.com/LoveDoLove/cloudflare-edge-commander) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-edge-commander?style=social)](https://github.com/LoveDoLove/cloudflare-edge-commander)
+
+A lightweight Next.js control panel for managing Cloudflare accounts, zones, DNS records and simple network tooling (IPv6 utils, reverse mapping). Built to run on Cloudflare via OpenNext + Wrangler.<br>
+<sub>Tech: TypeScript, CSS, JavaScript</sub>
+
 ### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
 
 This repository contains a Cloudflare Worker that implements an advanced HTTP load balancer. It proxies requests to multiple origin servers and includes features useful for production deployments.<br>
@@ -83,11 +88,6 @@ Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, 
 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
 <sub>Tech: JavaScript</sub>
-
-### [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/panindex-freebsd?style=social)](https://github.com/LoveDoLove/panindex-freebsd)
-
-PanIndex FreeBSD provides scripts and automation to build the PanIndex file indexing and sharing server for FreeBSD. It fetches the latest upstream release, configures the build environment, and produces FreeBSD-compatible binaries. This project is not the original PanIndex, but a downstream build/packaging effort for FreeBSD users.<br>
-<sub>Tech: Shell</sub>
 
 ---
 
