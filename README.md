@@ -64,15 +64,15 @@ EasyKit is a comprehensive Windows toolkit designed specifically for web develop
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
 
+### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
+
+This project provides a robust, production-ready Cloudflare Worker that acts as a high-performance HTTP load balancer. It allows you to distribute traffic across multiple origin servers based on configurable weights, with built-in support for failover to backup servers and maintenance modes.<br>
+<sub>Tech: JavaScript</sub>
+
 ### [cloudflare-edge-commander](https://github.com/LoveDoLove/cloudflare-edge-commander) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-edge-commander?style=social)](https://github.com/LoveDoLove/cloudflare-edge-commander)
 
 A lightweight Next.js control panel for managing Cloudflare accounts, zones, DNS records and simple network tooling (IPv6 utils, reverse mapping). Built to run on Cloudflare via OpenNext + Wrangler.<br>
 <sub>Tech: TypeScript, CSS, JavaScript</sub>
-
-### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
-
-This repository contains a Cloudflare Worker that implements an advanced HTTP load balancer. It proxies requests to multiple origin servers and includes features useful for production deployments.<br>
-<sub>Tech: JavaScript</sub>
 
 ### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
 
