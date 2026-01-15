@@ -67,27 +67,27 @@ Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, 
 ### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)
 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
-
+<sub>Tech: JavaScript</sub>
 
 ### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
 
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
-
+<sub>Tech: Python</sub>
 
 ### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
 
 This project provides a robust, production-ready Cloudflare Worker that acts as a high-performance HTTP load balancer. It allows you to distribute traffic across multiple origin servers based on configurable weights, with built-in support for failover to backup servers and maintenance modes.<br>
-
+<sub>Tech: JavaScript</sub>
 
 ### [cloudflare-edge-commander](https://github.com/LoveDoLove/cloudflare-edge-commander) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-edge-commander?style=social)](https://github.com/LoveDoLove/cloudflare-edge-commander)
 
 A lightweight Next.js control panel for managing Cloudflare accounts, zones, DNS records and simple network tooling (IPv6 utils, reverse mapping). Built to run on Cloudflare via OpenNext + Wrangler.<br>
-
+<sub>Tech: TypeScript, CSS, JavaScript</sub>
 
 ### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
 
 This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
-
+<sub>Tech: Shell</sub>
 
 ---
 
