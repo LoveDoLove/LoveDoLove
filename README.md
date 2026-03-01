@@ -72,22 +72,22 @@ Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, 
 ### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)
 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
-<sub>Tech: JavaScript</sub>
+
 
 ### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
 
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
-<sub>Tech: Python</sub>
+
 
 ### [LDLWinToolBox](https://github.com/LoveDoLove/LDLWinToolBox) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/LDLWinToolBox?style=social)](https://github.com/LoveDoLove/LDLWinToolBox)
 
 A cohesive, menu-driven Windows Batch utility that safely automates advanced system cleanup, integrity repair, components update, and NVMe SSD optimizations.<br>
-<sub>Tech: Batchfile</sub>
+
 
 ### [SuperGit-Tools](https://github.com/LoveDoLove/SuperGit-Tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SuperGit-Tools?style=social)](https://github.com/LoveDoLove/SuperGit-Tools)
 
 SuperGit-Tools is designed to solve the headache of managing multiple local Git repositories. Whether you have 5 or 50 projects, keeping them all synchronized can be tedious.<br>
-<sub>Tech: PowerShell</sub>
+
 
 ---
 
