@@ -1,8 +1,8 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Full-Stack Developer & DevOps/Cloud Engineer**
-<br>
-Experience in full-stack development, DevOps, and cloud services. Certified by AWS Academy and Credly, I build secure, scalable solutions and contribute to open-source projects.
+**Full-Stack Developer | DevOps Engineer | Cloud & Network Engineer**<br>
+AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and Cisco CCNA certified.<br>
+I build secure, scalable solutions and automate workflows across cloud and enterprise networks. Driven by open source, continuous learning, and a passion for impactful technology.
 
 ---
 
@@ -44,11 +44,6 @@ Experience in full-stack development, DevOps, and cloud services. Certified by A
 This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
 <sub>Tech: Shell</sub>
 
-### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
-
-The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
-<sub>Tech: JavaScript, HTML, CSS</sub>
-
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
@@ -58,6 +53,16 @@ This project provides a searchable list of all keys for software downloadable fr
 
 EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
 <sub>Tech: C#, TypeScript, Inno Setup</sub>
+
+### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
+
+The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
+<sub>Tech: JavaScript, HTML, CSS</sub>
+
+### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
+
+This project provides a robust, production-ready Cloudflare Worker that acts as a high-performance HTTP load balancer. It allows you to distribute traffic across multiple origin servers based on configurable weights, with built-in support for failover to backup servers and maintenance modes.<br>
+<sub>Tech: JavaScript</sub>
 
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
@@ -69,25 +74,20 @@ Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
 <sub>Tech: JavaScript</sub>
 
-### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
+### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
 
-This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
-<sub>Tech: Shell</sub>
-
-### [panindex-freebsd](https://github.com/LoveDoLove/panindex-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/panindex-freebsd?style=social)](https://github.com/LoveDoLove/panindex-freebsd)
-
-PanIndex FreeBSD provides scripts and automation to build the PanIndex file indexing and sharing server for FreeBSD. It fetches the latest upstream release, configures the build environment, and produces FreeBSD-compatible binaries. This project is not the original PanIndex, but a downstream build/packaging effort for FreeBSD users.<br>
-<sub>Tech: Shell</sub>
-
-### [cloudreve-freebsd](https://github.com/LoveDoLove/cloudreve-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudreve-freebsd?style=social)](https://github.com/LoveDoLove/cloudreve-freebsd)
-
-This project provides scripts and GitHub Actions workflows to automate the process of building and packaging the Cloudreve cloud storage system for FreeBSD (amd64). It is not the main Cloudreve repository, but a community-maintained solution for producing up-to-date FreeBSD binaries and release packages.<br>
-<sub>Tech: Shell</sub>
-
-### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
-
-Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
+Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
+
+### [LDLWinToolBox](https://github.com/LoveDoLove/LDLWinToolBox) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/LDLWinToolBox?style=social)](https://github.com/LoveDoLove/LDLWinToolBox)
+
+A cohesive, menu-driven Windows Batch utility that safely automates advanced system cleanup, integrity repair, components update, and NVMe SSD optimizations.<br>
+<sub>Tech: Batchfile</sub>
+
+### [SuperGit-Tools](https://github.com/LoveDoLove/SuperGit-Tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SuperGit-Tools?style=social)](https://github.com/LoveDoLove/SuperGit-Tools)
+
+SuperGit-Tools is designed to solve the headache of managing multiple local Git repositories. Whether you have 5 or 50 projects, keeping them all synchronized can be tedious.<br>
+<sub>Tech: PowerShell</sub>
 
 ---
 
