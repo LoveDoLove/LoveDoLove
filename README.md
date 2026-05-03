@@ -39,15 +39,15 @@ I build secure, scalable solutions and automate workflows across cloud and enter
 
 ## 🚀 Featured Projects
 
-### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
-
-This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
-<sub>Tech: Shell</sub>
-
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
+
+### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
+
+This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
+<sub>Tech: Shell</sub>
 
 ### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
 
