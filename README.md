@@ -1,8 +1,8 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Full-Stack Developer | DevOps Engineer | Cloud & Network Engineer**<br>
-AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and Cisco CCNA certified.<br>
-I build secure, scalable solutions and automate workflows across cloud and enterprise networks. Driven by open source, continuous learning, and a passion for impactful technology.
+**Full-Stack Developer | Cloud Infrastructure & DevOps Engineer**<br>
+AWS Academy Graduate (Cloud Architect, Web App Builder, Foundations) & Enterprise Networking (Cisco Academy).<br>
+I bridge the gap between high-performance software development and low-level cloud infrastructure. Specialized in building secure web applications, optimizing virtualization layers, and automating end-to-end CI/CD pipelines.
 
 ---
 
