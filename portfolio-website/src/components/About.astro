@@ -1,0 +1,71 @@
+---
+const achievements = [
+  "AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and AWS Educate Cloud 101 certifications (2024-2025)",
+  "Completed Cisco Networking Academy coursework (no official CCNA certification)",
+  "Expanded expertise in cloud architecture, enterprise networking, and IT infrastructure through industry-recognized training and coursework",
+  "Automated cross-platform workflows for Windows, Linux, and FreeBSD, increasing efficiency and reliability",
+  "Built and optimized CI/CD pipelines to accelerate deployments and ensure robust delivery",
+  "Published developer tools, templates, and guides adopted by the community",
+  "Led and contributed to open-source projects, earning recognition from developers worldwide",
+  "Engineered scalable, secure cloud infrastructure for high-impact web applications",
+];
+---
+
+<section class="card about">
+  <h2>About</h2>
+  <p class="about-text">
+    Full-Stack Developer &amp; DevOps Engineer &mdash;
+    AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations).
+    Building secure, scalable solutions and automating workflows across cloud platforms
+    and enterprise environments. Driven by open source, continuous learning, and a passion
+    for impactful technology.
+  </p>
+  <h3>Achievements</h3>
+  <ul class="achievements-list">
+    {achievements.map((a) => (
+      <li>{a}</li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .about {
+    animation: fadeUp 0.5s ease both;
+  }
+  .about-text {
+    color: #9ca3af;
+    line-height: 1.7;
+    margin: 0 0 18px 0;
+    max-width: 680px;
+  }
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #e6eef8;
+  }
+  .achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .achievements-list li {
+    color: #9ca3af;
+    font-size: 13px;
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+  }
+  .achievements-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #7c3aed;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>

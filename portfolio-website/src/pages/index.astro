@@ -1,0 +1,95 @@
+---
+import Header from "../components/Header.astro";
+import About from "../components/About.astro";
+import Stats from "../components/Stats.astro";
+import Skills from "../components/Skills.astro";
+import Certifications from "../components/Certifications.astro";
+import FeaturedProjects from "../components/FeaturedProjects.astro";
+import Connect from "../components/Connect.astro";
+import ThreeDeeSection from "../components/ThreeDeeSection.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LoveDoLove &mdash; Full-Stack Developer &amp; DevOps</title>
+    <meta
+      name="description"
+      content="Portfolio of LoveDoLove &mdash; Full-Stack Developer & DevOps engineer. Projects, stats, certifications and contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #071023;
+        --card-bg: rgba(255,255,255,0.02);
+        --muted: #9ca3af;
+        --accent: #7c3aed;
+        --text: #e6eef8;
+        --radius: 12px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        background: linear-gradient(180deg, #071023 0%, #0b0d2a 50%, #081026 100%);
+        color: var(--text);
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 32px 24px 48px;
+      }
+      .card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+        border: 1px solid rgba(255,255,255,0.04);
+        border-radius: var(--radius);
+        padding: 22px;
+        backdrop-filter: blur(4px);
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+      .card:hover {
+        border-color: rgba(124,58,237,0.12);
+        box-shadow: 0 0 40px rgba(124,58,237,0.05);
+      }
+      .card + .card {
+        margin-top: 18px;
+      }
+      h2 {
+        margin: 0 0 14px 0;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: var(--text);
+      }
+      .section-note {
+        color: var(--muted);
+        font-size: 13px;
+        margin: 0 0 14px 0;
+      }
+      @media (max-width: 600px) {
+        .container { padding: 20px 14px 32px; }
+        .card { padding: 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <Header />
+      <About />
+      <Stats />
+      <Skills />
+      <Certifications />
+      <FeaturedProjects />
+      <ThreeDeeSection />
+      <Connect />
+      <Footer />
+    </div>
+  </body>
+</html>

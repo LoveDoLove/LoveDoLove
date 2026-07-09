@@ -1,0 +1,105 @@
+---
+const projects = [
+  { name: "cloudflare-load-balancer", tech: "JavaScript", desc: "Production-ready HTTP load balancer as a Cloudflare Worker with weighted distribution, failover, and maintenance mode." },
+  { name: "TpLinkFirmwareDirectory", tech: "Python", desc: "Searchable list of all firmware keys from download.tplinkcloud.com's public S3 bucket." },
+  { name: "alist-freebsd", tech: "Shell", desc: "Build wrapper and CI automation for compiling alist on FreeBSD." },
+  { name: "open-source-projects", tech: "JavaScript, HTML, CSS", desc: "Dynamic web app for showcasing open source projects, deployed on Cloudflare Workers." },
+  { name: "EasyKit", tech: "C#, TypeScript, Inno Setup", desc: "Windows developer toolkit with unified console for Git, NPM, Composer, and Laravel Artisan." },
+  { name: "cloudflare-smart-cache", tech: "PHP, TypeScript", desc: "All-in-one Cloudflare cache solution for WordPress with edge HTML caching and auto-purging." },
+  { name: "RemoteRun", tech: "C#, Inno Setup", desc: "Lightweight .NET 8 utility to run programs as NT AUTHORITY\\SYSTEM locally or remotely." },
+  { name: "cloudflare-smart-tools", tech: "JavaScript", desc: "Modular suite for Cloudflare cache management, edge caching, and CDN routing." },
+  { name: "cf-best-domain", tech: "Python", desc: "Automate Cloudflare DNS A record management and collect the best Cloudflare IPs." },
+  { name: "LDLWinToolBox", tech: "Python, PowerShell, Batchfile", desc: "Menu-driven Windows Batch utility for safe advanced system cleanup, repair, and NVMe SSD optimization." },
+];
+---
+
+<section class="card">
+  <h2>Featured Projects</h2>
+  <p class="section-note">Top starred repositories auto-synced daily via GitHub Actions.</p>
+  <!-- FEATURED_PROJECTS_START -->
+  <div class="project-list">
+    {projects.map((p) => (
+      <a
+        href={`https://github.com/LoveDoLove/${p.name}`}
+        class="project-item"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="project-body">
+          <span class="project-name">{p.name}</span>
+          <span class="project-tech">{p.tech}</span>
+          <span class="project-desc">{p.desc}</span>
+        </div>
+        <span class="project-arrow">&rarr;</span>
+      </a>
+    ))}
+  </div>
+  <!-- FEATURED_PROJECTS_END -->
+</section>
+
+<style>
+  .card-note {
+    color: #9ca3af;
+    font-size: 13px;
+    margin: 0 0 14px 0;
+  }
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.02);
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+    border: 1px solid transparent;
+  }
+  .project-item:hover {
+    background: rgba(124,58,237,0.06);
+    border-color: rgba(124,58,237,0.12);
+    transform: translateX(3px);
+  }
+  .project-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .project-name {
+    font-weight: 600;
+    color: #e6eef8;
+    font-size: 14px;
+  }
+  .project-tech {
+    font-size: 11px;
+    color: #7c3aed;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .project-desc {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .project-arrow {
+    color: #7c3aed;
+    font-size: 18px;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .project-item:hover .project-arrow {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+</style>

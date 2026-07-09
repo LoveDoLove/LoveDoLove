@@ -1,0 +1,120 @@
+---
+export interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const { title = "LoveDoLove", subtitle = "Full-Stack Developer | Cloud Infrastructure & DevOps Engineer" } = Astro.props;
+---
+
+<header class="header">
+  <div class="header-inner">
+    <div class="avatar-frame">
+      <img src="/images/profile.png" alt="LoveDoLove profile" width="140" height="140" />
+    </div>
+    <div class="hero">
+      <h1>{title}</h1>
+      <p class="subtitle">{subtitle}</p>
+      <p class="tagline">
+        AWS Academy Graduate &mdash; bridging high-performance software with low-level cloud infrastructure.<br />
+        Specialized in secure web applications, virtualization, and CI/CD automation.
+      </p>
+      <div class="cta-row">
+        <a href="https://github.com/LoveDoLove" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:v0130p5100cuboss@gmail.com" class="btn btn-secondary">Email</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    margin-bottom: 32px;
+  }
+  .header-inner {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .avatar-frame {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: #071022;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .avatar-frame:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 24px rgba(124,58,237,0.25);
+  }
+  .avatar-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero h1 {
+    margin: 0 0 4px 0;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #e6eef8 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .subtitle {
+    margin: 0 0 8px 0;
+    color: #7c3aed;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .tagline {
+    margin: 0 0 14px 0;
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 560px;
+  }
+  .cta-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  .btn-primary {
+    background: #7c3aed;
+    color: #fff;
+  }
+  .btn-primary:hover {
+    box-shadow: 0 4px 16px rgba(124,58,237,0.4);
+  }
+  .btn-secondary {
+    background: rgba(255,255,255,0.04);
+    color: #e6eef8;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .btn-secondary:hover {
+    background: rgba(255,255,255,0.08);
+  }
+  @media (max-width: 600px) {
+    .header-inner { flex-direction: column; align-items: flex-start; }
+    .avatar-frame { width: 120px; height: 120px; }
+    .hero h1 { font-size: 26px; }
+  }
+</style>

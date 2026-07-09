@@ -1,0 +1,71 @@
+---
+const USERNAME = "LoveDoLove";
+---
+
+<section class="card stats">
+  <h2>GitHub Stats</h2>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <img
+        src={`https://personal-trophy.vercel.app/api?username=${USERNAME}&theme=dark`}
+        alt="GitHub Trophy"
+        loading="lazy"
+        style="width:100%;max-width:420px;display:block;margin:0 auto;"
+      />
+    </div>
+    <div class="stat-card">
+      <img
+        src={`https://github-stats-extended.vercel.app/api?username=${USERNAME}&show_icons=true&theme=gruvbox`}
+        alt="GitHub Stats"
+        loading="lazy"
+        style="width:100%"
+      />
+      <img
+        src={`https://github-stats-extended.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=gruvbox`}
+        alt="Top Languages"
+        loading="lazy"
+        style="width:100%;margin-top:8px"
+      />
+    </div>
+    <div class="stat-card">
+      <img
+        src={`https://github-stats-extended.vercel.app/api/wakatime?username=${USERNAME}&theme=gruvbox`}
+        alt="WakaTime Stats"
+        loading="lazy"
+        style="width:100%"
+      />
+      <img
+        src={`https://komarev.com/ghpvc/?username=${USERNAME}&color=blue`}
+        alt="Profile Views"
+        loading="lazy"
+        style="margin-top:8px"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.02);
+    border-radius: 10px;
+    padding: 14px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(124,58,237,0.12);
+  }
+  .stat-card img {
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+  @media (max-width: 700px) {
+    .stat-grid { grid-template-columns: 1fr; }
+  }
+</style>
