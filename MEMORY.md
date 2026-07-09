@@ -8,7 +8,7 @@
 - **Email**: v0130p5100cuboss@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/chong-jun-xiang
 - **YouTube**: https://www.youtube.com/@lovedolove
-- **Portfolio**: https://portfolio.lovedolove.one
+- **Portfolio**: https://portfolio.lovedolove.qzz.io
 - **GitHub Sponsors**: https://github.com/sponsors/LoveDoLove
 - **Buy Me a Coffee**: https://buymeacoffee.com/lovedolove
 
@@ -22,7 +22,7 @@
 ## 持久约定
 
 - **README.md**: Featured Projects 由外部脚本整体替换（不含 FEATURED_PROJECTS 标记）
-- **index.html**: 保留 `<!-- FEATURED_PROJECTS_START -->` 与 `<!-- FEATURED_PROJECTS_END -->` 标记区
+- **portfolio-website (Astro)**: `src/components/FeaturedProjects.astro` 保留 `<!-- FEATURED_PROJECTS_START/END -->` 标记区
 - **profile-3d-contrib/**: 永不手动修改（自动生成）
 - **AI 记忆**: 每次对话先读 AGENTS.md 和 memory/tasks.md
 - **日志记录**: 在 memory/ 下记录每日工作日志
@@ -53,7 +53,8 @@
 
 ## 已知注意事项
 
-- workflows 中的 Python 脚本从外部仓库（`LoveDoLove/Github-Profile-Manager`、`Github-Forks-Sync-Manager`、`Github-Action-Cleaner`）运行时下载，不在本仓库维护
+- `sync_top_starred_projects.py` 已内嵌到 `.github/scripts/`（修复远程 429），workflow 直接使用本地脚本
 - README 不含 FEATURED_PROJECTS 标记，整个 Featured Projects section 由外部脚本整体替换
-- index.html 已修复多余的 `</div>`（原 line 622 已移除）
-- `portfolio.lovedolove.qzz.io` 返回 403，需在 Cloudflare Dashboard 调整安全等级
+- `portfolio-website/` 已从纯 HTML 迁移到 Astro SSG（2026-07-09），组件化结构在 `src/components/`
+- 头像改用 GitHub avatar URL（`avatars.githubusercontent.com/u/67772009`），本地 profile.png 已删除
+- `portfolio.lovedolove.qzz.io` 返回 403（`Cf-Mitigated: challenge`），需在 Cloudflare Dashboard 调整安全等级为 Low 或关闭 Bot Fight Mode

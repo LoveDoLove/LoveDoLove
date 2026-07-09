@@ -8,16 +8,28 @@
 
 ```
 LoveDoLove/                          # GitHub Profile Monorepo
-├── README.md                        # GitHub 个人主页 README（核心，229行）
+├── README.md                        # GitHub 个人主页 README（Skills精简化、Contribution折叠）
 ├── README-Sponsor.md                # GitHub Sponsors 简化版（38行）
-├── portfolio-website/               # Cloudflare Workers 静态个人网站
-│   ├── wrangler.jsonc               # Workers 部署配置（兼容日期 2025-08-16）
-│   ├── package.json                 # wrangler CLI v4.107.1 依赖
-│   └── public/
-│       ├── index.html               # 单页 HTML+CSS 作品集（623行，无JS）
-│       └── images/profile.png       # 头像
-├── profile-3d-contrib/              # 10个3D贡献图SVG（自动生成，不手动改）
+├── portfolio-website/               # Astro SSG + Cloudflare Workers 静态个人网站
+│   ├── astro.config.mjs             # Astro 配置
+│   ├── wrangler.jsonc               # Workers 部署配置（assets: ./dist）
+│   ├── package.json                 # Astro v7 + wrangler v4.107.1
+│   ├── src/
+│   │   ├── pages/index.astro        # 主页面（组合9个组件）
+│   │   └── components/
+│   │       ├── Header.astro         # 头像（GitHub avatar URL）+ 简介
+│   │       ├── About.astro          # 自我介绍 + 8项成就
+│   │       ├── Stats.astro          # Trophy/Stats/TopLangs/WakaTime/Views
+│   │       ├── Skills.astro         # skillicons.dev 横幅
+│   │       ├── Certifications.astro # 5个AWS/Cisco徽章
+│   │       ├── FeaturedProjects.astro # 10个Featured Projects
+│   │       ├── ThreeDeeSection.astro  # 3D贡献图
+│   │       ├── Connect.astro        # 8个社交链接
+│   │       └── Footer.astro
+│   └── public/                      # 静态资源（profile.png已删除，改用GitHub avatar）
 ├── .github/
+│   ├── scripts/
+│   │   └── sync_top_starred_projects.py  # 本地脚本（避免远程429）
 │   ├── workflows/                   # 5个 CI/CD 自动流程
 │   └── FUNDING.yml                  # 仅启用 GitHub Sponsors
 ├── AGENTS.md                        # ← 本文件：AI 身份定义
@@ -69,11 +81,12 @@ LoveDoLove/                          # GitHub Profile Monorepo
 4. **AI 记忆机制**：每次对话先读 AGENTS.md 恢复身份，读 tasks.md 恢复工作状态
 5. **任务记录**：在 `memory/YYYY-MM-DD.md` 记录每日工作，在 `memory/tasks.md` 追踪待办
 6. **技能包**：只从 GitHub 开源仓库安装到全局 `C:\Users\LoveDoLove\.agents\skills\`，不自创
+7. **sync_top_starred_projects.py**：已内嵌到 `.github/scripts/`，workflow 不再远程下载（修复 429）
 
 ## 技术栈要点
 
 - **托管**：Cloudflare Workers (Wrangler v4.107.1)
 - **包管理**：pnpm 11.9.0
-- **前端**：纯 HTML + CSS（无框架、无 JS）
-- **CI/CD**：GitHub Actions，外部 Python 脚本运行时下载
+- **前端**：Astro SSG（组件化，无 JS 运行时）
+- **CI/CD**：GitHub Actions
 - **Widget API**：`github-stats-extended.vercel.app`（Stats/TopLangs/WakaTime）、`personal-trophy.vercel.app`（Trophy）

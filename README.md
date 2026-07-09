@@ -77,7 +77,7 @@ Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, 
 
 ### [RemoteRun](https://github.com/LoveDoLove/RemoteRun) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/RemoteRun?style=social)](https://github.com/LoveDoLove/RemoteRun)
 
-Lightweight .NET 8 Windows utility to run programs as NT AUTHORITY\SYSTEM locally or remotely.<br>
+Lightweight .NET 8 Windows utility to run programs as NT AUTHORITY\\SYSTEM locally or remotely.<br>
 <sub>Tech: C#, Inno Setup</sub>
 
 ### [cloudflare-smart-tools](https://github.com/LoveDoLove/cloudflare-smart-tools) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-tools?style=social)](https://github.com/LoveDoLove/cloudflare-smart-tools)

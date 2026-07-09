@@ -29,3 +29,4 @@
 - [x] npm → pnpm 迁移（pnpm 11.9.0, wrangler 4.107.1）
 - [x] 部署至 portfolio.lovedolove.qzz.io
 - [x] 修复 sync-top-starred-projects.yml 429：脚本内嵌到 .github/scripts/
+- [x] 全量 UI/UX 重写：README + Astro Portfolio（modern animated glassmorphism）— 2026-07-09 deploy v2
