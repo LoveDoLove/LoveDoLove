@@ -8,18 +8,18 @@ I bridge the gap between high-performance software development and low-level clo
 
 <p align="center">
 	<a href="https://github.com/ryo-ma/github-profile-trophy">
-		<img src="https://github-profile-trophy.vercel.app/?username=LoveDoLove&theme=gruvbox&margin-w=10&no-frame=true" alt="GitHub Trophy"/>
+		<img src="https://personal-trophy.vercel.app/api?username=LoveDoLove&theme=dark" alt="GitHub Trophy"/>
 	</a>
 	<br>
 	<a href="https://github.com/anuraghazra/github-readme-stats">
-		<img src="https://github-readme-stats.vercel.app/api?username=LoveDoLove&show_icons=true&theme=gruvbox" alt="GitHub Stats"/>
+		<img src="https://github-stats-extended.vercel.app/api?username=LoveDoLove&show_icons=true&theme=gruvbox" alt="GitHub Stats"/>
 	</a>
 	<a href="https://github.com/anuraghazra/github-readme-stats">
-		<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=gruvbox" alt="Top Langs"/>
+		<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=gruvbox" alt="Top Langs"/>
 	</a>
 	<br>
 	<a href="https://github.com/anuraghazra/github-readme-stats">
-		<img src="https://github-readme-stats.vercel.app/api/wakatime?username=LoveDoLove&theme=gruvbox" alt="Wakatime Stats"/>
+		<img src="https://github-stats-extended.vercel.app/api/wakatime?username=LoveDoLove&theme=gruvbox" alt="Wakatime Stats"/>
 	</a>
 	<br>
 	<a href="https://komarev.com/ghpvc/?username=LoveDoLove">
