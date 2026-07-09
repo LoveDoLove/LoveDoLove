@@ -20,10 +20,8 @@ jobs:
           python-version: "3.x"
       - name: Install Python Dependencies
         run: pip install requests
-      - name: Download Featured Projects Sync Script
-        run: curl -fsSL -o sync_top_starred_projects.py https://raw.githubusercontent.com/LoveDoLove/Github-Profile-Manager/refs/heads/main/scripts/sync_top_starred_projects.py
       - name: Run Featured Projects Sync
-        run: python -u sync_top_starred_projects.py
+        run: python -u .github/scripts/sync_top_starred_projects.py
         env:
           EXCLUDE_REPOS: ${{ vars.EXCLUDE_REPOS }}
       - name: Commit and Push README Changes
