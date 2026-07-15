@@ -1,60 +1,149 @@
-# AI 长期记忆
+AI 長期記憶與專案約定 (AI Long-Term Memory & Project Conventions)
 
-## 用户信息
+本文件是本倉庫 AI 代理人的「長期記憶與專案約定中心」。每一次與 AI 開始新對話時，AI 必須首先讀取本檔案與 AGENTS.md，以恢復對當前專案、技術棧、用戶偏好與持久約定的全面認知。
 
-- **Name**: LoveDoLove (Chong Jun Xiang)
-- **Role**: Full-Stack Developer | Cloud Infrastructure & DevOps Engineer
-- **Location**: Malaysia
-- **Email**: v0130p5100cuboss@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/chong-jun-xiang
-- **YouTube**: https://www.youtube.com/@lovedolove
-- **Portfolio**: https://portfolio.lovedolove.qzz.io
-- **GitHub Sponsors**: https://github.com/sponsors/LoveDoLove
-- **Buy Me a Coffee**: https://buymeacoffee.com/lovedolove
+1. 專案基礎設定 (Project Context)
 
-## 项目目标
+本節記錄當前專案的根本設定，請根據實際情況進行動態更新：
 
-- 维护 GitHub Profile README 作为个人展示墙（自动更新 Featured Projects + 3D 贡献图）
-- 维护 portfolio-website 作为 Cloudflare Workers 静态站点，与 README 信息同步
-- 自动化 CI/CD：3D 贡献图生成、项目同步（每日 UTC 00:00）、Fork 同步、Action 清理
-- 所有 AI Agent 技能包必须从 GitHub 开源仓库克隆，不自创
+應用名稱 (App Name): LoveDoLove (Chong Jun Xiang) — GitHub Profile Monorepo
 
-## 持久约定
+專案類型 (Project Type): GitHub 個人首頁 Monorepo + 靜態個人作品集網站
 
-- **README.md**: Featured Projects 由外部脚本整体替换（不含 FEATURED_PROJECTS 标记）
-- **portfolio-website (Astro)**: `src/components/FeaturedProjects.astro` 保留 `<!-- FEATURED_PROJECTS_START/END -->` 标记区
-- **profile-3d-contrib/**: 永不手动修改（自动生成）
-- **AI 记忆**: 每次对话先读 AGENTS.md 和 memory/tasks.md
-- **日志记录**: 在 memory/ 下记录每日工作日志
-- **技能包**: 全局安装于 `C:\Users\LoveDoLove\.agents\skills\`，所有项目共享，不自创
+資料庫 (App Database): 無 (純靜態站點，無後端資料庫)
 
-## 已安装技能包（全局）
+前端技術棧 (Frontend): Astro SSG v7 (元件化 Astro 元件，無 JS Runtime)
 
-| 技能包 | 来源 | 说明 |
+後端技術棧 (Backend): 無 (靜態網站，透過 Cloudflare Workers 託管)
+
+主權部署環境 (Deployment): Cloudflare Workers (Wrangler v4.107.1 + pnpm 11.9.0)
+
+CI/CD: GitHub Actions (5 個自動化流程)
+
+網站網址 (Site URL): https://portfolio.lovedolove.qzz.io
+
+2. 使用者偏好與互動慣例 (User Preferences)
+
+溝通語言：預設使用 繁體中文 (Traditional Chinese) 進行所有對話、架構解釋與日誌記錄（除程式碼註解、變數命名與技術文檔採用英文）。
+
+程式碼風格：
+
+追求極簡與健壯性，嚴禁過度設計。
+
+優先使用型別安全的 TypeScript 與現代 ES 語法。
+
+必須符合內置技能包 karpathy-guidelines 的編碼行為準則。
+
+人機協作 (HITL) 偏好：
+
+在涉及「破壞性寫入資料庫」、「線上環境部署」、「敏感金鑰修改」等操作前，AI 必須暫停並明確徵求使用者批准。
+
+3. 倉庫結構與核心專案知識 (Repository Structure & Knowledge Base)
+
+3.1 目錄結構
+
+LoveDoLove/
+├── README.md                        # GitHub 個人首頁 README
+├── README-Sponsor.md                # GitHub Sponsors 精簡版
+├── portfolio-website/               # Astro SSG + Cloudflare Workers 靜態個人網站
+│   ├── astro.config.mjs             # Astro 配置 (site: portfolio.lovedolove.qzz.io)
+│   ├── wrangler.jsonc               # Workers 部署配置 (assets: ./dist)
+│   ├── package.json                 # Astro v7 + wrangler v4.107.1
+│   ├── src/
+│   │   ├── pages/index.astro        # 主頁面 (組合 9 個元件)
+│   │   └── components/
+│   │       ├── Header.astro         # 頭像 (GitHub avatar URL) + 簡介
+│   │       ├── About.astro          # 自我介紹 + 8 項成就
+│   │       ├── Stats.astro          # Trophy/Stats/TopLangs/WakaTime/Views
+│   │       ├── Skills.astro         # skillicons.dev 橫幅
+│   │       ├── Certifications.astro # 5 個 AWS/Cisco 徽章
+│   │       ├── FeaturedProjects.astro # 10 個精選專案
+│   │       ├── ThreeDeeSection.astro  # 3D 貢獻圖
+│   │       ├── Connect.astro        # 8 個社交連結
+│   │       └── Footer.astro
+│   └── public/
+├── profile-3d-contrib/              # 3D 貢獻圖輸出目錄（永不手動修改，自動生成）
+├── .github/
+│   ├── scripts/
+│   │   └── sync_top_starred_projects.py  # 精選專案同步腳本（內嵌，避免遠端 429）
+│   ├── workflows/                   # 5 個 CI/CD 自動流程
+│   └── FUNDING.yml                  # 僅啟用 GitHub Sponsors
+├── AGENTS.md                        # AI 身份定義與行為規範
+├── MEMORY.md                        # 本文件：長期記憶
+├── memory/                          # 每日日誌 + 任務追蹤
+│   ├── tasks.md
+│   └── YYYY-MM-DD.md
+└── MIGRATION.md                     # 遷移指南
+
+3.2 核心專案說明
+
+(1) GitHub Profile (README.md)
+- 作用：GitHub 個人首頁展示牆
+- 內容：簡介、GitHub 統計 Widgets（Trophy/Stats/TopLangs/WakaTime/Views/3D貢獻圖）、Featured Projects（10 個專案）、Skills（5 大類技能）、Certifications（5 個 AWS/Cisco 徽章）、Achievements（8 項成就）、Connect（8 個連結）
+- Widget API 位址：
+  - Trophy: personal-trophy.vercel.app
+  - Stats/TopLangs/WakaTime: github-stats-extended.vercel.app
+- 自動化 Featured Projects：透過 sync-top-starred-projects.yml 每日執行
+- 3D 貢獻圖：透過 generate-3d-contribution-graph.yml 每日生成 10 個 SVG
+- README 不含 FEATURED_PROJECTS 標記，整個 Featured Projects 段落由外部腳本整體替換
+
+(2) portfolio-website (Cloudflare Workers)
+- 框架：Astro SSG v7
+- 包管理：pnpm 11.9.0，wrangler v4.107.1
+- 部署指令：pnpm run deploy（執行 astro build && wrangler deploy）
+- 資料來源：嵌入外部 API 圖片（GitHub Stats、Trophy、WakaTime 等）
+- 已知問題：portfolio.lovedolove.qzz.io 返回 403 (Cf-Mitigated: challenge)，需在 Cloudflare Dashboard 調整安全等級為 Low 或關閉 Bot Fight Mode
+- 頭像使用 GitHub avatar URL（avatars.githubusercontent.com/u/67772009）
+
+(3) CI/CD Workflows (5 個)
+| 流程 | 觸發 | 功能 |
 |---|---|---|
-| `karpathy-guidelines` | farmage/opencode-skills (MIT) | 减少 LLM 编码常见错误的行为准则 |
-| `code-reviewer` | farmage/opencode-skills (MIT) | 代码审查（bug/安全/性能/可维护性） |
-| `test-master` | farmage/opencode-skills (MIT) | 测试生成（单元/集成/E2E/性能/安全） |
-| `code-documenter` | farmage/opencode-skills (MIT) | 技术文档（OpenAPI/JSDoc/用户指南） |
-| `devops-engineer` | farmage/opencode-skills (MIT) | DevOps（Docker/CI-CD/K8s/Terraform） |
-| `debugging-wizard` | farmage/opencode-skills (MIT) | 调试（栈追踪/日志分析/根因定位） |
-| `fullstack-guardian` | farmage/opencode-skills (MIT) | 全栈安全开发（从前端到数据库的安全层） |
-| `secure-code-guardian` | farmage/opencode-skills (MIT) | 安全加固（OWASP Top 10/JWT/Zod） |
-| `spec-miner` | farmage/opencode-skills (MIT) | 逆向工程（从遗留代码提取规格） |
+| generate-3d-contribution-graph.yml | 每日 UTC 00:00 + 手動 | 生成 10 種 3D 貢獻圖 SVGs |
+| sync-top-starred-projects.yml | 每日 UTC 00:00 + 手動 | 按 Star 數同步 README Featured Projects |
+| github-forks-sync.yml | 僅手動 | 同步所有 Fork 倉庫與上游 |
+| cleanup-failed-runs.yml | 僅手動 | 清理失敗的 Action 記錄 |
+| cleanup-all-runs.yml | 僅手動 | 清理全部 Action 記錄 |
 
-## Widget API 替换记录
+3.3 AI Agent 技能包
+- 位置：C:\Users\LoveDoLove\.agents\skills\
+- 來源：全部從 farmage/opencode-skills（MIT, 53 stars）克隆，不自創
+- 政策：只從 GitHub 開源倉庫安裝到全局 %USERPROFILE%\.agents\skills\，不自創技能包
 
-| 用途 | 旧地址 | 新地址 | 状态 |
-|---|---|---|---|
-| GitHub Trophy | `github-profile-trophy.vercel.app` | `personal-trophy.vercel.app` | ✅ 200 |
-| GitHub Stats | `github-readme-stats.vercel.app/api` | `github-stats-extended.vercel.app/api` | ✅ 200 |
-| Top Langs | `github-readme-stats.vercel.app/top-langs` | `github-stats-extended.vercel.app/top-langs` | ✅ 200 |
-| WakaTime | `github-readme-stats.vercel.app/wakatime` | `github-stats-extended.vercel.app/wakatime` | ✅ 200 |
+4. 記憶同步與更新協議 (Memory Sync Protocol)
 
-## 已知注意事项
+為了確保 AI 的記憶在跨對話中永不丟失且持續演進，AI 助手必須遵循以下同步機制：
 
-- `sync_top_starred_projects.py` 已内嵌到 `.github/scripts/`（修复远程 429），workflow 直接使用本地脚本
-- README 不含 FEATURED_PROJECTS 标记，整个 Featured Projects section 由外部脚本整体替换
-- `portfolio-website/` 已从纯 HTML 迁移到 Astro SSG（2026-07-09），组件化结构在 `src/components/`
-- 头像改用 GitHub avatar URL（`avatars.githubusercontent.com/u/67772009`），本地 profile.png 已删除
-- `portfolio.lovedolove.qzz.io` 返回 403（`Cf-Mitigated: challenge`），需在 Cloudflare Dashboard 调整安全等级为 Low 或关闭 Bot Fight Mode
+4.1 每日日誌機制 (Daily Logs YYYY-MM-DD.md)
+
+每次對話結束前，AI 必須將當前的關鍵決策、面臨的問題與下一步計劃，摘要寫入 memory/YYYY-MM-DD.md（以當前日期命名）。
+
+日誌格式標準：
+
+# 每日工作日誌: YYYY-MM-DD
+* **今日進度**: [簡述完成了哪些功能/修復了哪些 Bug]
+* **關鍵決策**: [例如切換了某個 API、更新了某個 Schema]
+* **遭遇阻礙**: [遇到的技術難題與解決路徑]
+* **明日計劃**: [待續的具體工作事項]
+
+
+4.2 任務追蹤機制 (tasks.md)
+
+所有的跨對話待辦事項必須維護在 memory/tasks.md 中。
+
+任務分為三個看板狀態：[ ] Backlog（待辦）、[>] In Progress（進行中）、[x] Completed（已完成）。
+
+當 AI 助手完成一項任務時，必須同步更新 memory/tasks.md，並在日誌中註記。
+
+5. 持久技術約定 (Persistent Rules)
+
+安全優先原則：所有新開發的端點（Endpoints）或微服務，必須在核心邏輯外圍包裹安全認證層，貫徹 AGENTS.md 中的「受控副官防禦」。
+
+零退化 CI/CD 承諾：凡是有新的重大業務邏輯變更，必須同步在 tests/ 下建立對應的斷言測試，以利後續自動化品質飛輪（AgentOps）的集成。
+
+技能包（Agent Skills）優先：解決特定領域問題時（例如：SEO 審計、性能優化、程式碼重構），先檢索本地 .agents/skills/，優先調用已有技能。
+
+profile-3d-contrib/ 不變原則：永不手動修改 profile-3d-contrib/ 目錄內容（完全由 generate-3d-contribution-graph.yml 自動生成）。
+
+README.md 與 portfolio-website 同步原則：README.md 與 portfolio-website/src/pages/index.astro 的資訊必須保持同步。
+
+sync_top_starred_projects.py 已內嵌：該腳本已固定在 .github/scripts/ 目錄下，Workflow 直接使用本地腳本，不從遠端下載（修復 429 錯誤）。

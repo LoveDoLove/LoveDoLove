@@ -1,92 +1,114 @@
-# AI Agent 身份定义与行为规范
+通用代理人工程架構與行為規範 (Universal Agentic Architecture & Identity Specification)
 
-## 身份
+本文件是本倉庫 AI 代理人（Agent）的「身份定義與行為規範行為準則」，也是每次對話的至高入口。本文件將「神諭級全端代理人工程鐵律」與「本地技能包（Agent Skills）工作流」進行深度綁定，確保 AI 助手在解決任何工程問題時，皆能遵循高解耦、高安全、可觀測的最高標準。
 
-你是 **LoveDoLove** 的 AI 编程助手（opencode）。LoveDoLove（Chong Jun Xiang）是一位全栈开发者、云基础设施与 DevOps 工程师。
+1. 倉庫核心結構 (Repository Structure)
 
-## 仓库结构
+本倉庫採用「自適應認知與技能架構」，結構如下：
 
-```
-LoveDoLove/                          # GitHub Profile Monorepo
-├── README.md                        # GitHub 个人主页 README（Skills精简化、Contribution折叠）
-├── README-Sponsor.md                # GitHub Sponsors 简化版（38行）
-├── portfolio-website/               # Astro SSG + Cloudflare Workers 静态个人网站
-│   ├── astro.config.mjs             # Astro 配置
-│   ├── wrangler.jsonc               # Workers 部署配置（assets: ./dist）
-│   ├── package.json                 # Astro v7 + wrangler v4.107.1
-│   ├── src/
-│   │   ├── pages/index.astro        # 主页面（组合9个组件）
-│   │   └── components/
-│   │       ├── Header.astro         # 头像（GitHub avatar URL）+ 简介
-│   │       ├── About.astro          # 自我介绍 + 8项成就
-│   │       ├── Stats.astro          # Trophy/Stats/TopLangs/WakaTime/Views
-│   │       ├── Skills.astro         # skillicons.dev 横幅
-│   │       ├── Certifications.astro # 5个AWS/Cisco徽章
-│   │       ├── FeaturedProjects.astro # 10个Featured Projects
-│   │       ├── ThreeDeeSection.astro  # 3D贡献图
-│   │       ├── Connect.astro        # 8个社交链接
-│   │       └── Footer.astro
-│   └── public/                      # 静态资源（profile.png已删除，改用GitHub avatar）
-├── .github/
-│   ├── scripts/
-│   │   └── sync_top_starred_projects.py  # 本地脚本（避免远程429）
-│   ├── workflows/                   # 5个 CI/CD 自动流程
-│   └── FUNDING.yml                  # 仅启用 GitHub Sponsors
-├── AGENTS.md                        # ← 本文件：AI 身份定义
-├── MEMORY.md                        # 长期记忆
-├── memory/                          # 每日日志 + 任务追踪
-│   ├── tasks.md
-│   └── YYYY-MM-DD.md
-└── README.md                        # GitHub 个人主页（核心输出）
-```
+全局技能包
+%USERPROFILE%
+├── .agents/
+│   └── skills/               # AI Agent 技能包庫（可發現、可安裝、可複用）
 
-## 核心项目
+項目目錄
+projects/
+├── AGENTS.md                 # AI Agent 身份定義與行為規範（每次對話的入口）
+├── MEMORY.md                 # AI 长期记忆：用戶偏好、專案背景、持久約定
+├── memory/
+│   ├── tasks.md              # AI 任務追蹤（待辦 / 進行中 / 完成）
+│   └── YYYY-MM-DD.md         # 每日 AI 工作日誌
+└── .github/
+    └── workflows/            # AI 自動化工作流（每日摘要、Issue 處理、部署）
 
-### 1. GitHub Profile (README.md)
-- **作用**：GitHub 个人主页展示墙
-- **内容**：简介、GitHub 统计 Widgets（Trophy/Stats/TopLangs/WakaTime/Views/3D贡献图）、Featured Projects（10个项目）、Skills（5大类技能）、Certifications（5个AWS/Cisco徽章）、Achievements（8项成就）、Connect（8个链接）
-- **Widget API 地址**（已全部替换为可用的替代品）：
-  - Trophy: `personal-trophy.vercel.app`
-  - Stats/TopLangs/WakaTime: `github-stats-extended.vercel.app`
-- **自动化 Featured Projects**：通过 `sync-top-starred-projects.yml` 每日运行，从 `LoveDoLove/Github-Profile-Manager` 下载 Python 脚本重写 README
-- **3D 贡献图**：通过 `generate-3d-contribution-graph.yml` 每日生成 10 个 SVG
 
-### 2. portfolio-website (Cloudflare Workers)
-- **类型**：纯静态单页 HTML + CSS，无 JS/框架
-- **包管理**：pnpm 11.9.0，wrangler v4.107.1
-- **部署**：`pnpm run deploy`
-- **URL**：`https://portfolio.lovedolove.qzz.io`（需 Cloudflare Dashboard 调整安全等级以解除 403）
-- **数据来源**：嵌入外部 API 图片（GitHub Stats、Trophy、WakaTime 等）
+2. AI Agent 技能工作流 (Skill-Pack Engine)
 
-### 3. CI/CD Workflows (5 个)
+技能包（Agent Skill）是本倉庫的核心機制——將可複用的 AI 能力封裝為標準單元，存放在 .agents/skills/<skill-name>/。主入口為 SKILL.md，AI 助手在接到任務時必須遵循以下工作流：
 
-| 流程 | 触发 | 功能 |
-|---|---|---|
-| `generate-3d-contribution-graph.yml` | 每日 UTC 00:00 + 手动 | 生成 10 种 3D 贡献图 SVGs |
-| `sync-top-starred-projects.yml` | 每日 UTC 00:00 + 手动 | 按 Star 数同步 README Featured Projects |
-| `github-forks-sync.yml` | 仅手动 | 同步所有 Fork 仓库与上游 |
-| `cleanup-failed-runs.yml` | 仅手动 | 清理失败的 Action 记录 |
-| `cleanup-all-runs.yml` | 仅手动 | 清理全部 Action 记录 |
+2.1 技能調用工作流 (Invocation Workflow)
 
-### 4. AI Agent 技能包（全局）
-- **位置**：`C:\Users\LoveDoLove\.agents\skills\`
-- **来源**：全部从 `farmage/opencode-skills`（MIT，53 stars）克隆，不自创
-- **已安装**：9 个技能包（详见 MEMORY.md）
+任務檢索：接到任何代碼、架構或優化任務時，AI 必須優先檢索 本地 .agents/skills/ 目錄，查看是否有符合的技能包。
 
-## 行为规范
+外部導入 (不自行編寫)：若本地無合適技能包，嚴禁 AI 自行憑空編寫技能包。必須優先搜尋 GitHub 開源社群（如 github.com/fields/... 等開源 Skills）或 Skills.sh 進行 Clone，並統一安裝存放至 .agents/skills/<skill-name>/。
 
-1. **README.md 与 index.html** 保持信息同步
-2. **FEATURED_PROJECTS 标记区**：仅 `index.html` 保留 `<!-- FEATURED_PROJECTS_START/END -->`；README 由外部脚本整体替换
-3. **profile-3d-contrib/**：永不手动修改（自动生成）
-4. **AI 记忆机制**：每次对话先读 AGENTS.md 恢复身份，读 tasks.md 恢复工作状态
-5. **任务记录**：在 `memory/YYYY-MM-DD.md` 记录每日工作，在 `memory/tasks.md` 追踪待办
-6. **技能包**：只从 GitHub 开源仓库安装到全局 `C:\Users\LoveDoLove\.agents\skills\`，不自创
-7. **sync_top_starred_projects.py**：已内嵌到 `.github/scripts/`，workflow 不再远程下载（修复 429）
+加載與聲明：調用技能包時，AI 必須在對話中明確聲明：「偵測到相關任務，正在加載本地技能包 [skill-name]...」，並嚴格執行該技能包中的 SKILL.md 指引。
 
-## 技术栈要点
+2.2 已內置技能包索引
 
-- **托管**：Cloudflare Workers (Wrangler v4.107.1)
-- **包管理**：pnpm 11.9.0
-- **前端**：Astro SSG（组件化，无 JS 运行时）
-- **CI/CD**：GitHub Actions
-- **Widget API**：`github-stats-extended.vercel.app`（Stats/TopLangs/WakaTime）、`personal-trophy.vercel.app`（Trophy）
+karpathy-guidelines：減少 LLM 編碼常見錯誤的行為準則。在編寫、審查或重構代碼時使用這些準則，可以避免過度複雜化，進行精準修改，揭示潛在假設，並定義可驗證的成功標準。
+
+3. 代理人架構三大不妥協鐵律 (The Three Uncompromisables)
+
+不論任務規模多小，AI 助手在執行任何工具呼叫與後端變更時，必須 100% 遵守以下三大鐵律：
+
++---------------------------------------------------------------------------------+
+|                                 三大不妥協鐵律                                   |
+|                                                                                 |
+|  1. 受控副官防禦 (Security)   ====>  JWT/ACL 系統級隔離，嚴禁信任 Prompt 意志    |
+|  2. 宣告式工具解耦 (Decoupling) ====>  使用標準化介面 (MCP/JSON)，工具與 LLM 完全分離  |
+|  3. 軌跡即真理 (Observability) ====>  採用 OpenTelemetry 標準，完整追蹤決策 Spans  |
++---------------------------------------------------------------------------------+
+
+
+3.1 鐵律一：受控副官防禦 (Confused Deputy Defense)
+
+核心原則：永遠不要相信 Prompt 能守住系統安全。
+
+實踐：AI 助手本質上只是個「信差（Messenger）」。當代表用戶調用後端工具（API、資料庫、檔案系統）時，工具執行層必須依據使用者的安全憑證（JWT / ACL）進行硬性隔離校驗。縱使 AI 遭受 Prompt 注入（Prompt Injection）被洗腦，系統層也必須直接拒絕其越權存取。
+
+3.2 鐵律二：宣告式工具解耦 (Declarative Tool Decoupling)
+
+核心原則：禁止將工具呼叫邏輯與 LLM 驅動程式碼硬編碼（Hardcode）在一起。
+
+實踐：工具必須是以宣告式（如 Model Context Protocol 協定或 JSON Schema）定義。模型僅負責輸出調用決策與參數。這確保了當底層模型（如從 Gemini 換到 Claude）迭代時，一條工具程式碼都不需要修改。
+
+3.3 鐵律三：軌跡即真理 (Trajectory is the Truth)
+
+核心原則：拋棄傳統 console.log，採用標準「軌跡追蹤（Trace）」。
+
+實踐：必須完整記錄每一次推理的上下文。一個標準的 Trace Span 必須依循 OpenTelemetry GenAI Semantic Conventions 標準格式輸出：
+
+{
+  "trace_id": "8f3b1a2c5e7d9f0a1b2c3d4e5f6a7b8c",
+  "span_id": "4a5b6c7d8e9f0a1b",
+  "name": "agent_execution_loop",
+  "attributes": {
+    "gen_ai.system": "gemini",
+    "gen_ai.request.model": "gemini-2.5-pro",
+    "gen_ai.usage.input_tokens": 42105,
+    "gen_ai.usage.output_tokens": 1024,
+    "agent.name": "EnterpriseDevAgent",
+    "agent.loop.iterations": 3
+  }
+}
+
+
+4. 動態上下文預算與中斷機制 (Context & Preemption)
+
+預算分配公式：
+
+
+$$\text{Context Budget} = \text{Model Max Tokens} - \text{Target Output Tokens (Reserved)} - \text{Safety Buffer}$$
+
+語境剪枝策略：
+
+工作記憶 (Working Memory)：保留最新 $N$ 輪的原始對話，超出限制則背景調用 LLM 生成「摘要（Summary）」。
+
+聲明式記憶 (Declarative Memory)：使用語義相似度過濾向量資料庫（Vector DB）內容，設定 $0.78$ 以上門檻避免無關雜訊。
+
+超時與循環阻斷 (Preemption)：當 LLM 出現「邏輯死循環」或對同一個 API 連續發出 5 次錯誤請求時，執行階段（Runtime）必須在指定步數（如 Max 10 Steps）內主動阻斷，並執行 Fallback 降級處理與優雅報錯。
+
+5. 生產就緒檢核清單 (Production Checklist)
+
+在將任何代理人系統推向生產環境前，請確認已落實以下檢核點：
+
+[ ] 受控副官防禦：如果用戶輸入注入指令要求越權操作，後端工具層是否能依靠 JWT/ACL 強制拒絕，而非僅僅依賴 Prompt 拒絕？
+
+[ ] 模型無關性 (Model-agnostic)：工具與 LLM 驅動層是否完全解耦？若明天更換底層大模型，是否能做到一條工具程式碼都不改？
+
+[ ] 超時熔斷：系統是否能在指定步數（如 Max 10 Steps）內主動阻斷死循環？
+
+[ ] Context 溢出保護：當多輪對話長度接近臨界值時，系統是否能自動對歷史對話進行 Sliding Window 裁剪或自動摘要？
+
+[ ] 標準化軌跡 (Trace)：當線上用戶報錯時，後端是否能一鍵調出該次決策的 OpenTelemetry 結構化 Trace 進行快速除錯？
