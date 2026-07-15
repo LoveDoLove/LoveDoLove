@@ -147,3 +147,20 @@ profile-3d-contrib/ 不變原則：永不手動修改 profile-3d-contrib/ 目錄
 README.md 與 portfolio-website 同步原則：README.md 與 portfolio-website/src/pages/index.astro 的資訊必須保持同步。
 
 sync_top_starred_projects.py 已內嵌：該腳本已固定在 .github/scripts/ 目錄下，Workflow 直接使用本地腳本，不從遠端下載（修復 429 錯誤）。
+
+7. Fork Sync 架構決策 (Architecture Decision: Fork Sync)
+
+架構類型：公共工具提供者 + 消費者模式
+
+公共工具 repo：LoveDoLove/Github-Forks-Sync-Manager 持有 reusable workflow ＋ Python 腳本。
+消費者 repo（如 LoveDoLove）：透過 `uses:` 呼叫 reusable workflow，只需設定 `FORK_SYNC_ACCOUNTS`（vars）和 `GH_PAT`（secrets）。
+
+觸發方式：
+- 每日 UTC 00:00 定時排程（cron）
+- 手動觸發可指定單一帳號覆蓋
+
+行為要點：
+- 支援多帳號（逗號或換行分隔）
+- 單帳號失敗不影響其他帳號
+- 並發上限 5（Semaphore）
+- merge-upstream 409 conflict 標記為 [CONF] 需手動處理
