@@ -146,7 +146,7 @@ profile-3d-contrib/ 不變原則：永不手動修改 profile-3d-contrib/ 目錄
 
 README.md 與 portfolio-website 同步原則：README.md 與 portfolio-website/src/pages/index.astro 的資訊必須保持同步。
 
-sync_top_starred_projects.py 已內嵌：該腳本已固定在 .github/scripts/ 目錄下，Workflow 直接使用本地腳本，不從遠端下載（修復 429 錯誤）。
+sync_top_starred_projects.py 已移至 Github-Forks-Sync-Manager：Workflow 改為 `uses:` 呼叫 reusable workflow，不再本地保留腳本。
 
 7. Fork Sync 架構決策 (Architecture Decision: Fork Sync)
 
@@ -164,3 +164,10 @@ sync_top_starred_projects.py 已內嵌：該腳本已固定在 .github/scripts/ 
 - 單帳號失敗不影響其他帳號
 - 並發上限 5（Semaphore）
 - merge-upstream 409 conflict 標記為 [CONF] 需手動處理
+
+8. Sync Top Starred 架構決策 (Architecture Decision: Sync Top Starred)
+
+公共工具 repo：LoveDoLove/Github-Forks-Sync-Manager 持有 reusable workflow + 腳本。
+消費者 repo（如 LoveDoLove）：透過 `uses:` 呼叫 reusable workflow，不需設定任何 inputs/secrets。
+腳本透過 `GITHUB_REPOSITORY` 自動偵測帳號，`EXCLUDE_REPOS` 取自 caller 的 `vars`。
+Workflow 會修改 README.md 並 push 回 caller repo。

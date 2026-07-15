@@ -23,6 +23,7 @@
 ## 已完成
 
 - [x] Fork Sync 改用 reusable workflow + 多帳號 Python 腳本 (2026-07-15)
+- [x] Sync Top Starred 改為 reusable workflow，腳本移至 Github-Forks-Sync-Manager (2026-07-15)
 - [x] 创建 AGENTS.md、MEMORY.md、memory/ 目录结构
 - [x] 修复 index.html HTML 结构错误（`</div>` → `</footer>`，移除多余 `</div>`）
 - [x] 安装 9 个全局 skill 包（farmage/opencode-skills）

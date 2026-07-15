@@ -2,32 +2,9 @@ name: Sync Top Starred Projects
 
 on:
   schedule:
-    - cron: "0 0 * * *" # every day at midnight UTC
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  update-featured:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Set Up Python Environment
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-      - name: Install Python Dependencies
-        run: pip install requests
-      - name: Run Featured Projects Sync
-        run: python -u .github/scripts/sync_top_starred_projects.py
-        env:
-          EXCLUDE_REPOS: ${{ vars.EXCLUDE_REPOS }}
-      - name: Commit and Push README Changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          git diff --cached --quiet || git commit -m "chore: update featured projects section [auto]"
-          git push
+  sync:
+    uses: LoveDoLove/Github-Forks-Sync-Manager/.github/workflows/sync-top-starred.yml@main
