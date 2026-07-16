@@ -38,6 +38,26 @@ projects/
 
 karpathy-guidelines：減少 LLM 編碼常見錯誤的行為準則。在編寫、審查或重構代碼時使用這些準則，可以避免過度複雜化，進行精準修改，揭示潛在假設，並定義可驗證的成功標準。
 
+skillx：技能市場搜尋與調用。每項任務都應載入此技能。
+
+ui-ux-pro-max：UI/UX 設計智慧。提供 84 種設計風格、192 種色板、74 種字體搭配等。
+
+2.3 每次對話初始化流程 (Session Init Protocol)
+
+AI 助手在每次新對話開始時，必須依次執行：
+
+1. 讀取 memory/tools-state.json，取得已安裝工具的快照
+2. 對每個 status="installed" 的項目進行 quick-verify：
+   - Skills: 檢查技能路徑的 SKILL.md 是否存在
+   - MCPs: 檢查對應 CLI 有回應，或 opencode 設定中 MCP entry 是否存在
+   - Plugins: 檢查 opencode.json 設定
+3. 若發現實際狀態與 tools-state.json 不符（如檔案被刪除、CLI 消失），立即更新該檔案
+4. 對於有 version 欄位的項目，檢查 version_checked_at 是否超過 7 天：
+   - 是 → 執行版本檢查（如 ctx7 --version），更新 latest_version 與 version_checked_at
+   - 若 latest_version ≠ version → 在回覆尾聲附註「[工具名稱] 有新版本 [latest]，可執行 .\init.ps1 查看」
+5. 確認 skillx 技能已載入（設計為 every task 使用）
+6. 根據使用者的任務，參照 tools-state.json 決定哪些技能可用並調用
+
 3. 代理人架構三大不妥協鐵律 (The Three Uncompromisables)
 
 不論任務規模多小，AI 助手在執行任何工具呼叫與後端變更時，必須 100% 遵守以下三大鐵律：

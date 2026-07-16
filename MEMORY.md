@@ -106,8 +106,8 @@ LoveDoLove/
 
 3.3 AI Agent 技能包
 - 位置：C:\Users\LoveDoLove\.agents\skills\
-- 來源：全部從 farmage/opencode-skills（MIT, 53 stars）克隆，不自創
-- 政策：只從 GitHub 開源倉庫安裝到全局 %USERPROFILE%\.agents\skills\，不自創技能包
+- 來源：從 GitHub 開源社群（如 github.com/fields/...、farmage/opencode-skills 等）或 Skills.sh 獲取
+- 政策：嚴禁 AI 自行憑空編寫技能包。必須優先搜尋開源 Skills 並統一安裝至全局 %USERPROFILE%\.agents\skills\
 
 4. 記憶同步與更新協議 (Memory Sync Protocol)
 
@@ -134,7 +134,25 @@ LoveDoLove/
 
 當 AI 助手完成一項任務時，必須同步更新 memory/tasks.md，並在日誌中註記。
 
-5. 持久技術約定 (Persistent Rules)
+5. 工具狀態與技能索引 (Tool State & Skill Index)
+
+本倉庫的工具安裝狀態自動維護在 memory/tools-state.json，AI 每次對話會自動讀取並更新。
+
+已註冊工具列表（共 7 項）：
+- karpathy-guidelines (skill) — 編碼行為準則
+- skillx (skill) — 技能市場搜尋與調用，每項任務都應載入
+- ui-ux-pro-max (skill) — UI/UX 設計智慧：84 種風格、192 種色板、74 種字體
+- context7 (mcp) — 即時程式庫文件查詢
+- codebase-memory-mcp (mcp) — 程式碼知識圖譜
+- opencode-wakatime (plugin) — WakaTime 使用追蹤
+- superpowers (framework) — 代理人技能框架與開發方法論
+
+如需重新檢測或安裝，請執行 repo 根目錄的 init.ps1：
+.\init.ps1         # 逐項詢問安裝
+.\init.ps1 --yes   # 全自動安裝
+.\init.ps1 --no-install  # 只偵測狀態
+
+6. 持久技術約定 (Persistent Rules)
 
 安全優先原則：所有新開發的端點（Endpoints）或微服務，必須在核心邏輯外圍包裹安全認證層，貫徹 AGENTS.md 中的「受控副官防禦」。
 

@@ -1,0 +1,75 @@
+﻿{
+    "tools":  {
+                  "opencode-wakatime":  {
+                                            "version":  null,
+                                            "path":  "C:\\Users\\LoveDoLove\\.config\\opencode\\opencode.json",
+                                            "last_verified":  "2026-07-16",
+                                            "type":  "plugin",
+                                            "source":  "https://github.com/angristan/opencode-wakatime",
+                                            "status":  "installed",
+                                            "version_checked_at":  null,
+                                            "latest_version":  null
+                                        },
+                  "ui-ux-pro-max":  {
+                                        "version":  "2.11.0",
+                                        "path":  "C:\\Users\\LoveDoLove\\.agents\\skills\\ui-ux-pro-max\\SKILL.md",
+                                        "last_verified":  "2026-07-16",
+                                        "type":  "skill",
+                                        "source":  "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+                                        "status":  "installed",
+                                        "version_checked_at":  "2026-07-16",
+                                        "latest_version":  "2.11.0"
+                                    },
+                  "karpathy-guidelines":  {
+                                              "version":  null,
+                                              "path":  "C:\\Users\\LoveDoLove\\.agents\\skills\\karpathy-guidelines\\SKILL.md",
+                                              "last_verified":  "2026-07-16",
+                                              "type":  "skill",
+                                              "source":  "https://github.com/multica-ai/andrej-karpathy-skills",
+                                              "status":  "installed",
+                                              "version_checked_at":  null,
+                                              "latest_version":  null
+                                          },
+                  "superpowers":  {
+                                      "version":  null,
+                                      "path":  null,
+                                      "last_verified":  "2026-07-16",
+                                      "type":  "framework",
+                                      "source":  "https://github.com/obra/superpowers",
+                                      "status":  "installed",
+                                      "version_checked_at":  null,
+                                      "latest_version":  null
+                                  },
+                  "skillx":  {
+                                 "version":  "0.1.7",
+                                 "path":  "C:\\Users\\LoveDoLove\\.agents\\skills\\skillx\\SKILL.md",
+                                 "last_verified":  "2026-07-16",
+                                 "type":  "skill",
+                                 "source":  "https://github.com/nextlevelbuilder/skillx",
+                                 "status":  "installed",
+                                 "version_checked_at":  "2026-07-16",
+                                 "latest_version":  "0.1.7"
+                             },
+                  "codebase-memory-mcp":  {
+                                              "version":  "0.9.0",
+                                              "path":  null,
+                                              "last_verified":  "2026-07-16",
+                                              "type":  "mcp",
+                                              "source":  "https://github.com/DeusData/codebase-memory-mcp",
+                                              "status":  "installed",
+                                              "version_checked_at":  "2026-07-16",
+                                              "latest_version":  "0.9.0"
+                                          },
+                  "context7":  {
+                                   "version":  "0.5.4",
+                                   "path":  null,
+                                   "last_verified":  "2026-07-16",
+                                   "type":  "mcp",
+                                   "source":  "https://github.com/upstash/context7",
+                                   "status":  "installed",
+                                   "version_checked_at":  "2026-07-16",
+                                   "latest_version":  "0.5.4"
+                               }
+              },
+    "last_updated":  "2026-07-16"
+}
