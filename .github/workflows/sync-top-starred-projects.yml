@@ -1,5 +1,8 @@
 name: Sync Top Starred Projects
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 0 * * *"
