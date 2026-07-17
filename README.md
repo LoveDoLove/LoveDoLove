@@ -72,8 +72,8 @@ EasyKit is a comprehensive Windows toolkit designed specifically for web develop
 
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
-Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, advanced admin controls, API token support, and comprehensive logging.<br>
-<sub>Tech: PHP, TypeScript</sub>
+Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, AJAX admin controls, API token support, and comprehensive logging.<br>
+<sub>Tech: PHP, CSS, TypeScript, JavaScript</sub>
 
 ### [RemoteRun](https://github.com/LoveDoLove/RemoteRun) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/RemoteRun?style=social)](https://github.com/LoveDoLove/RemoteRun)
 
@@ -90,10 +90,10 @@ Modular suite for advanced Cloudflare cache management, edge caching, and flexib
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
 
-### [LDLWinToolBox](https://github.com/LoveDoLove/LDLWinToolBox) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/LDLWinToolBox?style=social)](https://github.com/LoveDoLove/LDLWinToolBox)
+### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
 
-A cohesive, menu-driven Windows Batch utility that safely automates advanced system cleanup, integrity repair, components update, and NVMe SSD optimizations.<br>
-<sub>Tech: Python, PowerShell, Batchfile</sub>
+Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
+<sub>Tech: Python</sub>
 
 ---
 
