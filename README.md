@@ -90,10 +90,10 @@ Modular suite for advanced Cloudflare cache management, edge caching, and flexib
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
 
-### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
+### [MCDataPacks](https://github.com/LoveDoLove/MCDataPacks) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/MCDataPacks?style=social)](https://github.com/LoveDoLove/MCDataPacks)
 
-Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
-<sub>Tech: Python</sub>
+<br>
+
 
 ---
 
