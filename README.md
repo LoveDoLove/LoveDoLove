@@ -93,7 +93,7 @@ Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.
 ### [Github-Forks-Sync-Manager](https://github.com/LoveDoLove/Github-Forks-Sync-Manager) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Github-Forks-Sync-Manager?style=social)](https://github.com/LoveDoLove/Github-Forks-Sync-Manager)
 
 Automate the synchronization of all forked repositories for a GitHub account with their upstream sources using GitHub Actions and Python.<br>
-
+<sub>Tech: Python</sub>
 
 ---
 
