@@ -1,8 +1,8 @@
 # 👋 Hi, I'm LoveDoLove
 
-**Full-Stack Developer | Cloud Infrastructure & DevOps Engineer**<br>
-AWS Academy Graduate (Cloud Architect, Web App Builder, Foundations) & Enterprise Networking (Cisco Academy).<br>
-I bridge the gap between high-performance software development and low-level cloud infrastructure. Specialized in building secure web applications, optimizing virtualization layers, and automating end-to-end CI/CD pipelines.
+**Full-Stack Developer | DevOps & Cloud Engineer**<br>
+B.I.T. (Hons.) Software Systems Development @ TARUMT | AWS Academy Graduate | Cisco CCNA<br>
+Versatile developer and engineer with enterprise-level experience spanning full-stack development (ASP.NET Core, Laravel, Flutter) and infrastructure operations (Sangfor HCI, Linux diagnostics, cloud DevOps). Specialized in building secure, scalable applications and automating end-to-end CI/CD pipelines.
 
 ---
 
@@ -100,7 +100,7 @@ Automate the synchronization of all forked repositories for a GitHub account wit
 ## 🛠️ Skills
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,php,js,py,nodejs,laravel,html,css,bootstrap,nginx,docker,cloudflare,githubactions,azure,aws,firebase,mysql,git,github,vscode,visualstudio,androidstudio,postman,bash,raspberrypi,java,flutter,supabase" alt="Skill Icons" style="max-width: 100%;" />
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,php,js,py,nodejs,laravel,html,css,bootstrap,nginx,docker,cloudflare,githubactions,azure,aws,firebase,mysql,git,github,linux,bash,vscode,visualstudio,androidstudio,postman,raspberrypi,java,flutter,supabase" alt="Skill Icons" style="max-width: 100%;" />
 </p>
 
 ---
@@ -112,20 +112,20 @@ Automate the synchronization of all forked repositories for a GitHub account wit
   <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Web%20App%20Builder-blue?logo=amazonaws&style=for-the-badge" />
   <img src="https://img.shields.io/badge/AWS%20Academy%20Graduate-Cloud%20Foundations-blue?logo=amazonaws&style=for-the-badge" />
   <img src="https://img.shields.io/badge/AWS%20Educate-Cloud%20Computing%20101-blue?logo=amazonaws&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cisco%20Coursework-Completed%20(no%20official%20certification)-lightgrey?logo=cisco&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cisco%20CCNA%20Certified-1BA0D7?logo=cisco&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/B.I.T.%20(Hons.)%20Software%20Systems%20Development-TARUMT-800020?style=for-the-badge" />
 </p>
 
 ---
 
 ## 🏆 Achievements
 
-- 🏅 **AWS Academy Graduate** (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and **AWS Educate Cloud 101** certifications (2024-2025)
-- 📚 Completed Cisco Networking Academy coursework (no official CCNA certification)
-- 🚀 Expanded expertise in cloud architecture, enterprise networking, and IT infrastructure through industry-recognized training and coursework
-- ⚡ Automated cross-platform workflows for Windows, Linux, and FreeBSD, increasing efficiency and reliability
+- 🏅 **Sangfor Technologies** — Cloud & Network Engineer Intern. Triaged L1/L2 global incidents for HCI, Cloud Platform & VDI (95%+ SLA). Led storage split-brain recovery, Linux kernel diagnostics, and automated Git-to-AWS CodeCommit migrations.
+- 🏅 **AWS Academy Graduate** (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and **AWS Educate Cloud 101** (2024–2025)
+- 🏅 **Cisco CCNA Certified** — Enterprise networking, routing & switching fundamentals
 - 🚀 Built and optimized CI/CD pipelines to accelerate deployments and ensure robust delivery
-- 🛠️ Published developer tools, templates, and guides adopted by the community
-- 🌟 Led and contributed to open-source projects, earning recognition from developers worldwide
+- 🛠️ Published developer tools (Windows-priv escalation utility, Cloudflare smart tools, DNS manager) adopted by the community
+- 🌟 Actively contribute to open-source projects, earning recognition from developers worldwide
 - ☁️ Engineered scalable, secure cloud infrastructure for high-impact web applications
 
 ---
