@@ -70,15 +70,15 @@ The Open Source Projects Showcase is a dynamic web application designed to elega
 EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
 <sub>Tech: C#, TypeScript, Inno Setup</sub>
 
-### [vps-scripts](https://github.com/LoveDoLove/vps-scripts) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/vps-scripts?style=social)](https://github.com/LoveDoLove/vps-scripts)
-
-A comprehensive, modular VPS management toolkit with bilingual (Chinese/English) support. Features a Docker App Store, firewall & WAF security, SSL certificate management, kernel & BBR tuning, LDNMP web stack, FRP tunneling, system benchmarks, and more.<br>
-<sub>Tech: Shell, TypeScript</sub>
-
 ### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
 
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
+
+### [vps-scripts](https://github.com/LoveDoLove/vps-scripts) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/vps-scripts?style=social)](https://github.com/LoveDoLove/vps-scripts)
+
+A comprehensive, modular VPS management toolkit with bilingual (Chinese/English) support. Features a Docker App Store, firewall & WAF security, SSL certificate management, kernel & BBR tuning, LDNMP web stack, FRP tunneling, system benchmarks, and more.<br>
+<sub>Tech: Shell, TypeScript</sub>
 
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
