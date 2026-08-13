@@ -50,6 +50,11 @@ Versatile developer and engineer with enterprise-level experience spanning full-
 This project provides a robust, production-ready Cloudflare Worker that acts as a high-performance HTTP load balancer. It allows you to distribute traffic across multiple origin servers based on configurable weights, with built-in support for failover to backup servers and maintenance modes.<br>
 <sub>Tech: JavaScript</sub>
 
+### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
+
+The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
+<sub>Tech: JavaScript, HTML, CSS</sub>
+
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
@@ -59,11 +64,6 @@ This project provides a searchable list of all keys for software downloadable fr
 
 This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
 <sub>Tech: Shell</sub>
-
-### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
-
-The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
-<sub>Tech: JavaScript, HTML, CSS</sub>
 
 ### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
 
@@ -90,10 +90,10 @@ Modular suite for advanced Cloudflare cache management, edge caching, and flexib
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
 
-### [vps-scripts](https://github.com/LoveDoLove/vps-scripts) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/vps-scripts?style=social)](https://github.com/LoveDoLove/vps-scripts)
+### [cloudflare-edge-commander](https://github.com/LoveDoLove/cloudflare-edge-commander) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-edge-commander?style=social)](https://github.com/LoveDoLove/cloudflare-edge-commander)
 
-A comprehensive, modular VPS management toolkit with bilingual (Chinese/English) support. Features a Docker App Store, firewall & WAF security, SSL certificate management, kernel & BBR tuning, LDNMP web stack, FRP tunneling, system benchmarks, and more.<br>
-<sub>Tech: Shell, TypeScript</sub>
+A lightweight Next.js control panel for managing Cloudflare accounts, zones, DNS records and simple network tooling (IPv6 utils, reverse mapping). Built to run on Cloudflare via OpenNext + Wrangler.<br>
+<sub>Tech: TypeScript, CSS, JavaScript</sub>
 
 ---
 
