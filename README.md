@@ -90,10 +90,10 @@ Modular suite for advanced Cloudflare cache management, edge caching, and flexib
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
 
-### [vps-scripts](https://github.com/LoveDoLove/vps-scripts) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/vps-scripts?style=social)](https://github.com/LoveDoLove/vps-scripts)
+### [VueXpressPro](https://github.com/LoveDoLove/VueXpressPro) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/VueXpressPro?style=social)](https://github.com/LoveDoLove/VueXpressPro)
 
-A comprehensive, modular VPS management toolkit with bilingual (Chinese/English) support. Features a Docker App Store, firewall & WAF security, SSL certificate management, kernel & BBR tuning, LDNMP web stack, FRP tunneling, system benchmarks, and more.<br>
-<sub>Tech: Shell, TypeScript</sub>
+VueXpressPro is a versatile full-stack development template tailored for web developers seeking efficiency and scalability. Harnessing Vue.js on the frontend and Express.js on the backend, VueXpressPro empowers you to build robust, modern applications seamlessly.<br>
+<sub>Tech: JavaScript, Vue, HTML</sub>
 
 ---
 
