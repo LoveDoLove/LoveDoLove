@@ -1,6 +1,6 @@
 # LoveDoLove — AGENTS.md
 
-GitHub profile monorepo: profile README + daily automation, plus a static Astro portfolio site in `portfolio-website/`. No backend, no database, no test suite. Docs are English; design specs are zh-TW.
+GitHub profile monorepo: profile README + daily automation, plus a static Astro portfolio site in `portfolio-website/`. No backend, no database, no test suite. Docs are English; the fork-sync architecture doc body is zh-TW.
 
 ## Portfolio site
 - Astro ^7.2.1, pnpm 11.9.0, wrangler ^4.121.0 (dev-dep). Single page `src/pages/index.astro`, 9 components, no client-side JS.
@@ -25,5 +25,5 @@ Automation logic lives in those external repos. This repo only wires triggers an
 - Expect automated daily commits: README sync + `profile-3d-contrib/` + `profile-snake/` regeneration.
 
 ## Docs
-- `docs/superpowers/specs/2026-07-15-forks-sync-design.md` — fork-sync architecture (current, zh-TW)
-- `docs/superpowers/plans/2026-07-15-forks-sync-implementation.md` — implementation plan (historical, executed)
+- `docs/architecture/forks-sync.md` — fork-sync architecture (current, zh-TW body)
+- `docs/history/forks-sync-implementation.md` — implementation record (historical, executed 2026-07)

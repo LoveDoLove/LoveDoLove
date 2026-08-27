@@ -1,4 +1,21 @@
+---
+title: Fork Sync Implementation Plan
+type: history
+status: historical
+stability: historical
+scope: automation/fork-sync
+created: 2026-07-15
+updated: 2026-08-28
+evidence:
+  - .github/workflows/github-forks-sync.yml
+  - LoveDoLove/Github-Forks-Sync-Manager (external repo)
+related:
+  - ../architecture/forks-sync.md
+---
+
 # GitHub Forks Sync Implementation Plan
+
+> **Status: Completed (executed 2026-07).** Checkboxes were never ticked — this is a historical record, not pending work. Do not execute. Mentions of `memory/` / `MEMORY.md` refer to files later removed (commit f15b37f). Paths under `docs/superpowers/` refer to the pre-migration layout; the design doc now lives at `docs/architecture/forks-sync.md`.
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
