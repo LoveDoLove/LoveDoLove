@@ -1,3 +1,18 @@
+---
+title: Fork Sync Architecture
+type: architecture
+status: current
+stability: stable
+scope: automation/fork-sync
+created: 2026-07-15
+updated: 2026-08-28
+evidence:
+  - .github/workflows/github-forks-sync.yml
+  - LoveDoLove/Github-Forks-Sync-Manager (external repo: reusable workflow + scripts/github_forks_sync.py)
+related:
+  - ../history/forks-sync-implementation.md
+---
+
 # GitHub Forks Sync 改進設計
 
 ## 背景
