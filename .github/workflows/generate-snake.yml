@@ -1,4 +1,4 @@
-name: Generate 3D Contribution Graph
+name: Generate Snake
 
 on:
   schedule:
@@ -11,20 +11,22 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: generate-snake
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Generate 3D Contribution Graph
-        uses: yoshi389111/github-profile-3d-contrib@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-      - name: Commit and Push Contribution Graph
+      - name: Generate Snake Animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile-snake/github-snake.svg
+            profile-snake/github-snake-dark.svg?palette=github-dark
+      - name: Commit and Push Snake
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A .
+          git add profile-snake/
           if git commit -m "generated"; then
             git push
           fi
