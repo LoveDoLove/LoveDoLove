@@ -74,6 +74,11 @@ This repository provides a build wrapper and automation for compiling the upstre
 EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
 <sub>Tech: C#, TypeScript, Inno Setup</sub>
 
+### [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SetEdit-LoveDoLove-Documentation?style=social)](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation)
+
+Documentation for SetEdit LoveDoLove, an all-in-one utility application designed to empower Android users with advanced tools for device customization, optimization, and management. With a comprehensive suite of features, our app provides users with unparalleled control over their device's performance, system settings, and resource utilization.<br>
+
+
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
 Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, AJAX admin controls, API token support, and comprehensive logging.<br>
@@ -93,11 +98,6 @@ Modular suite for advanced Cloudflare cache management, edge caching, and flexib
 
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
-
-### [Project-Memory-Agent](https://github.com/LoveDoLove/Project-Memory-Agent) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Project-Memory-Agent?style=social)](https://github.com/LoveDoLove/Project-Memory-Agent)
-
-Project Memory gives coding agents a single, trustworthy memory for a software repository — so they stop re-learning the same facts and stop writing conflicting "memory" files.<br>
-<sub>Tech: PowerShell</sub>
 
 ---
 
