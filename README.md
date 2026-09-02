@@ -59,6 +59,11 @@ This project provides a robust, production-ready Cloudflare Worker that acts as 
 The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
 <sub>Tech: JavaScript, HTML, CSS</sub>
 
+### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
+
+EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
+<sub>Tech: C#, TypeScript, Inno Setup</sub>
+
 ### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
 
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
@@ -69,10 +74,10 @@ This project provides a searchable list of all keys for software downloadable fr
 This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
 <sub>Tech: Shell</sub>
 
-### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
+### [Project-Memory-Agent](https://github.com/LoveDoLove/Project-Memory-Agent) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Project-Memory-Agent?style=social)](https://github.com/LoveDoLove/Project-Memory-Agent)
 
-EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
-<sub>Tech: C#, TypeScript, Inno Setup</sub>
+Project Memory gives coding agents a single, trustworthy memory for a software repository — so they stop re-learning the same facts and stop writing conflicting "memory" files.<br>
+<sub>Tech: PowerShell</sub>
 
 ### [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SetEdit-LoveDoLove-Documentation?style=social)](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation)
 
@@ -93,11 +98,6 @@ Lightweight .NET 8 Windows utility to run programs as NT AUTHORITY\\SYSTEM local
 
 Modular suite for advanced Cloudflare cache management, edge caching, and flexible CDN routing for modern web applications.<br>
 <sub>Tech: JavaScript</sub>
-
-### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
-
-Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
-<sub>Tech: Python</sub>
 
 ---
 
