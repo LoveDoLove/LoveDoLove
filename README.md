@@ -77,7 +77,7 @@ This repository provides a build wrapper and automation for compiling the upstre
 ### [Project-Memory-Agent](https://github.com/LoveDoLove/Project-Memory-Agent) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Project-Memory-Agent?style=social)](https://github.com/LoveDoLove/Project-Memory-Agent)
 
 Project Memory gives coding agents a single, trustworthy memory for a software repository — so they stop re-learning the same facts and stop writing conflicting "memory" files.<br>
-<sub>Tech: PowerShell</sub>
+<sub>Tech: JavaScript, PowerShell</sub>
 
 ### [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SetEdit-LoveDoLove-Documentation?style=social)](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation)
 
