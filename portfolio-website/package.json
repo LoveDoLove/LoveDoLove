@@ -11,10 +11,9 @@
     "deploy": "astro build && wrangler deploy"
   },
   "dependencies": {
-    "astro": "^7.2.1"
+    "astro": "^7.3.6"
   },
   "devDependencies": {
-    "wrangler": "^4.121.0"
-  },
-  "packageManager": "pnpm@11.9.0"
+    "wrangler": "^4.147.0"
+  }
 }

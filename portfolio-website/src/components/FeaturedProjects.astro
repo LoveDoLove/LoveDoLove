@@ -1,40 +1,89 @@
 ---
 const projects = [
-  { name: "cloudflare-load-balancer", tech: "JavaScript", desc: "Production-ready HTTP load balancer as a Cloudflare Worker with weighted distribution, failover, and maintenance mode." },
-  { name: "TpLinkFirmwareDirectory", tech: "Python", desc: "Searchable list of all firmware keys from download.tplinkcloud.com's public S3 bucket." },
-  { name: "alist-freebsd", tech: "Shell", desc: "Build wrapper and CI automation for compiling alist on FreeBSD." },
-  { name: "open-source-projects", tech: "JavaScript, HTML, CSS", desc: "Dynamic web app for showcasing open source projects, deployed on Cloudflare Workers." },
-  { name: "EasyKit", tech: "C#, TypeScript, Inno Setup", desc: "Windows developer toolkit with unified console for Git, NPM, Composer, and Laravel Artisan." },
-  { name: "cloudflare-smart-cache", tech: "PHP, TypeScript", desc: "All-in-one Cloudflare cache solution for WordPress with edge HTML caching and auto-purging." },
-  { name: "RemoteRun", tech: "C#, Inno Setup", desc: "Lightweight .NET 8 utility to run programs as NT AUTHORITY\\SYSTEM locally or remotely." },
-  { name: "cloudflare-smart-tools", tech: "JavaScript", desc: "Modular suite for Cloudflare cache management, edge caching, and CDN routing." },
-  { name: "cf-best-domain", tech: "Python", desc: "Automate Cloudflare DNS A record management and collect the best Cloudflare IPs." },
-  { name: "LDLWinToolBox", tech: "Python, PowerShell, Batchfile", desc: "Menu-driven Windows Batch utility for safe advanced system cleanup, repair, and NVMe SSD optimization." },
+  {
+    name: "Veyra",
+    href: "/projects/veyra",
+    externalHref: "https://github.com/LoveDoLove/Veyra",
+    tech: "TypeScript, Node.js, SQLite/FTS5, MCP, Cordis",
+    problem: "Coding agents re-learn the same repository facts every session and write conflicting memory files with no validation.",
+    solution: "Dual-Brain architecture: (1) Veyra Memory — persistent, evidence-backed engineering lessons with validation states (unverified → reviewed → verified) and authority levels (candidate → derived → canonical); (2) Code Intelligence — AST-level structural facts (symbols, call graphs, hierarchies) derived live from the repo via codebase-memory-mcp. Hybrid search combines FTS5 BM25, semantic overlap, intent affinity, and relationship-graph cohesion. Code Intelligence flags stale memories when evidence anchors point to modified code.",
+    flagship: true,
+  },
+  {
+    name: "dsh-codebase-memory-mcp",
+    href: "/projects/dsh-codebase-memory-mcp",
+    externalHref: "https://github.com/LoveDoLove/dsh-codebase-memory-mcp",
+    tech: "TypeScript, MCP, Cordis, stdio JSON-RPC",
+    problem: "No native bridge between DeepSeek Harness and codebase-memory-mcp for structural code queries.",
+    solution: "MCP bridge plugin registering six knowledge-graph code tools (cbm_projects, cbm_search, cbm_snippet, cbm_arch, cbm_trace, cbm_search_code) on the DSH tool surface. Auto-starts the daemon with Web UI over stdio JSON-RPC 2.0, injects system-prompt guidance for graph-vs-grep decisions, bundles a native agent skill (codebase-memory), provides /cbm slash command. Graceful degradation: only tools is a hard dependency; systemPrompt, skills, commands attach via deferred injection.",
+    flagship: true,
+  },
+  {
+    name: "cloudflare-load-balancer",
+    href: "https://github.com/LoveDoLove/cloudflare-load-balancer",
+    tech: "JavaScript, Cloudflare Workers, Wrangler",
+    problem: "Need zero-cold-start HTTP load balancing at the edge with weighted distribution and failover.",
+    solution: "Production-ready Cloudflare Worker load balancer with weighted traffic distribution across origins, failover to backup servers, maintenance-mode routing, and health-check integration.",
+  },
+  {
+    name: "cloudflare-smart-cache",
+    href: "https://github.com/LoveDoLove/cloudflare-smart-cache",
+    tech: "PHP, TypeScript, JavaScript, Cloudflare API",
+    problem: "WordPress sites need edge HTML caching with automatic, granular purging and zero-config admin controls.",
+    solution: "All-in-one Cloudflare cache solution: edge HTML caching, automatic purging on content changes, AJAX admin controls, API token support, comprehensive logging. Modular architecture for maintainable cache invalidation strategies.",
+  },
+  {
+    name: "cf-best-domain",
+    href: "https://github.com/LoveDoLove/cf-best-domain",
+    tech: "Python, Cloudflare API, GitHub Actions",
+    problem: "Manual DNS A-record management and IP selection for Cloudflare is error-prone and slow.",
+    solution: "Automated tool that collects and tests Cloudflare IP ranges, selects lowest-latency IPs, and updates DNS records programmatically. Designed for scheduled runs via GitHub Actions or Workers Cron Triggers.",
+  },
+  {
+    name: "alist-freebsd",
+    href: "https://github.com/LoveDoLove/alist-freebsd",
+    tech: "Shell, GitHub Actions, FreeBSD toolchain",
+    problem: "Upstream Alist lacks FreeBSD build support and CI automation.",
+    solution: "Build wrapper and CI automation producing runnable FreeBSD binaries from upstream source. Custom build.sh and GitHub Actions workflows demonstrating cross-platform build engineering for non-Linux targets.",
+  },
 ];
 ---
 
 <section class="card">
-  <h2>Featured Projects</h2>
-  <p class="section-note">Top starred repositories auto-synced daily via GitHub Actions.</p>
-  <!-- FEATURED_PROJECTS_START -->
+  <h2>Selected Engineering Work</h2>
+  <p class="section-note">Curated projects demonstrating depth across AI coding agents, developer tooling, and Cloudflare infrastructure.</p>
   <div class="project-list">
-    {projects.map((p) => (
-      <a
-        href={`https://github.com/LoveDoLove/${p.name}`}
-        class="project-item"
-        target="_blank"
-        rel="noopener"
-      >
-        <div class="project-body">
-          <span class="project-name">{p.name}</span>
-          <span class="project-tech">{p.tech}</span>
-          <span class="project-desc">{p.desc}</span>
-        </div>
-        <span class="project-arrow">&rarr;</span>
-      </a>
-    ))}
+    {projects.map((p) => {
+      const isInternal = p.href.startsWith('/');
+      return (
+        <a
+          href={p.href}
+          class="project-item"
+          target={isInternal ? undefined : "_blank"}
+          rel={isInternal ? undefined : "noopener"}
+          data-flagship={p.flagship ? "true" : "false"}
+        >
+          <div class="project-body">
+            <div class="project-header">
+              <span class="project-name">{p.name}</span>
+              {p.flagship && <span class="project-badge">Flagship</span>}
+            </div>
+            <span class="project-tech">{p.tech}</span>
+            <div class="project-problem-solution">
+              <p class="project-problem"><strong>Problem:</strong> {p.problem}</p>
+              <p class="project-solution"><strong>Solution:</strong> {p.solution}</p>
+            </div>
+          </div>
+          <span class="project-arrow">&rarr;</span>
+          {p.externalHref && (
+            <a href={p.externalHref} class="github-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          )}
+        </a>
+      );
+    })}
   </div>
-  <!-- FEATURED_PROJECTS_END -->
 </section>
 
 <style>
@@ -46,50 +95,78 @@ const projects = [
   .project-list {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
   }
   .project-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    gap: 12px;
-    padding: 12px 14px;
+    gap: 16px;
+    padding: 16px 18px;
     border-radius: 10px;
     background: rgba(255,255,255,0.02);
     text-decoration: none;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: background 0.2s ease, border-color 0.2s ease;
     border: 1px solid transparent;
   }
   .project-item:hover {
     background: rgba(124,58,237,0.06);
     border-color: rgba(124,58,237,0.12);
-    transform: translateX(3px);
+  }
+  .project-item[data-flagship="true"] {
+    border-color: rgba(124,58,237,0.15);
+    background: linear-gradient(180deg, rgba(124,58,237,0.04), rgba(255,255,255,0.01));
   }
   .project-body {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 6px;
     min-width: 0;
+    flex: 1;
+  }
+  .project-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   .project-name {
     font-weight: 600;
     color: #e6eef8;
     font-size: 14px;
   }
+  .project-badge {
+    font-size: 10px;
+    font-weight: 600;
+    color: #7c3aed;
+    background: rgba(124,58,237,0.12);
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
   .project-tech {
     font-size: 11px;
     color: #7c3aed;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    margin-top: -2px;
   }
-  .project-desc {
-    font-size: 13px;
+  .project-problem-solution {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .project-problem,
+  .project-solution {
+    font-size: 12px;
     color: #9ca3af;
     line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    margin: 0;
+  }
+  .project-problem strong,
+  .project-solution strong {
+    color: #d1d5db;
+    font-weight: 500;
   }
   .project-arrow {
     color: #7c3aed;
@@ -101,5 +178,13 @@ const projects = [
   .project-item:hover .project-arrow {
     opacity: 1;
     transform: translateX(3px);
+  }
+  @media (max-width: 600px) {
+    .project-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .project-arrow { display: none; }
   }
 </style>

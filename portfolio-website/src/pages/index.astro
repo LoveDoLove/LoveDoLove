@@ -2,12 +2,15 @@
 import Header from "../components/Header.astro";
 import About from "../components/About.astro";
 import Stats from "../components/Stats.astro";
-import Skills from "../components/Skills.astro";
-import Certifications from "../components/Certifications.astro";
 import FeaturedProjects from "../components/FeaturedProjects.astro";
+import TechnicalFocus from "../components/TechnicalFocus.astro";
+import Certifications from "../components/Certifications.astro";
 import Connect from "../components/Connect.astro";
-import ThreeDeeSection from "../components/ThreeDeeSection.astro";
 import Footer from "../components/Footer.astro";
+
+const CANONICAL_URL = "https://portfolio.lovedolove.qzz.io";
+const SITE_TITLE = "LoveDoLove — Software Engineer | AI Coding Agents · Developer Tooling · Cloud Infrastructure";
+const SITE_DESCRIPTION = "Portfolio of LoveDoLove — Software Engineer building engineering intelligence for coding agents, developer tooling, and cloud infrastructure. Featuring Veyra (Dual-Brain architecture for AI coding agents), dsh-codebase-memory-mcp, Cloudflare Workers projects, and more.";
 ---
 
 <!doctype html>
@@ -15,11 +18,60 @@ import Footer from "../components/Footer.astro";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LoveDoLove &mdash; Full-Stack Developer &amp; DevOps</title>
-    <meta
-      name="description"
-      content="Portfolio of LoveDoLove &mdash; Full-Stack Developer & DevOps engineer. Projects, stats, certifications and contact."
-    />
+    <link rel="canonical" href={CANONICAL_URL} />
+    <title>{SITE_TITLE}</title>
+    <meta name="description" content={SITE_DESCRIPTION} />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={CANONICAL_URL} />
+    <meta property="og:title" content={SITE_TITLE} />
+    <meta property="og:description" content={SITE_DESCRIPTION} />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/67772009?v=4&size=512" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={CANONICAL_URL} />
+    <meta name="twitter:title" content={SITE_TITLE} />
+    <meta name="twitter:description" content={SITE_DESCRIPTION} />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/67772009?v=4&size=512" />
+
+    <!-- Favicon / theme -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+    <meta name="theme-color" content="#071023" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Person structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "LoveDoLove",
+      "url": CANONICAL_URL,
+      "image": "https://avatars.githubusercontent.com/u/67772009?v=4&size=512",
+      "sameAs": [
+        "https://github.com/LoveDoLove",
+        "https://www.linkedin.com/in/chong-jun-xiang",
+        "https://www.youtube.com/@lovedolove"
+      ],
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "LoveDoLove"
+      },
+      "knowsAbout": [
+        "AI Coding Agents",
+        "Developer Tooling",
+        "Cloud Infrastructure",
+        "Cloudflare Workers",
+        "DeepSeek Harness",
+        "MCP",
+        "TypeScript",
+        "Systems Engineering"
+      ]
+    }, null, 2)} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
@@ -83,11 +135,10 @@ import Footer from "../components/Footer.astro";
     <div class="container">
       <Header />
       <About />
-      <Stats />
-      <Skills />
-      <Certifications />
       <FeaturedProjects />
-      <ThreeDeeSection />
+      <TechnicalFocus />
+      <Certifications />
+      <Stats />
       <Connect />
       <Footer />
     </div>
