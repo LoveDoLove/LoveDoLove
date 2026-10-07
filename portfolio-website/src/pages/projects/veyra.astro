@@ -1,0 +1,431 @@
+---
+import Footer from "../../components/Footer.astro";
+
+const title = "Veyra — Engineering Intelligence for Coding Agents | Case Study";
+const description = "How Veyra solves the coding-agent trust crisis: Dual-Brain architecture separating repository truth from engineering memory, evidence-backed validation, hybrid search, and graceful degradation.";
+const canonical = "https://portfolio.lovedolove.qzz.io/projects/veyra";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="stylesheet" href="../../styles/global.css" />
+  </head>
+  <body>
+    <article class="case-study">
+      <header class="hero">
+        <a href="/" class="back">← Portfolio</a>
+        <h1>Veyra</h1>
+        <p class="positioning">Engineering Intelligence for Coding Agents</p>
+        <p class="description">
+          A DeepSeek Harness plugin implementing a Dual-Brain architecture: persistent, evidence-backed engineering memory
+          (Veyra Memory) plus structural code intelligence (Code Intelligence via codebase-memory-mcp). Hybrid search
+          combines lexical, semantic, intent, and graph signals. Code Intelligence flags stale memories when referenced
+          files change — it never silently overwrites Veyra memory.
+        </p>
+        <div class="links">
+          <a href="https://github.com/LoveDoLove/Veyra" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.npmjs.com/package/@lovedolove/veyra" target="_blank" rel="noopener">npm</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>The Problem</h2>
+        <p>
+          Coding agents operate in two epistemic dimensions. <strong>Repository truth</strong> — what the code does now —
+          lives in the files. <strong>Engineering memory</strong> — why it was done, what failed, what constraints apply —
+          lives across sessions. Today these get conflated:
+        </p>
+        <ul>
+          <li><strong>Agent context loss.</strong> Every session starts cold. The agent re-learns repo facts via grep,
+          burning context budget and producing inconsistent answers.</li>
+          <li><strong>Memory corruption.</strong> Scratch files, auto-loaded markdown, and ad-hoc notes accumulate
+          without validation, authority boundaries, or project isolation.</li>
+          <li><strong>Trust failure.</strong> Retrieval by similarity ≠ truth. An old fix may no longer apply. A
+          "remembered" decision may have been reversed. Without validation states, agents treat all recalled context
+          as equally authoritative.</li>
+        </ul>
+        <p>
+          Traditional RAG retrieval fails because it ranks by semantic similarity alone. It does not distinguish:
+        </p>
+        <table>
+          <thead>
+            <tr><th>Dimension</th><th>Why it matters</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Authority</strong></td><td>An unverified observation should not be treated as a decision</td></tr>
+            <tr><td><strong>Validation</strong></td><td>A lesson should be confirmed across sessions before it is trusted</td></tr>
+            <tr><td><strong>Applicability</strong></td><td>A Windows-specific fix should not silently apply to Linux</td></tr>
+            <tr><td><strong>Freshness</strong></td><td>A memory about <code>auth.ts:42</code> is suspect if that file was deleted</td></tr>
+            <tr><td><strong>Project isolation</strong></td><td>Lessons from Project A must not contaminate Project B</td></tr>
+          </tbody>
+        </table>
+        <p>
+          Veyra treats these as first-class, observable dimensions — not afterthoughts.
+        </p>
+      </section>
+
+      <section>
+        <h2>Core Principles</h2>
+        <ul class="principles">
+          <li><strong>Observe ≠ Store.</strong> Session activity is distilled into <em>candidates</em> first. Only durable,
+          evidence-grounded lessons become memory.</li>
+          <li><strong>Candidate ≠ Truth.</strong> Candidates are never auto-recalled, never promoted automatically.</li>
+          <li><strong>Similarity ≠ Authority.</strong> Retrieval ranks relevance; authority is an orthogonal dimension
+          with explicit transitions.</li>
+          <li><strong>Similarity ≠ Applicability.</strong> Context keys (os, runtime, taskType) gate recall without
+          discarding records.</li>
+          <li><strong>Repository truth remains authoritative.</strong> Veyra never writes into the user's repo.</li>
+          <li><strong>Historical memory ≠ current truth.</strong> Temporal validity (validFrom/validUntil) and staleness
+          are checked at recall time.</li>
+          <li><strong>Memory ≠ executable instruction.</strong> All recalled items are injected with a <code>not repository truth</code>
+          disclaimer.</li>
+          <li><strong>Isolation fails closed.</strong> Project databases are separate. Reusable memory is explicitly opt-in.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Architecture</h2>
+        <div class="diagram">
+          <pre>{`
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         DSH host — Cordis plugin                         │
+│  session events ──► observe ──► candidate ──► learn ──► derived memory  │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  SQLite store  ~/.dsh/veyra/  (node:sqlite + FTS5, one DB per project) │
+└─────────────────────────────────────────────────────────────────────────┘
+           projections (read-only)
+    ┌───────────┬───────────────┬─────────────────┬────────────────────┐
+    ▼           ▼               ▼                 ▼
+ Hybrid Search  Local Graph   Agent context    Human surfaces
+ recall/tools   (1-hop)       systemPrompt     /veyra commands
+ observatory    src/graph.mjs (fail-closed)    Observatory / Network Graph
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Code Intelligence  src/code/  (optional — requires codebase-memory-mcp)│
+│  stdio JSON-RPC 2.0 ──► cbm_* tools ──► freshness checks ──► retrieval │
+│  Degraded when binary absent: memory layer unaffected                   │
+└─────────────────────────────────────────────────────────────────────────┘
+          `}</pre>
+        </div>
+        <p>
+          <strong>Veyra-owned:</strong> observe, learn, store (SQLite/FTS5), retrieve (hybrid search), graph projections,
+          lifecycle (promotion/forgetting/supersession), context injection, commands, skills, WebUI.
+        </p>
+        <p>
+          <strong>External:</strong> <code>codebase-memory-mcp</code> native daemon (provides AST-level structural facts).
+        </p>
+        <p>
+          The local graph is a <em>derived projection, not a second store</em>. Code Intelligence never modifies Veyra
+          Memory directly — it flags freshness, it does not rewrite memory.
+        </p>
+      </section>
+
+      <section>
+        <h2>Memory / Knowledge Lifecycle</h2>
+        <p>
+          Every record has orthogonal dimensions:
+        </p>
+        <table>
+          <thead>
+            <tr><th>Dimension</th><th>States</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Kind</strong></td><td>observation, memory, knowledge, evidence, negative, unresolved</td></tr>
+            <tr><td><strong>Status</strong></td><td>current, deprecated, superseded, historical</td></tr>
+            <tr><td><strong>Validation</strong></td><td>unverified → reviewed → verified | stale | invalid</td></tr>
+            <tr><td><strong>Authority</strong></td><td>candidate → derived → canonical</td></tr>
+            <tr><td><strong>Confidence</strong></td><td>low, medium, high</td></tr>
+            <tr><td><strong>Scope</strong></td><td>project (default), reusable (opt-in)</td></tr>
+          </tbody>
+        </table>
+        <p>
+          <strong>Lifecycle gate:</strong> <code>current</code>, not forgotten, not candidate, not invalid/stale, explicit
+          authority transition. <strong>Canonical authority is never assigned automatically</strong> — only via explicit
+          human instruction (<code>veyra_promote explicit=true</code>).
+        </p>
+      </section>
+
+      <section>
+        <h2>Retrieval & Ranking</h2>
+        <p>One query, several signals — with a transparent score breakdown:</p>
+        <ol>
+          <li><strong>Authority & lifecycle gate</strong> — candidates, observations, stale, invalid never surface</li>
+          <li><strong>Project isolation</strong> — strict DB-level split + scoped reusable</li>
+          <li><strong>Lexical</strong> — SQLite FTS5 BM25 + exact token/symbol/path match</li>
+          <li><strong>Semantic</strong> — query coverage + token-level Jaccard overlap</li>
+          <li><strong>Intent affinity</strong> — why / how / what-changed / outcome / symptom</li>
+          <li><strong>Relationships</strong> — graph cohesion, structural connections (updates, extends, derives, contradicts, supersedes)</li>
+          <li><strong>Unified RAG + Memory</strong> — <code>knowledge</code> records and engineering memory searched together</li>
+          <li><strong>Provenance</strong> — origin (user/assistant/tool), document path, session, verification tracked</li>
+          <li><strong>Contradiction banners</strong> — both sides stay visible, never silently resolved</li>
+        </ol>
+        <p>
+          <strong>Invariant:</strong> Retrieval ≠ authority. Similarity ≠ identity. Memory ≠ truth.
+        </p>
+      </section>
+
+      <section>
+        <h2>Code Intelligence</h2>
+        <p>
+          Veyra owns the epistemic state (what was learned, why, when verified). <code>codebase-memory-mcp</code> owns
+          the structural state (who calls whom, what symbols exist, where definitions live). They work together:
+        </p>
+        <table>
+          <thead>
+            <tr><th>Veyra</th><th>codebase-memory-mcp</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Memory records, validation, authority</td><td>Symbols, call graphs, class hierarchies</td></tr>
+            <tr><td>Evidence anchors (path, symbol, content hash)</td><td>Live AST-derived call-graph tracing</td></tr>
+            <tr><td>Freshness checks on evidence anchors</td><td>File change detection</td></tr>
+            <tr><td>Flags potentially stale memories</td><td>Reports structural facts</td></tr>
+          </tbody>
+        </table>
+        <p>
+          <strong>Graceful degradation:</strong> When <code>codebase-memory-mcp</code> binary is absent, all <code>cbm_*</code>
+          tools and <code>veyra_code_status</code> return structured errors with installation guidance. All Veyra Memory
+          tools, slash commands, Observatory, and hybrid search continue working.
+        </p>
+      </section>
+
+      <section>
+        <h2>Trust / Safety Model</h2>
+        <ul>
+          <li><strong>No automatic canonical truth.</strong> <code>assertAuthorityTransition</code> enforces that canonical
+          requires <code>explicit: true</code>; auto-promotion throws.</li>
+          <li><strong>No silent merges.</strong> Near-duplicate memories are <em>linked</em> via relations
+          (updates/extends/contradicts), not merged.</li>
+          <li><strong>No hidden contradictions.</strong> Contradiction banners surface both sides in context.</li>
+          <li><strong>No stale-as-current.</strong> Evidence anchors track content hashes; changed/deleted files mark
+          memory <code>POTENTIALLY_STALE</code> or <code>INVALID</code> with retrieval penalties.</li>
+          <li><strong>No cross-project contamination.</strong> Separate SQLite stores per project; reusable store is
+          explicitly scoped.</li>
+          <li><strong>No secrets stored.</strong> <code>redact.mjs</code> scrubs potential secrets before persistence.</li>
+          <li><strong>No repository mutation.</strong> Veyra writes only to <code>$DSH_HOME/veyra/</code>.</li>
+          <li><strong>Fail-closed on corruption.</strong> Records with broken JSON columns or invalid enums are excluded
+          from lifecycle eligibility until explicitly repaired.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>DSH Integration</h2>
+        <p>Veyra registers as a native Cordis plugin at <code>src/plugin.mjs</code>:</p>
+        <table>
+          <thead>
+            <tr><th>Surface</th><th>What Veyra provides</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>systemPrompt.section</code></td><td>Static "memory ≠ truth" guidance</td></tr>
+            <tr><td><code>systemPrompt.context</code></td><td>Per-turn automatic recall (top-N relevant records)</td></tr>
+            <tr><td><code>session/event</code></td><td>Observe engineering activity</td></tr>
+            <tr><td><code>agent/turn-stopping</code></td><td>Persist candidates, maybe-learn, maintenance cadence</td></tr>
+            <tr><td><code>ctx.tools</code></td><td>8 tools: veyra_remember, veyra_recall, veyra_inspect, veyra_forget, veyra_promote, veyra_feedback, veyra_recurrence, veyra_health + 6 cbm_* tools + veyra_code_status</td></tr>
+            <tr><td><code>ctx.commands</code></td><td>/veyra with observatory, code, recall, recent, inspect, forget, invalidate, supersede, tombstone, protect, promote</td></tr>
+            <tr><td><code>ctx.webServer</code></td><td>Network Graph WebUI at /veyra</td></tr>
+            <tr><td><code>ctx.skills</code></td><td>Bundled skills: veyra, legacy-onboarding, memory-maintenance, memory-review, codebase-memory</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Engineering Constraints</h2>
+        <table>
+          <thead>
+            <tr><th>Constraint</th><th>Rationale</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SQLite + FTS5 as canonical storage</td><td>Zero runtime dependencies, fast lexical search, single-file portability, no external service</td></tr>
+            <tr><td>No competing graph database</td><td>Graph projections are derived views, not a second store — avoids drift and dual-write bugs</td></tr>
+            <tr><td>Project/workspace isolation fails closed</td><td>A lesson from Project A must never contaminate Project B by default</td></tr>
+            <tr><td>No silent merge</td><td>Merging loses provenance; linking via relations preserves it</td></tr>
+            <tr><td>Repository truth authority</td><td>Code is the source of truth; memory is advisory</td></tr>
+            <tr><td>Graceful degradation</td><td>Missing codebase-memory-mcp must never break the memory layer</td></tr>
+            <tr><td>Zero runtime npm dependencies</td><td>Pure ESM, ~130 kB packed, no dependency chains</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Evolution</h2>
+        <p>Based on the actual repository history and CHANGELOG:</p>
+        <ol>
+          <li><strong>Memory capture</strong> — session observation, candidate distillation, candidate → derived promotion</li>
+          <li><strong>Validation model</strong> — unverified → reviewed → verified states; candidate → derived → canonical authority</li>
+          <li><strong>Causal knowledge</strong> — structured <code>symptom → rootCause → remedy → verifiedOutcome</code> facets</li>
+          <li><strong>Observability</strong> — Knowledge Observatory, Network Graph, /veyra commands</li>
+          <li><strong>Code Intelligence</strong> — codebase-memory-mcp integration, freshness checks, stale-memory flagging</li>
+          <li><strong>Engineering intelligence</strong> — hybrid search, unified RAG, feedback loops, health reports, recurrence detection</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Current State</h2>
+        <table>
+          <thead>
+            <tr><th>Attribute</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Version</td><td>0.1.50 (pre-1.0)</td></tr>
+            <tr><td>Status</td><td>Active development on <code>0.1.x</code> line</td></tr>
+            <tr><td>Repository</td><td><a href="https://github.com/LoveDoLove/Veyra">LoveDoLove/Veyra</a></td></tr>
+            <tr><td>npm</td><td><a href="https://www.npmjs.com/package/@lovedolove/veyra">@lovedolove/veyra</a></td></tr>
+            <tr><td>DSH compatibility</td><td><code>>=0.1.2-rc.1 <0.3.0-0</code></td></tr>
+            <tr><td>Node.js</td><td><code>>=22.5.0 <25.0.0</code></td></tr>
+            <tr><td>Storage</td><td><code>node:sqlite</code> + FTS5, one DB per project</td></tr>
+            <tr><td>Tests</td><td>711 passing (CI on Node 22 and 24)</td></tr>
+            <tr><td>Runtime dependencies</td><td>Zero npm dependencies</td></tr>
+            <tr><td>License</td><td>MIT</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <Footer />
+    </article>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #071023;
+    --card-bg: rgba(255,255,255,0.02);
+    --muted: #9ca3af;
+    --accent: #7c3aed;
+    --text: #e6eef8;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: linear-gradient(180deg, #071023 0%, #0b0d2a 50%, #081026 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .case-study {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+  }
+  .hero {
+    margin-bottom: 40px;
+  }
+  .back {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin: 12px 0 4px;
+    letter-spacing: -0.02em;
+  }
+  .positioning {
+    color: var(--accent);
+    font-size: 16px;
+    margin: 0 0 16px;
+    font-weight: 500;
+  }
+  .description {
+    color: var(--muted);
+    max-width: 720px;
+    margin: 0 0 20px;
+  }
+  .links {
+    display: flex;
+    gap: 12px;
+  }
+  .links a {
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  section {
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+  }
+  p {
+    margin: 0 0 14px;
+    color: var(--muted);
+  }
+  ul, ol {
+    color: var(--muted);
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: rgba(124,58,237,0.08);
+    color: var(--text);
+    font-weight: 600;
+  }
+  td {
+    color: var(--muted);
+  }
+  code {
+    background: rgba(255,255,255,0.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  .principles li strong {
+    color: var(--text);
+  }
+  .diagram pre {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #a0aec0;
+  }
+  @media (max-width: 600px) {
+    .case-study { padding: 20px 14px 32px; }
+    .hero h1 { font-size: 28px; }
+    table { font-size: 12px; }
+    th, td { padding: 8px; }
+  }
+</style>

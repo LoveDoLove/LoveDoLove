@@ -1,0 +1,260 @@
+---
+import Footer from "../../components/Footer.astro";
+
+const title = "dsh-codebase-memory-mcp — Code Graph Bridge for DeepSeek Harness | Case Study";
+const description = "How dsh-codebase-memory-mcp bridges DeepSeek Harness to codebase-memory-mcp: six native knowledge-graph code tools, auto-started daemon with Web UI, system-prompt guidance for graph-vs-grep decisions, graceful degradation.";
+const canonical = "https://portfolio.lovedolove.qzz.io/projects/dsh-codebase-memory-mcp";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="stylesheet" href="../../styles/global.css" />
+  </head>
+  <body>
+    <article class="case-study">
+      <header class="hero">
+        <a href="/" class="back">← Portfolio</a>
+        <h1>dsh-codebase-memory-mcp</h1>
+        <p class="positioning">Native MCP Bridge for DeepSeek Harness</p>
+        <p class="description">
+          A standalone bridge plugin that registers six knowledge-graph code tools on the DeepSeek Harness tool
+          surface, auto-starts the <code>codebase-memory-mcp</code> daemon with its graph-visualization Web UI,
+          injects system-prompt guidance for graph-vs-grep decisions, and ships a bundled agent skill plus a
+          <code>/cbm</code> status command.
+        </p>
+        <div class="links">
+          <a href="https://github.com/LoveDoLove/dsh-codebase-memory-mcp" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.npmjs.com/package/@lovedolove/dsh-codebase-memory-mcp" target="_blank" rel="noopener">npm</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>The Problem</h2>
+        <p>
+          When a coding agent needs structural facts about a codebase — who calls <code>login()</code>, what
+          <code>AuthService</code> exposes, where definitions live — text search (<code>grep</code>, <code>read</code>)
+          returns noisy results and burns ~80K tokens. <code>codebase-memory-mcp</code> provides an AST-level
+          knowledge graph with call tracing, but it has no native integration with DeepSeek Harness.
+        </p>
+        <p>
+          Without a bridge:
+        </p>
+        <ul>
+          <li>The subprocess must be started, handshake negotiated, and reconnected manually</li>
+          <li>Tools are not registered on the DSH tool surface</li>
+          <li>The model does not know when to prefer the graph over grep</li>
+          <li>No agent skill, no slash command, no graceful degradation when the binary is missing</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Core Principles</h2>
+        <ul class="principles">
+          <li><strong>Bridge, not fork.</strong> Wrap the upstream daemon — index, maintain, and evolve. Do not
+          reimplement code indexing.</li>
+          <li><strong>Graceful degradation.</strong> Only tools is a hard dependency; systemPrompt, skills, and
+          commands attach via deferred injection. A missing service skips that feature.</li>
+          <li><strong>Structured guidance.</strong> The model receives a policy section explaining when graph
+          queries outperform grep, with concrete workflow steps.</li>
+          <li><strong>Cross-platform executable detection.</strong> CBM_EXE override, user/system directories, PATH
+          search, and a WSL interop fallback.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Architecture</h2>
+        <div class="diagram">
+          <pre>{`
+┌──────────────────────────────────────────────────────────────────────┐
+│  DeepSeek Harness — Cordis plugin (src/index.mjs)                     │
+│                                                                      │
+│  apply(ctx, config):                                                 │
+│    1. cbmApply(ctx) → register 6 cbm_* tools + auto-start daemon     │
+│    2. ctx.inject(['systemPrompt']) → register guidance               │
+│    3. ctx.inject(['skills']) → register bundled skill                │
+│    4. ctx.inject(['commands']) → register /cbm                       │
+└──────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│  stdio JSON-RPC 2.0 client (src/bridge.mjs)                          │
+│    • spawn(exePath, ['--ui=true']) — child process management        │
+│    • MCP handshake (2025-03-26) — initialize on startup              │
+│    • Persistent client with automatic restart on exit                │
+│    • Deferred tool registration if ctx.tools not ready               │
+└──────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│  codebase-memory-mcp native daemon                                   │
+│    • AST-level code indexing (symbols, call graphs, hierarchies)      │
+│    • HTTP graph visualization Web UI at http://localhost:9749/       │
+└──────────────────────────────────────────────────────────────────────┘
+          `}</pre>
+        </div>
+      </section>
+
+      <section>
+        <h2>Six Knowledge-Graph Code Tools</h2>
+        <table>
+          <thead>
+            <tr><th>Tool</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>cbm_projects</code></td><td>List all projects currently indexed in codebase-memory-mcp</td></tr>
+            <tr><td><code>cbm_search</code></td><td>Find symbols, functions, classes, or files by name/label/regex</td></tr>
+            <tr><td><code>cbm_snippet</code></td><td>Get exact source code snippet for a qualified name</td></tr>
+            <tr><td><code>cbm_trace</code></td><td>Trace inbound/outbound call paths through the knowledge graph</td></tr>
+            <tr><td><code>cbm_arch</code></td><td>Get architectural summary of a directory: key components, entry points, dependencies</td></tr>
+            <tr><td><code>cbm_search_code</code></td><td>Fast textual regex search over indexed repository files</td></tr>
+          </tbody>
+        </table>
+        <p>
+          The bundled skill's guidance notes that graph queries return precise structural results in
+          ~500 tokens vs ~80K for grep.
+        </p>
+      </section>
+
+      <section>
+        <h2>System-Prompt Guidance</h2>
+        <p>
+          The plugin injects a <em>Codebase Memory — Knowledge Graph Policy</em> section that tells the model:
+        </p>
+        <ul>
+          <li>Prefer <code>cbm_trace</code> for caller/callee relationships and blast-radius analysis</li>
+          <li>Prefer <code>cbm_search</code> to discover functions, classes, interfaces by name or AST label</li>
+          <li>Prefer <code>cbm_snippet</code> to inspect definitions without loading entire files</li>
+          <li>Prefer <code>cbm_arch</code> for directory-level component dependencies</li>
+          <li>Use <code>grep</code>/<code>read</code> only for exact string literals or non-code assets</li>
+        </ul>
+        <p>
+          This guidance is wired through <code>ctx.inject(['systemPrompt'])</code> and registered at
+          order 3040, so it composes with other DSH system-prompt sections.
+        </p>
+      </section>
+
+      <section>
+        <h2>Lifecycle Management</h2>
+        <p>
+          The stdio JSON-RPC client (<code>src/bridge.mjs</code>) manages:
+        </p>
+        <ul>
+          <li><strong>Eager start</strong> — spawns the daemon with <code>--ui=true</code> on plugin load (skipped in test runs)</li>
+          <li><strong>MCP handshake</strong> — sends <code>initialize</code> with <code>protocolVersion: '2025-03-26'</code></li>
+          <li><strong>Automatic restart</strong> — if the child exits and pending promises are rejected, the client can be restarted via <code>getOrCreateClient()</code></li>
+          <li><strong>Graceful disposal</strong> — on plugin shutdown, pending promises are cleared and the child process receives SIGTERM</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Graceful Degradation</h2>
+        <p>
+          The plugin declares <code>inject: ['tools']</code> as the only hard dependency. System-prompt,
+          skills, and commands are attached via deferred <code>ctx.inject()</code> — if the host service is
+          unavailable, the injection silently skips. When the <code>codebase-memory-mcp</code> binary is not
+          found, the daemon does not start, <code>cbm_*</code> tools are not registered, and the <code>/cbm</code>
+          command reports the missing executable with installation guidance.
+        </p>
+      </section>
+
+      <section>
+        <h2>Engineering Constraints</h2>
+        <table>
+          <thead>
+            <tr><th>Constraint</th><th>Rationale</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bridge, not fork</td><td>Upstream daemon handles indexing; the bridge wires it to DSH</td></tr>
+            <tr><td>Deferred injection</td><td>Tools are hard; systemPrompt/skills/commands are optional — missing host services degrade gracefully</td></tr>
+            <tr><td>Cross-platform exe discovery</td><td>Windows, Linux, WSL, macOS all supported via <code>CBM_EXE</code>, PATH, user/system dirs</td></tr>
+            <tr><td>stdio JSON-RPC 2.0</td><td>MCP-compatible protocol, preserves upstream binary's transport</td></tr>
+            <tr><td>MCP handshake <code>2025-03-26</code></td><td>Matches the upstream protocol version tested with <code>0.11.0</code></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Current State</h2>
+        <table>
+          <thead>
+            <tr><th>Attribute</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Version</td><td>0.1.4</td></tr>
+            <tr><td>Status</td><td>Published, CI on Node 20/22/24</td></tr>
+            <tr><td>Repository</td><td><a href="https://github.com/LoveDoLove/dsh-codebase-memory-mcp">LoveDoLove/dsh-codebase-memory-mcp</a></td></tr>
+            <tr><td>npm</td><td><a href="https://www.npmjs.com/package/@lovedolove/dsh-codebase-memory-mcp">@lovedolove/dsh-codebase-memory-mcp</a></td></tr>
+            <tr><td>DSH compatibility</td><td><code>>=0.1.2-rc.1 <0.3.0-0</code></td></tr>
+            <tr><td>Node.js</td><td><code>>=18.0.0 <25.0.0</code></td></tr>
+            <tr><td>License</td><td>MIT</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <Footer />
+    </article>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #071023;
+    --card-bg: rgba(255,255,255,0.02);
+    --muted: #9ca3af;
+    --accent: #7c3aed;
+    --text: #e6eef8;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: linear-gradient(180deg, #071023 0%, #0b0d2a 50%, #081026 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .case-study {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+  }
+  .hero { margin-bottom: 40px; }
+  .back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  .hero h1 { font-size: 36px; margin: 12px 0 4px; letter-spacing: -0.02em; }
+  .positioning { color: var(--accent); font-size: 16px; margin: 0 0 16px; font-weight: 500; }
+  .description { color: var(--muted); max-width: 720px; margin: 0 0 20px; }
+  .links { display: flex; gap: 12px; }
+  .links a { background: var(--accent); color: #fff; padding: 8px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; }
+  section { margin-bottom: 36px; }
+  h2 { font-size: 22px; margin: 0 0 14px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; color: var(--muted); }
+  ul, ol { color: var(--muted); padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
+  th, td { border: 1px solid rgba(255,255,255,0.06); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: rgba(124,58,237,0.08); color: var(--text); font-weight: 600; }
+  td { color: var(--muted); }
+  code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+  .principles li strong { color: var(--text); }
+  .diagram pre { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; overflow-x: auto; font-size: 12px; line-height: 1.4; color: #a0aec0; }
+  @media (max-width: 600px) {
+    .case-study { padding: 20px 14px 32px; }
+    .hero h1 { font-size: 28px; }
+    table { font-size: 12px; }
+    th, td { padding: 8px; }
+  }
+</style>
