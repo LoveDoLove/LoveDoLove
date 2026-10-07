@@ -1,0 +1,56 @@
+---
+export interface Props {
+  title?: string;
+  subtitle?: string;
+}
+---
+
+<section class="card technical-focus">
+  <h2>Technical Focus</h2>
+  <div class="focus-grid">
+    <div class="focus-item">
+      <strong>AI Coding Agents</strong>
+      <span>DeepSeek Harness plugin architecture, Cordis composition model, MCP protocol integration, evidence-backed memory systems</span>
+    </div>
+    <div class="focus-item">
+      <strong>Developer Tooling</strong>
+      <span>MCP bridge design, cross-platform executable detection, system-prompt injection, graceful degradation patterns, slash-command surfaces</span>
+    </div>
+    <div class="focus-item">
+      <strong>Cloud Infrastructure</strong>
+      <span>Cloudflare Workers deployment via OpenNext, edge caching strategies, Wrangler configuration, static-asset serving, Workers Custom Domains</span>
+    </div>
+    <div class="focus-item">
+      <strong>Automation</strong>
+      <span>CI/CD with GitHub Actions, build wrappers for non-Linux targets, infrastructure-as-code, automated testing pipelines</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .focus-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 8px;
+  }
+  .focus-item strong {
+    color: #e6eef8;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .focus-item span {
+    color: #9ca3af;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+</style>

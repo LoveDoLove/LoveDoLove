@@ -9,17 +9,72 @@ const achievements = [
   "Led and contributed to open-source projects, earning recognition from developers worldwide",
   "Engineered scalable, secure cloud infrastructure for high-impact web applications",
 ];
+
+const experience = [
+  {
+    role: "Cloud & Network Engineer Intern",
+    company: "Sangfor Technologies",
+    period: "2023–2024",
+    details: [
+      "Triaged L1/L2 global incidents for HCI / Cloud Platform / VDI (95%+ SLA adherence)",
+      "Led storage split-brain recovery and Linux kernel diagnostics",
+      "Automated Git-to-AWS CodeCommit migrations",
+    ],
+  },
+];
+
+const education = [
+  "Bachelor of Information Technology (Honours) in Software Systems Development — TARUMT",
+];
 ---
 
 <section class="card about">
   <h2>About</h2>
   <p class="about-text">
-    Full-Stack Developer &amp; DevOps Engineer &mdash;
-    AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations).
-    Building secure, scalable solutions and automating workflows across cloud platforms
-    and enterprise environments. Driven by open source, continuous learning, and a passion
-    for impactful technology.
+    Software Engineer focused on AI coding agents, developer tooling, and cloud infrastructure. I build engineering intelligence that makes AI-assisted development trustworthy, tools that reduce the gap between intent and running code, and cloud systems that scale reliably on Cloudflare and modern platforms.
   </p>
+
+  <h3>What I Build</h3>
+  <div class="build-grid">
+    <div class="build-item">
+      <strong>AI Coding Agents</strong>
+      <span>Persistent engineering memory, structural code intelligence, evidence-backed automation — making agents trustworthy over long horizons</span>
+    </div>
+    <div class="build-item">
+      <strong>Developer Tooling</strong>
+      <span>MCP bridges, CLI plugins, build automation, cross-platform utilities — reducing the gap between intent and running code</span>
+    </div>
+    <div class="build-item">
+      <strong>Cloud Infrastructure</strong>
+      <span>Cloudflare Workers, edge caching, load balancing, DNS automation, Workers-native deployments — serverless-first, globally distributed</span>
+    </div>
+    <div class="build-item">
+      <strong>Systems & Automation</strong>
+      <span>CI/CD pipelines, infrastructure-as-code, Windows/Linux/FreeBSD build systems — reliable, repeatable, auditable</span>
+    </div>
+  </div>
+
+  <h3>Experience</h3>
+  <div class="experience-list">
+    {experience.map((exp) => (
+      <div class="experience-item">
+        <div class="experience-header">
+          <strong>{exp.role}</strong>
+          <span class="experience-period">{exp.period}</span>
+        </div>
+        <p class="experience-company">{exp.company}</p>
+        <ul class="experience-details">
+          {exp.details.map((d) => <li>{d}</li>)}
+        </ul>
+      </div>
+    ))}
+  </div>
+
+  <h3>Education</h3>
+  <ul class="education-list">
+    {education.map((e) => <li>{e}</li>)}
+  </ul>
+
   <h3>Achievements</h3>
   <ul class="achievements-list">
     {achievements.map((a) => (
@@ -39,10 +94,108 @@ const achievements = [
     max-width: 680px;
   }
   h3 {
-    margin: 0 0 10px 0;
+    margin: 24px 0 10px 0;
     font-size: 16px;
     color: #e6eef8;
   }
+  h3:first-of-type {
+    margin-top: 0;
+  }
+
+  .build-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .build-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 8px;
+  }
+  .build-item strong {
+    color: #e6eef8;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .build-item span {
+    color: #9ca3af;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .experience-item {
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 8px;
+  }
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .experience-header strong {
+    color: #e6eef8;
+    font-size: 13px;
+  }
+  .experience-period {
+    color: #7c3aed;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .experience-company {
+    color: #9ca3af;
+    font-size: 12px;
+    margin: 0 0 6px 0;
+  }
+  .experience-details {
+    margin: 0;
+    padding-left: 18px;
+    color: #9ca3af;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .experience-details li {
+    margin: 4px 0;
+  }
+
+  .education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .education-list li {
+    color: #9ca3af;
+    font-size: 13px;
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+  }
+  .education-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #7c3aed;
+  }
+
   .achievements-list {
     list-style: none;
     padding: 0;
