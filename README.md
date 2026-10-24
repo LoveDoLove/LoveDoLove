@@ -126,7 +126,7 @@ This project provides a searchable list of all keys for software downloadable fr
 ### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
 
 Veyra — Engineering Intelligence for Coding Agents. Persistent engineering memory + optional AST code intelligence (Dual-Brain) for DeepSeek Harness. Zero runtime npm dependencies.<br>
-<sub>Tech: JavaScript</sub>
+
 
 ### [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SetEdit-LoveDoLove-Documentation?style=social)](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation)
 
@@ -136,12 +136,12 @@ Documentation for SetEdit LoveDoLove, an all-in-one utility application designed
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
 Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, AJAX admin controls, API token support, and comprehensive logging.<br>
-<sub>Tech: PHP, CSS, TypeScript, JavaScript</sub>
+
 
 ### [RemoteRun](https://github.com/LoveDoLove/RemoteRun) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/RemoteRun?style=social)](https://github.com/LoveDoLove/RemoteRun)
 
 Lightweight .NET 8 Windows utility to run programs as NT AUTHORITY\\SYSTEM locally or remotely.<br>
-<sub>Tech: C#, Inno Setup</sub>
+
 
 ---
 
