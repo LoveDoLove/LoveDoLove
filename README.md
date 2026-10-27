@@ -128,6 +128,11 @@ This project provides a searchable list of all keys for software downloadable fr
 Veyra — Engineering Intelligence for Coding Agents. Persistent engineering memory + optional AST code intelligence (Dual-Brain) for DeepSeek Harness. Zero runtime npm dependencies.<br>
 <sub>Tech: JavaScript</sub>
 
+### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-codebase-memory-mcp?style=social)](https://github.com/LoveDoLove/dsh-codebase-memory-mcp)
+
+Codebase Memory MCP bridge plugin for DeepSeek Harness: knowledge-graph code search, AST snippets, architecture analysis, call-graph tracing, auto-started graph UI, bundled skill, and /cbm command.<br>
+<sub>Tech: JavaScript</sub>
+
 ### [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SetEdit-LoveDoLove-Documentation?style=social)](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation)
 
 Documentation for SetEdit LoveDoLove, an all-in-one utility application designed to empower Android users with advanced tools for device customization, optimization, and management. With a comprehensive suite of features, our app provides users with unparalleled control over their device's performance, system settings, and resource utilization.<br>
@@ -137,11 +142,6 @@ Documentation for SetEdit LoveDoLove, an all-in-one utility application designed
 
 Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, AJAX admin controls, API token support, and comprehensive logging.<br>
 <sub>Tech: PHP, CSS, TypeScript, JavaScript</sub>
-
-### [RemoteRun](https://github.com/LoveDoLove/RemoteRun) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/RemoteRun?style=social)](https://github.com/LoveDoLove/RemoteRun)
-
-Lightweight .NET 8 Windows utility to run programs as NT AUTHORITY\\SYSTEM locally or remotely.<br>
-<sub>Tech: C#, Inno Setup</sub>
 
 ---
 
