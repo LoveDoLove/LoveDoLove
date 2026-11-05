@@ -108,6 +108,11 @@ This project provides a robust, production-ready Cloudflare Worker that acts as 
 The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
 <sub>Tech: JavaScript, HTML, CSS</sub>
 
+### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
+
+Veyra — Engineering Intelligence for Coding Agents. Persistent engineering memory + optional AST code intelligence (Dual-Brain) for DeepSeek Harness. Zero runtime npm dependencies.<br>
+<sub>Tech: JavaScript</sub>
+
 ### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
 
 This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
@@ -123,25 +128,20 @@ EasyKit is a comprehensive Windows toolkit designed specifically for web develop
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
 
-### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
+### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
 
-Veyra — Engineering Intelligence for Coding Agents. Persistent engineering memory + optional AST code intelligence (Dual-Brain) for DeepSeek Harness. Zero runtime npm dependencies.<br>
-<sub>Tech: JavaScript</sub>
+Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
+<sub>Tech: Python</sub>
+
+### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
+
+This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
+<sub>Tech: Shell</sub>
 
 ### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-codebase-memory-mcp?style=social)](https://github.com/LoveDoLove/dsh-codebase-memory-mcp)
 
 Codebase Memory MCP bridge plugin for DeepSeek Harness: knowledge-graph code search, AST snippets, architecture analysis, call-graph tracing, auto-started graph UI, bundled skill, and /cbm command.<br>
 <sub>Tech: JavaScript</sub>
-
-### [SetEdit-LoveDoLove-Documentation](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/SetEdit-LoveDoLove-Documentation?style=social)](https://github.com/LoveDoLove/SetEdit-LoveDoLove-Documentation)
-
-Documentation for SetEdit LoveDoLove, an all-in-one utility application designed to empower Android users with advanced tools for device customization, optimization, and management. With a comprehensive suite of features, our app provides users with unparalleled control over their device's performance, system settings, and resource utilization.<br>
-
-
-### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-smart-cache?style=social)](https://github.com/LoveDoLove/cloudflare-smart-cache)
-
-Powerful all-in-one Cloudflare cache solution for WordPress: edge HTML caching, automatic purging, AJAX admin controls, API token support, and comprehensive logging.<br>
-<sub>Tech: PHP, CSS, TypeScript, JavaScript</sub>
 
 ---
 
