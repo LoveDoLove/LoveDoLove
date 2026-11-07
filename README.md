@@ -110,7 +110,7 @@ The Open Source Projects Showcase is a dynamic web application designed to elega
 
 ### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
 
-Veyra — Engineering Intelligence for Coding Agents. Persistent engineering memory + optional AST code intelligence (Dual-Brain) for DeepSeek Harness. Zero runtime npm dependencies.<br>
+Engineering intelligence for coding agents — evidence-backed project memory, retrieval, and automatic context delivery.<br>
 <sub>Tech: JavaScript</sub>
 
 ### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
