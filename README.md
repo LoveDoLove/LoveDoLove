@@ -128,6 +128,11 @@ EasyKit is a comprehensive Windows toolkit designed specifically for web develop
 This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
 
 
+### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-codebase-memory-mcp?style=social)](https://github.com/LoveDoLove/dsh-codebase-memory-mcp)
+
+Codebase Memory MCP bridge plugin for DeepSeek Harness: knowledge-graph code search, AST snippets, architecture analysis, call-graph tracing, auto-started graph UI, bundled skill, and /cbm command.<br>
+<sub>Tech: JavaScript</sub>
+
 ### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
 
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
@@ -137,11 +142,6 @@ Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.
 
 This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
 <sub>Tech: Shell</sub>
-
-### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-codebase-memory-mcp?style=social)](https://github.com/LoveDoLove/dsh-codebase-memory-mcp)
-
-Codebase Memory MCP bridge plugin for DeepSeek Harness: knowledge-graph code search, AST snippets, architecture analysis, call-graph tracing, auto-started graph UI, bundled skill, and /cbm command.<br>
-<sub>Tech: JavaScript</sub>
 
 ---
 
