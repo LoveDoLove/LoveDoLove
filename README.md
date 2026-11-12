@@ -103,15 +103,15 @@ Project Memory gives coding agents a single, trustworthy memory for a software r
 This project provides a robust, production-ready Cloudflare Worker that acts as a high-performance HTTP load balancer. It allows you to distribute traffic across multiple origin servers based on configurable weights, with built-in support for failover to backup servers and maintenance modes.<br>
 <sub>Tech: JavaScript</sub>
 
-### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
-
-The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
-<sub>Tech: JavaScript, HTML, CSS</sub>
-
 ### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
 
 Engineering intelligence for coding agents — evidence-backed project memory, retrieval, and automatic context delivery.<br>
 <sub>Tech: JavaScript</sub>
+
+### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
+
+The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
+<sub>Tech: JavaScript, HTML, CSS</sub>
 
 ### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
 
