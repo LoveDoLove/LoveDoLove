@@ -105,7 +105,7 @@ This project provides a robust, production-ready Cloudflare Worker that acts as 
 
 ### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
 
-Engineering intelligence for coding agents — evidence-backed project memory, retrieval, and automatic context delivery.<br>
+Persistent engineering memory for coding agents. A DeepSeek Harness plugin that captures what the agent learned, keeps only what held up, and recalls it automatically. Local SQLite, no daemon, no API keys.<br>
 <sub>Tech: JavaScript</sub>
 
 ### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
