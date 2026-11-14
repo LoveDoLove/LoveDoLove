@@ -130,7 +130,7 @@ This project provides a searchable list of all keys for software downloadable fr
 
 ### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-codebase-memory-mcp?style=social)](https://github.com/LoveDoLove/dsh-codebase-memory-mcp)
 
-Codebase Memory MCP bridge plugin for DeepSeek Harness: knowledge-graph code search, AST snippets, architecture analysis, call-graph tracing, auto-started graph UI, bundled skill, and /cbm command.<br>
+DeepSeek Harness plugin that gives coding agents a real code graph: six MCP tools for symbol search, AST snippets, call-path tracing, architecture analysis, and an auto-started graph UI.<br>
 <sub>Tech: JavaScript</sub>
 
 ### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
