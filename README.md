@@ -93,6 +93,11 @@ The following section is updated daily by GitHub Actions (top 10 starred public 
 
 ## 🚀 Featured Projects
 
+### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
+
+Persistent engineering memory for coding agents. A DeepSeek Harness plugin that captures what the agent learned, keeps only what held up, and recalls it automatically. Local SQLite, no daemon, no API keys.<br>
+<sub>Tech: JavaScript</sub>
+
 ### [Project-Memory-Agent](https://github.com/LoveDoLove/Project-Memory-Agent) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Project-Memory-Agent?style=social)](https://github.com/LoveDoLove/Project-Memory-Agent)
 
 Project Memory gives coding agents a single, trustworthy memory for a software repository — so they stop re-learning the same facts and stop writing conflicting "memory" files.<br>
@@ -101,11 +106,6 @@ Project Memory gives coding agents a single, trustworthy memory for a software r
 ### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
 
 This project provides a robust, production-ready Cloudflare Worker that acts as a high-performance HTTP load balancer. It allows you to distribute traffic across multiple origin servers based on configurable weights, with built-in support for failover to backup servers and maintenance modes.<br>
-<sub>Tech: JavaScript</sub>
-
-### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
-
-Persistent engineering memory for coding agents. A DeepSeek Harness plugin that captures what the agent learned, keeps only what held up, and recalls it automatically. Local SQLite, no daemon, no API keys.<br>
 <sub>Tech: JavaScript</sub>
 
 ### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
@@ -133,15 +133,15 @@ This project provides a searchable list of all keys for software downloadable fr
 DeepSeek Harness plugin that gives coding agents a real code graph: six MCP tools for symbol search, AST snippets, call-path tracing, architecture analysis, and an auto-started graph UI.<br>
 <sub>Tech: JavaScript</sub>
 
+### [dsh-token-saver](https://github.com/LoveDoLove/dsh-token-saver) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-token-saver?style=social)](https://github.com/LoveDoLove/dsh-token-saver)
+
+DeepSeek Harness plugin for token efficiency. Trims oversized tool output, folds grep results, and adds optional RTK compaction, prompt shaping, and local responses.<br>
+<sub>Tech: TypeScript, JavaScript</sub>
+
 ### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cf-best-domain?style=social)](https://github.com/LoveDoLove/cf-best-domain)
 
 Automate Cloudflare DNS A record management and collect the best Cloudflare IPs.<br>
 <sub>Tech: Python</sub>
-
-### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
-
-This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
-<sub>Tech: Shell</sub>
 
 ---
 
