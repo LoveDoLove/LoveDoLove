@@ -1,202 +1,180 @@
 # LoveDoLove
 
-**Software Systems Developer / Full Stack Developer**
+**Software Engineer | AI Coding Agents · Developer Tooling · Cloud Infrastructure**
 
-I build engineering intelligence for coding agents, developer tooling that reduces friction, and cloud infrastructure that scales. My work centers on making AI-assisted development trustworthy, automating away toil, and running reliable systems on Cloudflare and modern cloud platforms.
+I build engineering intelligence for AI coding agents, developer tooling that eliminates friction between intent and execution, and cloud infrastructure that scales reliably. Focused on persistent agent memory, structural codebase intelligence, and distributed serverless architectures.
 
-[GitHub](https://github.com/LoveDoLove) • [Portfolio](https://portfolio.lovedolove.qzz.io) • [Email](mailto:v0130p5100cuboss@gmail.com) • [LinkedIn](https://www.linkedin.com/in/chong-jun-xiang)
-
----
-
-## What I Build
-
-| Direction | Focus |
-|-----------|-------|
-| **AI Coding Agents** | Persistent engineering memory, structural code intelligence, evidence-backed automation — making agents trustworthy over long horizons |
-| **Developer Tooling** | MCP bridges, CLI plugins, build automation, cross-platform utilities — reducing the gap between intent and running code |
-| **Cloud Infrastructure** | Cloudflare Workers, edge caching, load balancing, DNS automation, Workers-native deployments — serverless-first, globally distributed |
-| **Systems & Automation** | CI/CD pipelines, infrastructure-as-code, Windows/Linux/FreeBSD build systems — reliable, repeatable, auditable |
+[Portfolio](https://portfolio.lovedolove.qzz.io) • [GitHub](https://github.com/LoveDoLove) • [LinkedIn](https://www.linkedin.com/in/chong-jun-xiang) • [Email](mailto:v0130p5100cuboss@gmail.com)
 
 ---
 
-## 🏗️ Flagship Projects
+## About Me
 
-### [Veyra](https://github.com/LoveDoLove/Veyra) — *Primary flagship*
+I build software systems that make AI-assisted engineering trustworthy and edge infrastructure resilient. My work focuses on addressing long-horizon context loss in coding agents, providing deterministic code-graph navigation, and building maintainable edge services on modern cloud platforms.
 
-**Engineering intelligence for coding agents.** A DeepSeek Harness plugin implementing a Dual-Brain architecture: (1) **Veyra Memory** — persistent, evidence-backed engineering lessons with validation states (`unverified → reviewed → verified`) and authority levels (`candidate → derived → canonical`); (2) **Code Intelligence** — AST-level structural facts (symbols, call graphs, class hierarchies) derived live from the repository via `codebase-memory-mcp`. Hybrid search combines FTS5 BM25, semantic overlap, intent affinity, and relationship-graph cohesion. Code Intelligence flags potentially stale memories when evidence anchors point to modified code. Zero runtime npm dependencies (~130 kB packed).
-
-**Tech:** TypeScript, Node.js, SQLite/FTS5, MCP, Cordis plugin architecture
+Core engineering principles:
+- **Subtract before adding:** Minimize layers, eliminate speculative abstractions, and keep state scopes small.
+- **Evidence-backed automation:** Validate before asserting, flag stale assumptions against live code, and make systems self-verifying.
+- **Resilient edge architectures:** Design for low-latency serverless execution, graceful degradation, and idempotent operations.
 
 ---
 
-### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) — *Core infrastructure*
+## Engineering Focus
 
-**Codebase Memory MCP bridge for DeepSeek Harness.** Registers six knowledge-graph code tools (`cbm_projects`, `cbm_search`, `cbm_snippet`, `cbm_arch`, `cbm_trace`, `cbm_search_code`) natively on the DSH tool surface. Auto-starts the `codebase-memory-mcp` daemon with its Web UI over stdio JSON-RPC 2.0, injects system-prompt guidance for when to prefer graph tools over grep, bundles a native agent skill (`codebase-memory`), and provides a `/cbm` slash command. Graceful degradation: only `tools` is a hard dependency; `systemPrompt`, `skills`, `commands` attach via deferred injection.
+| Domain | Focus & Systems |
+|---|---|
+| **AI Coding Agents** | Dual-Brain architectures, persistent engineering memory, validation states (`unverified → reviewed → verified`), authority progressions, and live AST staleness detection. |
+| **Developer Tooling** | Model Context Protocol (MCP) bridges, CLI plugins, knowledge-graph code search, symbol tracing, and developer friction reduction. |
+| **Cloud Infrastructure** | Cloudflare Workers, edge caching with granular purging, dynamic HTTP load balancing, DNS automation, and serverless-first architectures. |
+| **Systems & Automation** | Cross-platform build engineering (Linux, FreeBSD, Windows), CI/CD workflows, automated incident recovery tooling, and reproducible environments. |
 
-**Tech:** TypeScript, MCP, Cordis, stdio JSON-RPC, cross-platform executable detection
+---
+
+## Featured Engineering Projects
+
+### [Veyra](https://github.com/LoveDoLove/Veyra) `Primary Flagship`
+
+**Engineering intelligence for AI coding agents.** A DeepSeek Harness plugin implementing a Dual-Brain architecture to mitigate agent context loss and repository disorientation across sessions:
+
+- **Persistent Engineering Memory:** Captures evidence-backed lessons with explicit validation stages (`unverified → reviewed → verified`) and authority tiers (`candidate → derived → canonical`), retrieved via SQLite FTS5 hybrid search.
+- **AST Code Intelligence:** Derives live structural code facts via `codebase-memory-mcp` and proactively flags stale memories when anchored source files change.
+- **Zero-Dependency Runtime:** Self-contained local execution (~130 kB packed) with no external runtime npm dependencies, daemons, or API keys.
+
+**Tech:** `TypeScript` · `Node.js` · `SQLite / FTS5` · `MCP` · `Cordis Plugin Framework`
+
+---
+
+### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) `Core Infrastructure`
+
+**Codebase Memory MCP bridge for DeepSeek Harness.** Integrates structural code intelligence directly into agent tool surfaces:
+
+- **Native Tool Exposure:** Registers six knowledge-graph tools for symbol discovery, snippet extraction, and call-path tracing over stdio JSON-RPC 2.0.
+- **Guided Exploration:** Injects runtime guidance steering agents toward AST-level structural analysis over unstructured text searches.
+- **Resilient Lifecycle:** Manages daemon process lifecycles and Web UI startup with graceful degradation across plugin hooks.
+
+**Tech:** `TypeScript` · `MCP` · `Cordis` · `stdio JSON-RPC` · `Process Management`
 
 ---
 
 ### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer)
 
-**Production-ready HTTP load balancer as a Cloudflare Worker.** Weighted traffic distribution across multiple origins, failover to backup servers, maintenance-mode routing, and health-check integration — all at the edge with zero cold-start overhead.
+**Cloudflare Worker-based HTTP load balancer.** Provides low-latency traffic routing and fault tolerance at the edge:
 
-**Tech:** JavaScript, Cloudflare Workers, Wrangler
+- **Traffic Distribution:** Routes requests across multiple origin servers using configurable weight policies.
+- **Health Probing & Failover:** Monitors origin availability with automated failover to standby endpoints.
+- **Operational Controls:** Supports edge maintenance-mode routing without origin reconfiguration.
 
----
-
-### [personal-hq](https://github.com/LoveDoLove/personal-hq) *(private / in progress)*
-
-**Personal identity site + dynamic registry on Cloudflare Workers.** Next.js 16 (App Router, Turbopack) + React 19 + TypeScript + Tailwind v4, deployed via `@opennextjs/cloudflare`. Supabase (PostgreSQL + Auth) for metadata registry. Phase-gated development with hermetic DB tests (PGlite), Playwright E2E, and Vitest. Canonical site URL defined once, shared across metadata, canonical links, and Wrangler vars.
-
-**Tech:** Next.js, TypeScript, Tailwind v4, Supabase, Cloudflare Workers, OpenNext
+**Tech:** `JavaScript` · `Cloudflare Workers` · `Wrangler` · `Edge Networking`
 
 ---
 
 ### [cloudflare-smart-cache](https://github.com/LoveDoLove/cloudflare-smart-cache)
 
-**All-in-one Cloudflare cache solution for WordPress.** Edge HTML caching with automatic purging, AJAX admin controls, API token support, and comprehensive logging. Modular PHP/TypeScript architecture for maintainable cache invalidation strategies.
+**Cloudflare edge caching and invalidation plugin for WordPress.** Delivers low-latency page caching with targeted purging:
 
-**Tech:** PHP, TypeScript, JavaScript, Cloudflare API
+- **Automated Invalidation:** Purges specific edge cache entries upon content modification to prevent stale delivery.
+- **Admin Dashboard:** Provides an AJAX-driven interface for manual cache controls, token authentication, and purge logging.
+- **Modular Policies:** Implements structured invalidation rules to prevent cache stampedes under heavy traffic.
+
+**Tech:** `PHP` · `TypeScript` · `JavaScript` · `Cloudflare API` · `WordPress`
 
 ---
 
 ### [cf-best-domain](https://github.com/LoveDoLove/cf-best-domain)
 
-**Automated Cloudflare DNS A-record management and IP optimization.** Collects and tests Cloudflare IP ranges, selects lowest-latency IPs, and updates DNS records programmatically. Designed for scheduled runs via GitHub Actions or Workers Cron Triggers.
+**Cloudflare DNS A-record optimizer and latency benchmarking tool.** Automates Anycast endpoint selection:
 
-**Tech:** Python, Cloudflare API, GitHub Actions
+- **Latency Benchmarking:** Probes Cloudflare Anycast IP ranges to identify lowest-latency, minimal-packet-loss routes.
+- **DNS Record Automation:** Updates Cloudflare DNS records programmatically via GitHub Actions or Workers Cron triggers.
+
+**Tech:** `Python` · `Cloudflare API` · `GitHub Actions` · `DNS Automation`
 
 ---
 
 ### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd)
 
-**Build wrapper and CI automation for compiling Alist on FreeBSD.** Custom `build.sh` and GitHub Actions workflows producing runnable FreeBSD binaries from upstream source. Demonstrates cross-platform build engineering and CI/CD for non-Linux targets.
+**FreeBSD build automation and CI pipeline for the Alist file management service.**
 
-**Tech:** Shell, GitHub Actions, FreeBSD toolchain
+- **Targeted Toolchain Build:** Custom `build.sh` pipeline compiling upstream Go sources natively for FreeBSD environments.
+- **Automated CI Workflows:** GitHub Actions integration producing release artifacts for non-Linux targets.
+
+**Tech:** `Shell` · `GitHub Actions` · `FreeBSD Toolchain` · `CI/CD`
+
+---
+
+## Technical Expertise
+
+- **Languages:** TypeScript, JavaScript, Python, PHP, Shell (Bash/Zsh/sh), C#, SQL
+- **AI & Agent Engineering:** Model Context Protocol (MCP), DeepSeek Harness, Cordis Architecture, Retrieval-Augmented Generation (RAG), Hybrid Search (FTS5 + Vector + Graph), Agent Tool Surface Design
+- **Cloud & Edge Platforms:** Cloudflare Workers, Cloudflare DNS / CDN / WAF, AWS (Cloud Architect, Web App Builder, Cloud Foundations), Edge Compute, Serverless Architecture
+- **Systems & DevOps:** GitHub Actions CI/CD, Linux Kernel Diagnostics, FreeBSD Toolchains, Windows Tooling, Git Workflow Automation, System Call Profiling
+- **Databases & Frameworks:** SQLite (FTS5), Node.js, Astro, Next.js, Vite, Tailwind CSS
 
 ---
 
 ## Experience & Education
 
-- **B.I.T. (Hons.) Software Systems Development** — TARUMT
-- **AWS Academy Graduate** — Cloud Architect, Cloud Web Application Builder, Cloud Foundations (2024–2025)
+### Experience
+
+**Cloud & Network Engineer Intern** — Sangfor Technologies *(2023–2024)*
+- Triaged L1/L2 global infrastructure incidents across Hyper-Converged Infrastructure (HCI), Enterprise Cloud Platform, and VDI systems, maintaining 95%+ SLA adherence.
+- Led storage split-brain diagnostics and recovery operations under live production conditions.
+- Conducted Linux kernel diagnostics, system call tracing, and network packet analysis to isolate platform bottlenecks.
+- Designed and implemented automated repository migration tooling from Git to AWS CodeCommit.
+
+### Education & Credentials
+
+- **B.I.T. (Hons.) Software Systems Development** — Tunku Abdul Rahman University of Management and Technology (TAR UMT)
+- **AWS Academy Graduate** — AWS Academy Cloud Architect, Cloud Web Application Builder, Cloud Foundations (2024–2025)
 - **AWS Educate** — Cloud Computing 101
-- **Cisco Networking Academy** — Completed coursework (no official CCNA certification)
-- **Sangfor Technologies** — Cloud & Network Engineer Intern: triaged L1/L2 global incidents for HCI/Cloud Platform/VDI (95%+ SLA), led storage split-brain recovery, Linux kernel diagnostics, automated Git-to-AWS CodeCommit migrations
+- **Cisco Networking Academy** — Enterprise Networking & Security Coursework (CCNA curriculum)
 
 ---
 
-## Automated Sections
+## GitHub Activity
 
-The following section is updated daily by GitHub Actions (top 10 starred public repos, excluding forks):
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile-snake/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="profile-snake/github-snake.svg" />
+    <img alt="GitHub Contribution Snake" src="profile-snake/github-snake.svg" width="100%" />
+  </picture>
+</p>
 
-## 🚀 Featured Projects
+<p align="center">
+  <a href="https://github.com/LoveDoLove">
+    <img alt="3D Contribution Graph" src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
+  </a>
+</p>
 
-### [Project-Memory-Agent](https://github.com/LoveDoLove/Project-Memory-Agent) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Project-Memory-Agent?style=social)](https://github.com/LoveDoLove/Project-Memory-Agent)
+<p align="center">
+  <a href="https://github.com/LoveDoLove">
+    <img src="https://personal-trophy.vercel.app/api?username=LoveDoLove&theme=dark" alt="GitHub Trophy" />
+  </a>
+</p>
 
-Project Memory gives coding agents a single, trustworthy memory for a software repository — so they stop re-learning the same facts and stop writing conflicting "memory" files.<br>
-<sub>Tech: JavaScript, PowerShell, Shell</sub>
-
-### [cloudflare-load-balancer](https://github.com/LoveDoLove/cloudflare-load-balancer) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/cloudflare-load-balancer?style=social)](https://github.com/LoveDoLove/cloudflare-load-balancer)
-
-This project provides a robust, production-ready Cloudflare Worker that acts as a high-performance HTTP load balancer. It allows you to distribute traffic across multiple origin servers based on configurable weights, with built-in support for failover to backup servers and maintenance modes.<br>
-<sub>Tech: JavaScript</sub>
-
-### [Veyra](https://github.com/LoveDoLove/Veyra) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/Veyra?style=social)](https://github.com/LoveDoLove/Veyra)
-
-Persistent engineering memory for coding agents. A DeepSeek Harness plugin that captures what the agent learned, keeps only what held up, and recalls it automatically. Local SQLite, no daemon, no API keys.<br>
-<sub>Tech: JavaScript</sub>
-
-### [open-source-projects](https://github.com/LoveDoLove/open-source-projects) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/open-source-projects?style=social)](https://github.com/LoveDoLove/open-source-projects)
-
-The Open Source Projects Showcase is a dynamic web application designed to elegantly display and organize open source projects. Built with modern web technologies and deployed on Cloudflare Workers, this project provides a clean, responsive interface for browsing project collections.<br>
-<sub>Tech: JavaScript, HTML, CSS</sub>
-
-### [alist-freebsd](https://github.com/LoveDoLove/alist-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/alist-freebsd?style=social)](https://github.com/LoveDoLove/alist-freebsd)
-
-This repository provides a build wrapper and automation for compiling the upstream alist project for FreeBSD. It includes a custom build.sh script and GitHub Actions workflows to automate building and cleaning up workflow runs. The resulting binary is suitable for running on FreeBSD systems.<br>
-<sub>Tech: Shell</sub>
-
-### [EasyKit](https://github.com/LoveDoLove/EasyKit) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/EasyKit?style=social)](https://github.com/LoveDoLove/EasyKit)
-
-EasyKit is a comprehensive Windows toolkit designed specifically for web developers. It provides a unified console interface that integrates multiple development tools including Git, NPM, Composer, and Laravel Artisan, making it easier to manage web development workflows on Windows systems.<br>
-<sub>Tech: C#, TypeScript, Inno Setup</sub>
-
-### [TpLinkFirmwareDirectory](https://github.com/LoveDoLove/TpLinkFirmwareDirectory) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/TpLinkFirmwareDirectory?style=social)](https://github.com/LoveDoLove/TpLinkFirmwareDirectory)
-
-This project provides a searchable list of all keys for software downloadable from download.tplinkcloud.com. It uses a Python script to list all objects in the public S3 bucket and saves them to all_keys.txt for convenience and reference.<br>
-
-
-### [dsh-token-saver](https://github.com/LoveDoLove/dsh-token-saver) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-token-saver?style=social)](https://github.com/LoveDoLove/dsh-token-saver)
-
-DeepSeek Harness plugin for token efficiency. Trims oversized tool output, folds grep results, and adds optional RTK compaction, prompt shaping, and local responses.<br>
-<sub>Tech: TypeScript, JavaScript</sub>
-
-### [dsh-codebase-memory-mcp](https://github.com/LoveDoLove/dsh-codebase-memory-mcp) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/dsh-codebase-memory-mcp?style=social)](https://github.com/LoveDoLove/dsh-codebase-memory-mcp)
-
-DeepSeek Harness plugin that gives coding agents a real code graph: six MCP tools for symbol search, AST snippets, call-path tracing, architecture analysis, and an auto-started graph UI.<br>
-<sub>Tech: JavaScript</sub>
-
-### [memos-freebsd](https://github.com/LoveDoLove/memos-freebsd) [![GitHub stars](https://img.shields.io/github/stars/LoveDoLove/memos-freebsd?style=social)](https://github.com/LoveDoLove/memos-freebsd)
-
-This project provides a FreeBSD-compatible build and porting scripts for the memos self-hosted knowledge base server. It enables building and running memos natively on FreeBSD systems using cross-compilation and custom build tooling.<br>
-<sub>Tech: Shell</sub>
+<p align="center">
+  <a href="https://github.com/LoveDoLove">
+    <img src="https://github-stats-extended.vercel.app/api?username=LoveDoLove&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  </a>
+  <a href="https://github.com/LoveDoLove">
+    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=tokyonight" alt="Top Languages" />
+  </a>
+</p>
 
 ---
 
 ## Connect
 
 <p align="center">
-  <a href="https://github.com/LoveDoLove"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://portfolio.lovedolove.qzz.io"><img src="https://img.shields.io/badge/Portfolio-007ACC?style=for-the-badge&logo=cloudflare&logoColor=white" /></a>
-  <a href="mailto:v0130p5100cuboss@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://portfolio.lovedolove.qzz.io"><img src="https://img.shields.io/badge/Portfolio-portfolio.lovedolove.qzz.io-7c3aed?style=flat-square&logo=cloudflare&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://github.com/LoveDoLove"><img src="https://img.shields.io/badge/GitHub-LoveDoLove-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/chong-jun-xiang"><img src="https://img.shields.io/badge/LinkedIn-Chong%20Jun%20Xiang-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:v0130p5100cuboss@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-06b6d4?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
-
----
-
-<details>
-<summary><b>📊 Contribution Activity</b></summary>
-<br>
-<p align="center">
-  <a href="https://github.com/LoveDoLove?tab=overview&from=2024-01-01&to=2024-12-31">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-snake/github-snake-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-snake/github-snake.svg" />
-      <img alt="Contribution Snake" src="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-snake/github-snake.svg" width="100%"/>
-    </picture>
-  </a>
-  <br>
-  <a href="https://github.com/LoveDoLove?tab=overview&from=2024-01-01&to=2024-12-31">
-    <img src="https://raw.githubusercontent.com/LoveDoLove/LoveDoLove/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D GitHub Profile" width="100%"/>
-  </a>
-</p>
-</details>
 
 ---
 
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://personal-trophy.vercel.app/api?username=LoveDoLove&theme=dark" alt="GitHub Trophy"/>
-  </a>
-  <br>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-stats-extended.vercel.app/api?username=LoveDoLove&show_icons=true&theme=gruvbox" alt="GitHub Stats"/>
-  </a>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=gruvbox" alt="Top Langs"/>
-  </a>
-  <br>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-stats-extended.vercel.app/api/wakatime?username=LoveDoLove&theme=gruvbox" alt="Wakatime Stats"/>
-  </a>
-  <br>
-  <a href="https://komarev.com/ghpvc/?username=LoveDoLove">
-    <img src="https://komarev.com/ghpvc/?username=LoveDoLove&color=blue" alt="Profile Views"/>
-  </a>
+  <sub>Engineering intelligence for coding agents · Developer tooling that reduces friction · Cloud infrastructure that scales</sub>
 </p>
-
----
-
-> **Engineering intelligence for coding agents. Developer tooling that reduces friction. Cloud infrastructure that scales.**
