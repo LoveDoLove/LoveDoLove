@@ -1,46 +1,87 @@
 ---
-
 ---
 
 <footer class="footer">
-  <div class="footer-links">
-    <a href="mailto:v0130p5100cuboss@gmail.com">Email</a>
-    <a href="https://portfolio.lovedolove.qzz.io">Portfolio</a>
-    <a href="https://www.youtube.com/@lovedolove">YouTube</a>
-    <a href="https://www.linkedin.com/in/chong-jun-xiang">LinkedIn</a>
-    <a href="https://github.com/LoveDoLove">GitHub</a>
-    <a href="https://www.credly.com/users/chong-jun-xiang">Credly</a>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/projects/veyra">Veyra Case Study</a>
+      <a href="/projects/dsh-codebase-memory-mcp">Code Graph Case Study</a>
+      <a href="https://github.com/LoveDoLove" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+      <a href="https://github.com/LoveDoLove/LoveDoLove" target="_blank" rel="noopener noreferrer">Portfolio Source</a>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-status">
+        <span class="status-indicator"></span>
+        <span>Cloudflare Workers Static Assets · Zero Client JS</span>
+      </div>
+      <p class="copyright">
+        © 2026 LoveDoLove. Built with Astro & deployed to Cloudflare Workers static infrastructure.
+      </p>
+    </div>
   </div>
-  <p class="footer-quote">&ldquo;Striving for innovation, automation, and excellence in every project.&rdquo;</p>
 </footer>
 
 <style>
   .footer {
-    margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    margin-top: 20px;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
     text-align: center;
   }
+
   .footer-links {
     display: flex;
-    gap: 16px;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 12px;
+    justify-content: center;
+    gap: 18px;
   }
+
   .footer-links a {
-    color: #9ca3af;
-    text-decoration: none;
+    color: var(--muted);
     font-size: 13px;
-    transition: color 0.2s ease;
+    text-decoration: none;
+    transition: color 0.15s ease;
   }
+
   .footer-links a:hover {
-    color: #a78bfa;
+    color: var(--accent-cyan);
   }
-  .footer-quote {
-    color: #6b7280;
+
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .footer-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--dim);
+  }
+
+  .status-indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--accent-emerald);
+  }
+
+  .copyright {
+    color: var(--dim);
     font-size: 12px;
-    font-style: italic;
     margin: 0;
   }
 </style>

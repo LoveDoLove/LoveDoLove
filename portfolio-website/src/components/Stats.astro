@@ -1,68 +1,182 @@
 ---
-const USERNAME = "LoveDoLove";
 ---
 
-<section class="card stats">
-  <h2>GitHub Stats</h2>
-  <p class="section-note">Automated metrics — supplemental, not defining.</p>
-  <div class="stats-grid">
-    <img
-      src={`https://personal-trophy.vercel.app/api?username=${USERNAME}&theme=dark`}
-      alt="GitHub Trophy"
-      loading="lazy"
-      class="stat-img"
-    />
-    <img
-      src={`https://github-stats-extended.vercel.app/api?username=${USERNAME}&show_icons=true&theme=gruvbox`}
-      alt="GitHub Stats"
-      loading="lazy"
-      class="stat-img"
-    />
-    <img
-      src={`https://github-stats-extended.vercel.app/api/top-langs/?username=${USERNAME}&layout=compact&theme=gruvbox`}
-      alt="Top Languages"
-      loading="lazy"
-      class="stat-img"
-    />
-    <img
-      src={`https://github-stats-extended.vercel.app/api/wakatime?username=${USERNAME}&theme=gruvbox`}
-      alt="WakaTime Stats"
-      loading="lazy"
-      class="stat-img"
-    />
-    <img
-      src={`https://komarev.com/ghpvc/?username=${USERNAME}&color=blue`}
-      alt="Profile Views"
-      loading="lazy"
-      class="stat-img"
-    />
+<section class="card stats-card" id="stats">
+  <div class="card-header-row">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon">
+        <line x1="18" y1="20" x2="18" y2="10"></line>
+        <line x1="12" y1="20" x2="12" y2="4"></line>
+        <line x1="6" y1="20" x2="6" y2="14"></line>
+      </svg>
+      Activity & Architecture Metrics
+    </h2>
+    <span class="section-eyebrow">Attributed Project Metrics</span>
+  </div>
+
+  <!-- Project-Attributed Architectural Metrics Grid -->
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <span class="metric-project">Veyra</span>
+      <span class="metric-num">1,220+</span>
+      <span class="metric-label">Automated Tests</span>
+      <span class="metric-desc">Passing tests across 19 test suites on Node 22 & 24 CI</span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-project">dsh-codebase-memory-mcp</span>
+      <span class="metric-num">6 Tools</span>
+      <span class="metric-label">AST Knowledge Graph</span>
+      <span class="metric-desc">Native AST symbol search, snippets, and call-graph tracing</span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-project">Veyra</span>
+      <span class="metric-num">0</span>
+      <span class="metric-label">npm Dependencies</span>
+      <span class="metric-desc">Runs purely on native node:sqlite and FTS5 full-text search</span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-project">LoveDoLove Monorepo</span>
+      <span class="metric-num">5</span>
+      <span class="metric-label">CI Workflows</span>
+      <span class="metric-desc">Automated daily cron pipelines for graphs, snake, and forks</span>
+    </div>
+  </div>
+
+  <!-- Live GitHub Activity Widgets -->
+  <div class="widgets-container">
+    <div class="widget-row trophy-row">
+      <div class="widget-frame">
+        <img
+          src="https://personal-trophy.vercel.app/?username=LoveDoLove&theme=onedark&column=4&margin-w=8&margin-h=8"
+          alt="GitHub Trophies"
+          loading="lazy"
+          class="stats-img"
+        />
+      </div>
+    </div>
+
+    <div class="widgets-dual-row">
+      <div class="widget-frame">
+        <img
+          src="https://github-stats-extended.vercel.app/api?username=LoveDoLove&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"
+          alt="GitHub Stats"
+          loading="lazy"
+          class="stats-img"
+        />
+      </div>
+      <div class="widget-frame">
+        <img
+          src="https://github-stats-extended.vercel.app/api/top-langs/?username=LoveDoLove&layout=compact&theme=tokyonight&hide_border=true"
+          alt="Top Languages"
+          loading="lazy"
+          class="stats-img"
+        />
+      </div>
+    </div>
   </div>
 </section>
 
 <style>
-  .stats {
+  .stats-card {
+    margin-bottom: 32px;
+  }
+
+  .title-icon {
+    color: var(--accent-cyan);
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .metric-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 16px 14px;
     display: flex;
     flex-direction: column;
+    gap: 4px;
   }
-  .stats h2 {
-    margin-bottom: 6px;
+
+  .metric-project {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-light);
+    margin-bottom: 2px;
   }
-  .stats-grid {
+
+  .metric-num {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    line-height: 1.1;
+  }
+
+  .metric-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .metric-desc {
+    font-size: 11px;
+    color: var(--dim);
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+
+  .widgets-container {
     display: flex;
     flex-direction: column;
+    gap: 14px;
+  }
+
+  .widget-frame {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    overflow-x: auto;
   }
-  .stat-img {
+
+  .stats-img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
     display: block;
-    max-height: 180px;
   }
-  .section-note {
-    color: #9ca3af;
-    font-size: 13px;
-    margin: 0 0 14px 0;
+
+  .widgets-dual-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  @media (max-width: 860px) {
+    .metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .widgets-dual-row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .metrics-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

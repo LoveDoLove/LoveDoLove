@@ -1,56 +1,209 @@
 ---
-export interface Props {
-  title?: string;
-  subtitle?: string;
-}
 ---
 
-<section class="card technical-focus">
-  <h2>Technical Focus</h2>
+<section class="card focus-card" id="skills">
+  <div class="card-header-row">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+      </svg>
+      Technical Focus & Capabilities
+    </h2>
+    <span class="section-eyebrow">Engineering Tooling & Stack</span>
+  </div>
+
   <div class="focus-grid">
-    <div class="focus-item">
-      <strong>AI Coding Agents</strong>
-      <span>DeepSeek Harness plugin architecture, Cordis composition model, MCP protocol integration, evidence-backed memory systems</span>
+    <!-- Pillar 1: AI Agents & Epistemics -->
+    <div class="focus-col">
+      <div class="focus-header">
+        <span class="pillar-num">Pillar 01</span>
+        <h3>AI Agents & Memory Systems</h3>
+      </div>
+      <p class="focus-summary">
+        Architectures designed for stateful, reliable agent operation and long-horizon task execution.
+      </p>
+      <div class="focus-items">
+        <div class="focus-item">
+          <strong>Dual-Brain Epistemics</strong>
+          <span>Separation of authoritative repository truth from learned historical guidance.</span>
+        </div>
+        <div class="focus-item">
+          <strong>Prompt Cache Economics</strong>
+          <span>Reconciliation of stable prefixes, context compaction, and turn degradation.</span>
+        </div>
+        <div class="focus-item">
+          <strong>Causal Incident Learning</strong>
+          <span>Root-cause indexing, symptom linking, and negative-lesson capture.</span>
+        </div>
+        <div class="focus-item">
+          <strong>Three-Axis Verification</strong>
+          <span>Authority (candidate/derived/canonical) and validation (unverified/reviewed/verified).</span>
+        </div>
+      </div>
     </div>
-    <div class="focus-item">
-      <strong>Developer Tooling</strong>
-      <span>MCP bridge design, cross-platform executable detection, system-prompt injection, graceful degradation patterns, slash-command surfaces</span>
+
+    <!-- Pillar 2: Code Intelligence -->
+    <div class="focus-col">
+      <div class="focus-header">
+        <span class="pillar-num">Pillar 02</span>
+        <h3>Codebase Intelligence & MCP</h3>
+      </div>
+      <p class="focus-summary">
+        AST-level code graphs and protocols bridging agent reasoning directly to software structures.
+      </p>
+      <div class="focus-items">
+        <div class="focus-item">
+          <strong>Model Context Protocol (MCP)</strong>
+          <span>High-performance STDIO JSON-RPC 2.0 transport for agent code tools.</span>
+        </div>
+        <div class="focus-item">
+          <strong>AST Call-Graph Traversal</strong>
+          <span>Multi-hop inbound/outbound caller hierarchies and blast-radius impact analysis.</span>
+        </div>
+        <div class="focus-item">
+          <strong>Hybrid Search & Retrieval</strong>
+          <span>FTS5 BM25 lexical search with intent analysis, score breakdown, and graph freshness.</span>
+        </div>
+        <div class="focus-item">
+          <strong>DeepSeek Harness Integration</strong>
+          <span>Native agent plugin hooks, ordered system prompts, and background daemon orchestration.</span>
+        </div>
+      </div>
     </div>
-    <div class="focus-item">
-      <strong>Cloud Infrastructure</strong>
-      <span>Cloudflare Workers deployment via OpenNext, edge caching strategies, Wrangler configuration, static-asset serving, Workers Custom Domains</span>
-    </div>
-    <div class="focus-item">
-      <strong>Automation</strong>
-      <span>CI/CD with GitHub Actions, build wrappers for non-Linux targets, infrastructure-as-code, automated testing pipelines</span>
+
+    <!-- Pillar 3: Edge & Systems Infrastructure -->
+    <div class="focus-col">
+      <div class="focus-header">
+        <span class="pillar-num">Pillar 03</span>
+        <h3>Cloud, Edge & Systems</h3>
+      </div>
+      <p class="focus-summary">
+        Low-latency serverless edge computing, resilient routing, and native UNIX systems engineering.
+      </p>
+      <div class="focus-items">
+        <div class="focus-item">
+          <strong>Cloudflare Workers & V8</strong>
+          <span>Low-latency serverless edge execution, Service Bindings, KV, and Cache API.</span>
+        </div>
+        <div class="focus-item">
+          <strong>Edge Caching & Geo-Steering</strong>
+          <span>Tiered cache topologies, stale-while-revalidate, and latency load balancing.</span>
+        </div>
+        <div class="focus-item">
+          <strong>FreeBSD & Linux Systems</strong>
+          <span>rc.d daemon supervisors, system process management, and shell automation.</span>
+        </div>
+        <div class="focus-item">
+          <strong>GitHub Actions Automation</strong>
+          <span>Reusable workflows, scheduled maintenance cron jobs, and repository syncing.</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
+  .focus-card {
+    margin-bottom: 32px;
+  }
+
+  .title-icon {
+    color: var(--accent-cyan);
+  }
+
   .focus-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
-  .focus-item {
+
+  .focus-col {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease;
+  }
+
+  .focus-col:hover {
+    border-color: rgba(99, 102, 241, 0.25);
+    background: rgba(255, 255, 255, 0.035);
+  }
+
+  .focus-header {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    padding: 12px 14px;
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 8px;
+    margin-bottom: 12px;
   }
-  .focus-item strong {
-    color: #e6eef8;
-    font-size: 13px;
+
+  .pillar-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent-cyan);
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
   }
-  .focus-item span {
-    color: #9ca3af;
-    font-size: 12px;
+
+  .focus-header h3 {
+    margin: 0;
+    font-size: 16.5px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .focus-summary {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 18px;
     line-height: 1.5;
+  }
+
+  .focus-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .focus-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 12px;
+    border-left: 2px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .focus-col:nth-child(1) .focus-item {
+    border-left-color: rgba(99, 102, 241, 0.4);
+  }
+
+  .focus-col:nth-child(2) .focus-item {
+    border-left-color: rgba(6, 182, 212, 0.4);
+  }
+
+  .focus-col:nth-child(3) .focus-item {
+    border-left-color: rgba(16, 185, 129, 0.4);
+  }
+
+  .focus-item strong {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .focus-item span {
+    font-size: 12px;
+    color: var(--dim);
+    line-height: 1.4;
+  }
+
+  @media (max-width: 860px) {
+    .focus-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

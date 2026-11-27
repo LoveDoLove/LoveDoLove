@@ -4,116 +4,296 @@ export interface Props {
   subtitle?: string;
 }
 
-const { title = "LoveDoLove", subtitle = "Software Engineer | AI Coding Agents · Developer Tooling · Cloud Infrastructure" } = Astro.props;
+const {
+  title = "LoveDoLove",
+  subtitle = "Software Engineer | AI Coding Agents · Developer Tooling · Cloud Infrastructure"
+} = Astro.props;
 ---
 
-<header class="header">
-  <div class="header-inner">
-    <div class="avatar-frame">
-      <img src="https://avatars.githubusercontent.com/u/67772009?v=4" alt="LoveDoLove profile" width="140" height="140" />
+<header class="card hero-card">
+  <div class="hero-layout">
+    <div class="avatar-col">
+      <div class="avatar-glow-wrap">
+        <img
+          src="https://avatars.githubusercontent.com/u/67772009?v=4"
+          alt="LoveDoLove avatar"
+          class="avatar-img"
+          width="132"
+          height="132"
+          loading="eager"
+        />
+        <div class="avatar-ring"></div>
+      </div>
     </div>
-    <div class="hero">
-      <h1>{title}</h1>
-      <p class="subtitle">{subtitle}</p>
-      <p class="tagline">
-        I build engineering intelligence for coding agents, developer tooling that reduces friction, and cloud infrastructure that scales. My focus is making AI-assisted development trustworthy, automating away toil, and running reliable systems on Cloudflare and modern cloud platforms.
+
+    <div class="hero-content">
+      <div class="hero-eyebrow-row">
+        <span class="hero-badge">
+          <span class="status-indicator"></span>
+          <span>Active Engineering · Epistemic AI Memory & Systems</span>
+        </span>
+      </div>
+
+      <h1 class="hero-title">{title}</h1>
+      <p class="hero-subtitle">{subtitle}</p>
+
+      <p class="hero-bio">
+        Engineering reliable intelligence for autonomous coding agents, building friction-reducing developer tooling, and deploying resilient edge systems on Cloudflare and UNIX platforms. Focused on solving context amnesia, structural code comprehension, and deterministic infrastructure.
       </p>
-      <div class="cta-row">
-        <a href="https://github.com/LoveDoLove" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:v0130p5100cuboss@gmail.com" class="btn btn-secondary">Email</a>
+
+      <div class="focus-grid" aria-label="Core Engineering Focus">
+        <div class="focus-pill">
+          <span class="focus-label">Architecture</span>
+          <span class="focus-val">Dual-Brain Memory</span>
+        </div>
+        <div class="focus-pill">
+          <span class="focus-label">Graph Traversal</span>
+          <span class="focus-val">AST-Level MCP</span>
+        </div>
+        <div class="focus-pill">
+          <span class="focus-label">Edge Cloud</span>
+          <span class="focus-val">Cloudflare Workers</span>
+        </div>
+        <div class="focus-pill">
+          <span class="focus-label">Automation</span>
+          <span class="focus-val">5 Daily Workflows</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#featured-projects" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          Flagship Projects
+        </a>
+        <a href="/projects/veyra" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          Veyra Case Study
+        </a>
+        <a href="https://github.com/LoveDoLove" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
       </div>
     </div>
   </div>
 </header>
 
 <style>
-  .header {
+  .hero-card {
+    padding: 36px 32px;
     margin-bottom: 32px;
   }
-  .header-inner {
+
+  .hero-layout {
     display: flex;
-    gap: 28px;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 32px;
+    align-items: flex-start;
   }
-  .avatar-frame {
-    width: 140px;
-    height: 140px;
-    border-radius: 16px;
-    overflow: hidden;
+
+  .avatar-col {
     flex-shrink: 0;
-    border: 1px solid rgba(255,255,255,0.06);
-    background: #071022;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  .avatar-frame:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 24px rgba(124,58,237,0.25);
+
+  .avatar-glow-wrap {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
   }
-  .avatar-frame img {
+
+  .avatar-img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     object-fit: cover;
     display: block;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    background: #0f172a;
+    position: relative;
+    z-index: 2;
   }
-  .hero h1 {
-    margin: 0 0 4px 0;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #e6eef8 0%, #a78bfa 100%);
+
+  .avatar-ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%, #6366f1 0deg, #06b6d4 120deg, #10b981 240deg, #6366f1 360deg);
+    opacity: 0.6;
+    filter: blur(10px);
+    z-index: 1;
+    animation: spinSlow 18s linear infinite;
+  }
+
+  @keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .hero-content {
+    flex-grow: 1;
+  }
+
+  .hero-eyebrow-row {
+    margin-bottom: 12px;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.28);
+    color: var(--accent-light);
+  }
+
+  .status-indicator {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent-emerald);
+    box-shadow: 0 0 8px var(--accent-emerald);
+  }
+
+  .hero-title {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin: 0 0 6px;
+    background: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
-  .subtitle {
-    margin: 0 0 8px 0;
-    color: #7c3aed;
-    font-weight: 500;
-    font-size: 15px;
+
+  .hero-subtitle {
+    font-size: 15.5px;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    margin: 0 0 16px;
   }
-  .tagline {
-    margin: 0 0 14px 0;
-    color: #9ca3af;
-    font-size: 14px;
-    line-height: 1.6;
-    max-width: 560px;
+
+  .hero-bio {
+    font-size: 14.5px;
+    color: var(--muted);
+    line-height: 1.65;
+    margin: 0 0 20px;
+    max-width: 680px;
   }
-  .cta-row {
-    display: flex;
+
+  /* Focus Pills Grid */
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .focus-pill {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .focus-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--dim);
+    letter-spacing: 0.05em;
+  }
+
+  .focus-val {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
     flex-wrap: wrap;
   }
+
   .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
     padding: 9px 18px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.2s ease;
   }
-  .btn:hover {
+
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-light);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-1px);
   }
-  .btn-primary {
-    background: #7c3aed;
-    color: #fff;
+
+  .btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--muted);
   }
-  .btn-primary:hover {
-    box-shadow: 0 4px 16px rgba(124,58,237,0.4);
+
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.15);
   }
-  .btn-secondary {
-    background: rgba(255,255,255,0.04);
-    color: #e6eef8;
-    border: 1px solid rgba(255,255,255,0.08);
-  }
-  .btn-secondary:hover {
-    background: rgba(255,255,255,0.08);
-  }
-  @media (max-width: 600px) {
-    .header-inner { flex-direction: column; align-items: flex-start; }
-    .avatar-frame { width: 120px; height: 120px; }
-    .hero h1 { font-size: 26px; }
+
+  @media (max-width: 680px) {
+    .hero-card {
+      padding: 24px 20px;
+    }
+    .hero-layout {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+    .hero-actions {
+      justify-content: center;
+    }
+    .focus-grid {
+      grid-template-columns: repeat(2, 1fr);
+      text-align: left;
+    }
   }
 </style>

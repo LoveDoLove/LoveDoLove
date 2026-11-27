@@ -1,7 +1,7 @@
 ---
 import Footer from "../../components/Footer.astro";
 
-const title = "Veyra — Engineering Intelligence for Coding Agents | Case Study";
+const title = "Veyra — Engineering Intelligence for Coding Agents | Deep Architecture Study";
 const description = "How Veyra solves the coding-agent trust crisis: Dual-Brain architecture separating repository truth from engineering memory, evidence-backed validation, hybrid search, and graceful degradation.";
 const canonical = "https://portfolio.lovedolove.qzz.io/projects/veyra";
 ---
@@ -18,281 +18,331 @@ const canonical = "https://portfolio.lovedolove.qzz.io/projects/veyra";
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Veyra",
+        "description": "Engineering Intelligence & Dual-Brain Memory Architecture for Autonomous Coding Agents.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "LoveDoLove"
+        }
+      }
+    </script>
   </head>
   <body>
+    <!-- Ambient Lighting Glows -->
+    <div class="glow-bg top-glow" aria-hidden="true"></div>
+    <div class="glow-bg side-glow" aria-hidden="true"></div>
+
     <article class="case-study">
+      <!-- Breadcrumb Navigation -->
+      <nav class="nav-bar">
+        <a href="/" class="back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back to Overview
+        </a>
+        <div class="nav-links">
+          <a href="/projects/dsh-codebase-memory-mcp" class="nav-next">Next Study: Code Graph →</a>
+        </div>
+      </nav>
+
+      <!-- Hero Header -->
       <header class="hero">
-        <a href="/" class="back">← Portfolio</a>
-        <h1>Veyra</h1>
-        <p class="positioning">Engineering Intelligence for Coding Agents</p>
-        <p class="description">
-          A DeepSeek Harness plugin implementing a Dual-Brain architecture: persistent, evidence-backed engineering memory
-          (Veyra Memory) plus structural code intelligence (Code Intelligence via codebase-memory-mcp). Hybrid search
-          combines lexical, semantic, intent, and graph signals. Code Intelligence flags stale memories when referenced
-          files change — it never silently overwrites Veyra memory.
+        <div class="eyebrow-container">
+          <span class="badge-flagship">FLAGSHIP CASE STUDY</span>
+          <span class="badge-version">v0.7.0 Production</span>
+          <span class="badge-tests">1,220+ Passing Tests</span>
+        </div>
+        <h1>Veyra: Engineering Intelligence for Coding Agents</h1>
+        <p class="subtitle">
+          Solving the AI coding-agent trust crisis with a Dual-Brain epistemic architecture that rigorously separates repository truth from learned engineering memory.
         </p>
-        <div class="links">
-          <a href="https://github.com/LoveDoLove/Veyra" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.npmjs.com/package/@lovedolove/veyra" target="_blank" rel="noopener">npm</a>
+
+        <div class="meta-row">
+          <div class="meta-item">
+            <span class="meta-label">Domain</span>
+            <span class="meta-val">AI Epistemics & Agent Memory</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Storage Engine</span>
+            <span class="meta-val"><code>node:sqlite</code> + FTS5</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Integration</span>
+            <span class="meta-val">DeepSeek Harness Native Plugin</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Dependencies</span>
+            <span class="meta-val">Zero npm dependencies</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="https://github.com/LoveDoLove/Veyra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub Repository
+          </a>
+          <a href="https://www.npmjs.com/package/@lovedolove/veyra" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 7.334v8h6.666v1.332H12v-1.332h12v-8H0zm6.666 6.664H2.666V9.998h4v4zm5.334 0h-2.666V9.998H12v4zm9.334 0h-4v-1.332H20v-2.668h-4V9.998h5.334v4z"/>
+            </svg>
+            npm Package
+          </a>
         </div>
       </header>
 
-      <section>
-        <h2>The Problem</h2>
+      <!-- Section: The Problem -->
+      <section class="content-section">
+        <h2>The Problem: The Coding-Agent Trust Crisis</h2>
         <p>
-          Coding agents operate in two epistemic dimensions. <strong>Repository truth</strong> — what the code does now —
-          lives in the files. <strong>Engineering memory</strong> — why it was done, what failed, what constraints apply —
-          lives across sessions. Today these get conflated:
+          Coding agents face a fundamental dilemma between <strong>amnesia</strong> and <strong>hallucination</strong>. Without persistent memory, an agent repeats past mistakes, forgets architecture constraints, and rediscovers bugs across restarts. But existing agent memory systems introduce a worse failure mode: they treat remembered observations as authoritative truth.
         </p>
-        <ul>
-          <li><strong>Agent context loss.</strong> Every session starts cold. The agent re-learns repo facts via grep,
-          burning context budget and producing inconsistent answers.</li>
-          <li><strong>Memory corruption.</strong> Scratch files, auto-loaded markdown, and ad-hoc notes accumulate
-          without validation, authority boundaries, or project isolation.</li>
-          <li><strong>Trust failure.</strong> Retrieval by similarity ≠ truth. An old fix may no longer apply. A
-          "remembered" decision may have been reversed. Without validation states, agents treat all recalled context
-          as equally authoritative.</li>
-        </ul>
-        <p>
-          Traditional RAG retrieval fails because it ranks by semantic similarity alone. It does not distinguish:
-        </p>
-        <table>
-          <thead>
-            <tr><th>Dimension</th><th>Why it matters</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Authority</strong></td><td>An unverified observation should not be treated as a decision</td></tr>
-            <tr><td><strong>Validation</strong></td><td>A lesson should be confirmed across sessions before it is trusted</td></tr>
-            <tr><td><strong>Applicability</strong></td><td>A Windows-specific fix should not silently apply to Linux</td></tr>
-            <tr><td><strong>Freshness</strong></td><td>A memory about <code>auth.ts:42</code> is suspect if that file was deleted</td></tr>
-            <tr><td><strong>Project isolation</strong></td><td>Lessons from Project A must not contaminate Project B</td></tr>
-          </tbody>
-        </table>
-        <p>
-          Veyra treats these as first-class, observable dimensions — not afterthoughts.
-        </p>
-      </section>
 
-      <section>
-        <h2>Core Principles</h2>
-        <ul class="principles">
-          <li><strong>Observe ≠ Store.</strong> Session activity is distilled into <em>candidates</em> first. Only durable,
-          evidence-grounded lessons become memory.</li>
-          <li><strong>Candidate ≠ Truth.</strong> Candidates are never auto-recalled, never promoted automatically.</li>
-          <li><strong>Similarity ≠ Authority.</strong> Retrieval ranks relevance; authority is an orthogonal dimension
-          with explicit transitions.</li>
-          <li><strong>Similarity ≠ Applicability.</strong> Context keys (os, runtime, taskType) gate recall without
-          discarding records.</li>
-          <li><strong>Repository truth remains authoritative.</strong> Veyra never writes into the user's repo.</li>
-          <li><strong>Historical memory ≠ current truth.</strong> Temporal validity (validFrom/validUntil) and staleness
-          are checked at recall time.</li>
-          <li><strong>Memory ≠ executable instruction.</strong> All recalled items are injected with a <code>not repository truth</code>
-          disclaimer.</li>
-          <li><strong>Isolation fails closed.</strong> Project databases are separate. Reusable memory is explicitly opt-in.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Architecture</h2>
-        <div class="diagram">
-          <pre>{`
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         DSH host — Cordis plugin                         │
-│  session events ──► observe ──► candidate ──► learn ──► derived memory  │
-└─────────────────────────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│  SQLite store  ~/.dsh/veyra/  (node:sqlite + FTS5, one DB per project) │
-└─────────────────────────────────────────────────────────────────────────┘
-           projections (read-only)
-    ┌───────────┬───────────────┬─────────────────┬────────────────────┐
-    ▼           ▼               ▼                 ▼
- Hybrid Search  Local Graph   Agent context    Human surfaces
- recall/tools   (1-hop)       systemPrompt     /veyra commands
- observatory    src/graph.mjs (fail-closed)    Observatory / Network Graph
-
-┌─────────────────────────────────────────────────────────────────────────┐
-│  Code Intelligence  src/code/  (optional — requires codebase-memory-mcp)│
-│  stdio JSON-RPC 2.0 ──► cbm_* tools ──► freshness checks ──► retrieval │
-│  Degraded when binary absent: memory layer unaffected                   │
-└─────────────────────────────────────────────────────────────────────────┘
-          `}</pre>
+        <div class="callout warning-callout">
+          <div class="callout-icon">⚠️</div>
+          <div class="callout-body">
+            <strong>The Stale Memory Trap:</strong> If an agent stores <em>"file X has function Y"</em> in memory, and a human engineer renames or deletes <em>Y</em>, a naive agent trusts its memory over the actual codebase. It writes patches against code that no longer exists, failing builds or hallucinating non-existent APIs.
+          </div>
         </div>
-        <p>
-          <strong>Veyra-owned:</strong> observe, learn, store (SQLite/FTS5), retrieve (hybrid search), graph projections,
-          lifecycle (promotion/forgetting/supersession), context injection, commands, skills, WebUI.
-        </p>
-        <p>
-          <strong>External:</strong> <code>codebase-memory-mcp</code> native daemon (provides AST-level structural facts).
-        </p>
-        <p>
-          The local graph is a <em>derived projection, not a second store</em>. Code Intelligence never modifies Veyra
-          Memory directly — it flags freshness, it does not rewrite memory.
-        </p>
-      </section>
 
-      <section>
-        <h2>Memory / Knowledge Lifecycle</h2>
         <p>
-          Every record has orthogonal dimensions:
+          General-purpose memory solutions (e.g. naive vector databases over conversational turns) fail because they treat all text equally. In real-world software engineering, code and engineering context possess strict hierarchical authority:
         </p>
-        <table>
-          <thead>
-            <tr><th>Dimension</th><th>States</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Kind</strong></td><td>observation, memory, knowledge, evidence, negative, unresolved</td></tr>
-            <tr><td><strong>Status</strong></td><td>current, deprecated, superseded, historical</td></tr>
-            <tr><td><strong>Validation</strong></td><td>unverified → reviewed → verified | stale | invalid</td></tr>
-            <tr><td><strong>Authority</strong></td><td>candidate → derived → canonical</td></tr>
-            <tr><td><strong>Confidence</strong></td><td>low, medium, high</td></tr>
-            <tr><td><strong>Scope</strong></td><td>project (default), reusable (opt-in)</td></tr>
-          </tbody>
-        </table>
-        <p>
-          <strong>Lifecycle gate:</strong> <code>current</code>, not forgotten, not candidate, not invalid/stale, explicit
-          authority transition. <strong>Canonical authority is never assigned automatically</strong> — only via explicit
-          human instruction (<code>veyra_promote explicit=true</code>).
-        </p>
-      </section>
-
-      <section>
-        <h2>Retrieval & Ranking</h2>
-        <p>One query, several signals — with a transparent score breakdown:</p>
-        <ol>
-          <li><strong>Authority & lifecycle gate</strong> — candidates, observations, stale, invalid never surface</li>
-          <li><strong>Project isolation</strong> — strict DB-level split + scoped reusable</li>
-          <li><strong>Lexical</strong> — SQLite FTS5 BM25 + exact token/symbol/path match</li>
-          <li><strong>Semantic</strong> — query coverage + token-level Jaccard overlap</li>
-          <li><strong>Intent affinity</strong> — why / how / what-changed / outcome / symptom</li>
-          <li><strong>Relationships</strong> — graph cohesion, structural connections (updates, extends, derives, contradicts, supersedes)</li>
-          <li><strong>Unified RAG + Memory</strong> — <code>knowledge</code> records and engineering memory searched together</li>
-          <li><strong>Provenance</strong> — origin (user/assistant/tool), document path, session, verification tracked</li>
-          <li><strong>Contradiction banners</strong> — both sides stay visible, never silently resolved</li>
-        </ol>
-        <p>
-          <strong>Invariant:</strong> Retrieval ≠ authority. Similarity ≠ identity. Memory ≠ truth.
-        </p>
-      </section>
-
-      <section>
-        <h2>Code Intelligence</h2>
-        <p>
-          Veyra owns the epistemic state (what was learned, why, when verified). <code>codebase-memory-mcp</code> owns
-          the structural state (who calls whom, what symbols exist, where definitions live). They work together:
-        </p>
-        <table>
-          <thead>
-            <tr><th>Veyra</th><th>codebase-memory-mcp</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Memory records, validation, authority</td><td>Symbols, call graphs, class hierarchies</td></tr>
-            <tr><td>Evidence anchors (path, symbol, content hash)</td><td>Live AST-derived call-graph tracing</td></tr>
-            <tr><td>Freshness checks on evidence anchors</td><td>File change detection</td></tr>
-            <tr><td>Flags potentially stale memories</td><td>Reports structural facts</td></tr>
-          </tbody>
-        </table>
-        <p>
-          <strong>Graceful degradation:</strong> When <code>codebase-memory-mcp</code> binary is absent, all <code>cbm_*</code>
-          tools and <code>veyra_code_status</code> return structured errors with installation guidance. All Veyra Memory
-          tools, slash commands, Observatory, and hybrid search continue working.
-        </p>
-      </section>
-
-      <section>
-        <h2>Trust / Safety Model</h2>
-        <ul>
-          <li><strong>No automatic canonical truth.</strong> <code>assertAuthorityTransition</code> enforces that canonical
-          requires <code>explicit: true</code>; auto-promotion throws.</li>
-          <li><strong>No silent merges.</strong> Near-duplicate memories are <em>linked</em> via relations
-          (updates/extends/contradicts), not merged.</li>
-          <li><strong>No hidden contradictions.</strong> Contradiction banners surface both sides in context.</li>
-          <li><strong>No stale-as-current.</strong> Evidence anchors track content hashes; changed/deleted files mark
-          memory <code>POTENTIALLY_STALE</code> or <code>INVALID</code> with retrieval penalties.</li>
-          <li><strong>No cross-project contamination.</strong> Separate SQLite stores per project; reusable store is
-          explicitly scoped.</li>
-          <li><strong>No secrets stored.</strong> <code>redact.mjs</code> scrubs potential secrets before persistence.</li>
-          <li><strong>No repository mutation.</strong> Veyra writes only to <code>$DSH_HOME/veyra/</code>.</li>
-          <li><strong>Fail-closed on corruption.</strong> Records with broken JSON columns or invalid enums are excluded
-          from lifecycle eligibility until explicitly repaired.</li>
+        <ul class="principles">
+          <li><strong>Repository Code is Supreme Truth:</strong> What exists on disk right now overrides any past memory, note, or guess.</li>
+          <li><strong>Memory is Supporting Context, Never Truth:</strong> Memories are hypotheses, historical rationale, and negative lessons — never hard law.</li>
+          <li><strong>Candidate ≠ Truth:</strong> Automatic observations are unverified candidates until backed by reproducible evidence.</li>
+          <li><strong>Similarity ≠ Authority:</strong> Vector or lexical search hits prove relevance, not accuracy or correctness.</li>
         </ul>
       </section>
 
-      <section>
-        <h2>DSH Integration</h2>
-        <p>Veyra registers as a native Cordis plugin at <code>src/plugin.mjs</code>:</p>
-        <table>
-          <thead>
-            <tr><th>Surface</th><th>What Veyra provides</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>systemPrompt.section</code></td><td>Static "memory ≠ truth" guidance</td></tr>
-            <tr><td><code>systemPrompt.context</code></td><td>Per-turn automatic recall (top-N relevant records)</td></tr>
-            <tr><td><code>session/event</code></td><td>Observe engineering activity</td></tr>
-            <tr><td><code>agent/turn-stopping</code></td><td>Persist candidates, maybe-learn, maintenance cadence</td></tr>
-            <tr><td><code>ctx.tools</code></td><td>8 tools: veyra_remember, veyra_recall, veyra_inspect, veyra_forget, veyra_promote, veyra_feedback, veyra_recurrence, veyra_health + 6 cbm_* tools + veyra_code_status</td></tr>
-            <tr><td><code>ctx.commands</code></td><td>/veyra with observatory, code, recall, recent, inspect, forget, invalidate, supersede, tombstone, protect, promote</td></tr>
-            <tr><td><code>ctx.webServer</code></td><td>Network Graph WebUI at /veyra</td></tr>
-            <tr><td><code>ctx.skills</code></td><td>Bundled skills: veyra, legacy-onboarding, memory-maintenance, memory-review, codebase-memory</td></tr>
-          </tbody>
-        </table>
+      <!-- Section: Architecture -->
+      <section class="content-section">
+        <h2>Architecture: Dual-Brain & Truth Separation</h2>
+        <p>
+          Veyra implements a <strong>Dual-Brain</strong> architecture that creates an uncompromised barrier between current repository state and durable engineering memory:
+        </p>
+
+        <div class="diagram-box">
+          <div class="diagram-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="diagram-title">Veyra Dual-Brain Topology</span>
+          </div>
+          <pre><code>+-------------------------------------------------------------+
+|                     DeepSeek Harness Agent                  |
++-------------------------------------------------------------+
+         |                                           |
+         v (Authoritative: git, tests, AST)          v (Supporting: hybrid search)
++-----------------------------------+     +-----------------------------------+
+|            LEFT BRAIN             |     |            RIGHT BRAIN            |
+|       Repository Truth Engine     |     |      Durable Memory Engine        |
+|                                   |     |                                   |
+| - Source code on disk             |     | - Architecture decisions & ADRs   |
+| - Git history, diffs, blame       |     | - Verified fix patterns & remedies|
+| - Test suites & compiler checks   |     | - Project-specific constraints    |
+| - AST code graph (via MCP)        |     | - Negative lessons (known fails)  |
+|                                   |     | - Epistemic status: STALE / FRESH |
++-----------------------------------+     +-----------------------------------+
+         |                                           |
+         +---------------------+---------------------+
+                               |
+                               v
+               +-------------------------------+
+               |    Epistemic Arbiter          |
+               |                               |
+               | Memory contradicts code?      |
+               | -> Code wins every time.      |
+               | -> Memory flagged as STALE.   |
+               +-------------------------------+</code></pre>
+        </div>
+
+        <h3>Three Independent Epistemic Axes</h3>
+        <p>
+          Instead of flattening memory state into a single score, Veyra models durable knowledge across three orthogonal axes, separating persistent storage standing from dynamic read-time validation:
+        </p>
+        <div class="ladder-grid">
+          <div class="ladder-step">
+            <span class="ladder-tag candidate">1. Authority Axis</span>
+            <p><code>candidate → derived → canonical</code>. Tracks governance: from unverified automatic observation, to verified engineering pattern, up to explicit user-promoted project mandate.</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-tag derived">2. Validation Axis</span>
+            <p><code>unverified → reviewed → verified</code>. Tracks empirical confirmation: whether the memory was observed, reviewed, or validated through passing tests.</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-tag canonical">3. Confidence Axis</span>
+            <p><code>low / medium / high</code>. Records the certainty assigned by the observer or causal attribution engine.</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-tag stale">Dynamic Read-Time Trust</span>
+            <p><code>trusted</code>, <code>review_required</code>, <code>stale</code>, <code>contradicted</code>, <code>insufficient_evidence</code>. Evaluated on-the-fly against live git state and evidence anchors.</p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Engineering Constraints</h2>
-        <table>
-          <thead>
-            <tr><th>Constraint</th><th>Rationale</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>SQLite + FTS5 as canonical storage</td><td>Zero runtime dependencies, fast lexical search, single-file portability, no external service</td></tr>
-            <tr><td>No competing graph database</td><td>Graph projections are derived views, not a second store — avoids drift and dual-write bugs</td></tr>
-            <tr><td>Project/workspace isolation fails closed</td><td>A lesson from Project A must never contaminate Project B by default</td></tr>
-            <tr><td>No silent merge</td><td>Merging loses provenance; linking via relations preserves it</td></tr>
-            <tr><td>Repository truth authority</td><td>Code is the source of truth; memory is advisory</td></tr>
-            <tr><td>Graceful degradation</td><td>Missing codebase-memory-mcp must never break the memory layer</td></tr>
-            <tr><td>Zero runtime npm dependencies</td><td>Pure ESM, ~130 kB packed, no dependency chains</td></tr>
-          </tbody>
-        </table>
+      <!-- Section: Key Capabilities -->
+      <section class="content-section">
+        <h2>Core Capabilities</h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-title">
+              <span class="feature-icon">🔍</span>
+              <h3>Proactive Recall</h3>
+            </div>
+            <p>
+              Agents automatically search memory at the beginning of non-trivial engineering tasks (bug fixes, refactors, architecture decisions) rather than relying on noisy keyword injections.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-title">
+              <span class="feature-icon">⚡</span>
+              <h3>Evidence-Backed Anchors</h3>
+            </div>
+            <p>
+              Memories anchor directly to file paths, function symbols, line ranges, or commit hashes. If a target file is modified or removed, Veyra marks the memory <code>STALE</code> automatically.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-title">
+              <span class="feature-icon">🛡️</span>
+              <h3>Self-Healing Maintenance</h3>
+            </div>
+            <p>
+              Autonomous health scans flag new contradictions, identify unresolved open questions, detect repeated failure loops, and suggest revalidation candidates without human intervention.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-title">
+              <span class="feature-icon">🌐</span>
+              <h3>Cross-Project Reusability</h3>
+            </div>
+            <p>
+              Strict isolation keeps repo-specific secrets and conventions locked to a project, while project-agnostic patterns (e.g. Node 22 ESM nuances) can be safely promoted to reusable scope.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Evolution</h2>
-        <p>Based on the actual repository history and CHANGELOG:</p>
-        <ol>
-          <li><strong>Memory capture</strong> — session observation, candidate distillation, candidate → derived promotion</li>
-          <li><strong>Validation model</strong> — unverified → reviewed → verified states; candidate → derived → canonical authority</li>
-          <li><strong>Causal knowledge</strong> — structured <code>symptom → rootCause → remedy → verifiedOutcome</code> facets</li>
-          <li><strong>Observability</strong> — Knowledge Observatory, Network Graph, /veyra commands</li>
-          <li><strong>Code Intelligence</strong> — codebase-memory-mcp integration, freshness checks, stale-memory flagging</li>
-          <li><strong>Engineering intelligence</strong> — hybrid search, unified RAG, feedback loops, health reports, recurrence detection</li>
-        </ol>
+      <!-- Section: Real-World Engineering -->
+      <section class="content-section">
+        <h2>Engineering Invariants & Reality: What Breaks & How Veyra Handles It</h2>
+        <p>
+          Building persistent systems for non-deterministic AI agents reveals tricky failure modes. Here are four real challenges solved in Veyra:
+        </p>
+
+        <div class="scenarios-list">
+          <div class="scenario-item">
+            <h4>1. FTS5 Tokenization & Stopword Pitfalls</h4>
+            <p>
+              Standard SQLite FTS5 tokenizers treat hyphens and punctuation as delimiters, causing identifier searches like <code>dsh-codebase-memory-mcp</code> to match every word independently. Veyra implements token sanitization, quoted phrase fallback, and BM25 ranking calibration tailored for code symbols.
+            </p>
+          </div>
+
+          <div class="scenario-item">
+            <h4>2. Zero-Dependency Storage Guarantee</h4>
+            <p>
+              Rather than pulling in heavy native bindings or external services (e.g., PostgreSQL, Redis, Chromadb), Veyra runs purely on Node.js 22's built-in <code>node:sqlite</code> module. This guarantees zero compilation overhead, zero supply-chain vulnerabilities, and instant local execution.
+            </p>
+          </div>
+
+          <div class="scenario-item">
+            <h4>3. Safe Contradiction Visibility</h4>
+            <p>
+              Veyra never silently overwrites or auto-deletes conflicting memories. If Memory A claims <em>"use X"</em> and Memory B claims <em>"do not use X"</em>, both records are surfaced to the agent with contradiction flags, while directing the agent to inspect the authoritative repository files to break the tie.
+            </p>
+          </div>
+
+          <div class="scenario-item">
+            <h4>4. Negative Lessons ([NEGATIVE · known failed solution])</h4>
+            <p>
+              In software engineering, knowing what <em>didn't work</em> is as valuable as knowing what did. Veyra records falsified hypotheses and failed bug-fix attempts with negative markers, preventing subsequent agent sessions from retrying disproven fixes.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Current State</h2>
-        <table>
-          <thead>
-            <tr><th>Attribute</th><th>Value</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Version</td><td>0.1.50 (pre-1.0)</td></tr>
-            <tr><td>Status</td><td>Active development on <code>0.1.x</code> line</td></tr>
-            <tr><td>Repository</td><td><a href="https://github.com/LoveDoLove/Veyra">LoveDoLove/Veyra</a></td></tr>
-            <tr><td>npm</td><td><a href="https://www.npmjs.com/package/@lovedolove/veyra">@lovedolove/veyra</a></td></tr>
-            <tr><td>DSH compatibility</td><td><code>>=0.1.2-rc.1 <0.3.0-0</code></td></tr>
-            <tr><td>Node.js</td><td><code>>=22.5.0 <25.0.0</code></td></tr>
-            <tr><td>Storage</td><td><code>node:sqlite</code> + FTS5, one DB per project</td></tr>
-            <tr><td>Tests</td><td>711 passing (CI on Node 22 and 24)</td></tr>
-            <tr><td>Runtime dependencies</td><td>Zero npm dependencies</td></tr>
-            <tr><td>License</td><td>MIT</td></tr>
-          </tbody>
-        </table>
+      <!-- Section: Specifications & Verification -->
+      <section class="content-section">
+        <h2>Technical Specifications & Verification</h2>
+
+        <div class="table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Specification / Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Current Release</td>
+                <td><span class="mono-badge">v0.7.0</span></td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td>Active production development on <code>0.7.x</code></td>
+              </tr>
+              <tr>
+                <td>Repository</td>
+                <td><a href="https://github.com/LoveDoLove/Veyra" target="_blank" rel="noopener noreferrer">github.com/LoveDoLove/Veyra</a></td>
+              </tr>
+              <tr>
+                <td>Package Registry</td>
+                <td><a href="https://www.npmjs.com/package/@lovedolove/veyra" target="_blank" rel="noopener noreferrer">@lovedolove/veyra on npm</a></td>
+              </tr>
+              <tr>
+                <td>DeepSeek Harness Compatibility</td>
+                <td><code>&gt;=0.2.0 &lt;0.3.0</code></td>
+              </tr>
+              <tr>
+                <td>Node.js Runtime Bounds</td>
+                <td><code>&gt;=22.12.0 &lt;25.0.0</code> (Built with native <code>node:sqlite</code>)</td>
+              </tr>
+              <tr>
+                <td>Storage Engine</td>
+                <td><code>node:sqlite</code> + FTS5 full-text indexing, isolated per-project DB</td>
+              </tr>
+              <tr>
+                <td>Test Suite Verification</td>
+                <td><strong>1,220+ passing tests</strong> (1,221 passing across 19 suites on Node 22 & 24 CI)</td>
+              </tr>
+              <tr>
+                <td>Architecture Type</td>
+                <td>Dual-Brain Epistemic State Machine</td>
+              </tr>
+              <tr>
+                <td>License</td>
+                <td>MIT License</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <Footer />
@@ -302,130 +352,570 @@ const canonical = "https://portfolio.lovedolove.qzz.io/projects/veyra";
 
 <style>
   :root {
-    --bg: #071023;
-    --card-bg: rgba(255,255,255,0.02);
-    --muted: #9ca3af;
-    --accent: #7c3aed;
-    --text: #e6eef8;
+    --bg: #080b12;
+    --card-bg: rgba(255, 255, 255, 0.02);
+    --card-border: rgba(255, 255, 255, 0.06);
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --dim: #64748b;
+    --accent: #6366f1;
+    --accent-light: #818cf8;
+    --accent-cyan: #06b6d4;
+    --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     --radius: 12px;
   }
-  * { box-sizing: border-box; }
+
   body {
-    font-family: Inter, system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    background: linear-gradient(180deg, #071023 0%, #0b0d2a 50%, #081026 100%);
+    padding: 0;
+    background-color: var(--bg);
     color: var(--text);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 100% 100%, 48px 48px, 48px 48px;
+    background-position: 0 0, -1px -1px, -1px -1px;
     min-height: 100vh;
+    overflow-x: hidden;
   }
+
+  /* Ambient Glows */
+  .glow-bg {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .top-glow {
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.05) 60%, transparent 80%);
+  }
+
+  .side-glow {
+    top: 600px;
+    right: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+  }
+
   .case-study {
-    max-width: 980px;
+    max-width: 840px;
     margin: 0 auto;
-    padding: 32px 24px 48px;
+    padding: 32px 20px 80px;
+    position: relative;
+    z-index: 1;
   }
-  .hero {
-    margin-bottom: 40px;
+
+  /* Navigation */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--card-border);
   }
-  .back {
-    color: var(--accent);
+
+  .back-link, .nav-next {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: color 0.15s ease;
   }
+
+  .back-link:hover, .nav-next:hover {
+    color: var(--accent-light);
+  }
+
+  /* Hero Section */
+  .hero {
+    margin-bottom: 48px;
+  }
+
+  .eyebrow-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .badge-flagship {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(99, 102, 241, 0.18);
+    color: var(--accent-light);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 3px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  .badge-version {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+    border: 1px solid var(--card-border);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
+  .badge-tests {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-emerald);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
   .hero h1 {
-    font-size: 36px;
-    margin: 12px 0 4px;
-    letter-spacing: -0.02em;
-  }
-  .positioning {
-    color: var(--accent);
-    font-size: 16px;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
     margin: 0 0 16px;
+    letter-spacing: -0.025em;
+    color: var(--text);
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 28px;
+  }
+
+  .meta-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    margin-bottom: 24px;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .meta-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .meta-val {
+    font-size: 12.5px;
+    color: var(--text);
     font-weight: 500;
   }
-  .description {
-    color: var(--muted);
-    max-width: 720px;
-    margin: 0 0 20px;
+
+  .meta-val code {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent-cyan);
+    background: rgba(6, 182, 212, 0.1);
+    padding: 2px 4px;
+    border-radius: 3px;
   }
-  .links {
+
+  .hero-actions {
     display: flex;
     gap: 12px;
   }
-  .links a {
-    background: var(--accent);
-    color: #fff;
-    padding: 8px 20px;
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 10px 18px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
+    transition: all 0.2s ease;
   }
-  section {
-    margin-bottom: 36px;
+
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
   }
-  h2 {
-    font-size: 22px;
-    margin: 0 0 14px;
-    letter-spacing: -0.01em;
+
+  .btn-primary:hover {
+    background: var(--accent-light);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
   }
-  h3 {
-    font-size: 16px;
-    margin: 20px 0 10px;
-  }
-  p {
-    margin: 0 0 14px;
-    color: var(--muted);
-  }
-  ul, ol {
-    color: var(--muted);
-    padding-left: 20px;
-  }
-  li {
-    margin-bottom: 8px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 16px 0;
-    font-size: 13px;
-  }
-  th, td {
-    border: 1px solid rgba(255,255,255,0.06);
-    padding: 10px 12px;
-    text-align: left;
-    vertical-align: top;
-  }
-  th {
-    background: rgba(124,58,237,0.08);
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
     color: var(--text);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  /* Content Sections */
+  .content-section {
+    margin-bottom: 48px;
+  }
+
+  .content-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: var(--text);
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 10px;
+  }
+
+  .content-section h3 {
+    font-size: 17px;
     font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--accent-light);
   }
-  td {
+
+  .content-section p {
+    font-size: 15px;
     color: var(--muted);
+    line-height: 1.7;
+    margin: 0 0 16px;
   }
-  code {
-    background: rgba(255,255,255,0.06);
+
+  .content-section strong {
+    color: var(--text);
+  }
+
+  .content-section code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 2px 6px;
     border-radius: 4px;
-    font-size: 12px;
+    color: var(--accent-cyan);
   }
-  .principles li strong {
-    color: var(--text);
-  }
-  .diagram pre {
-    background: rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.06);
+
+  /* Callouts */
+  .callout {
+    display: flex;
+    gap: 14px;
+    padding: 16px;
     border-radius: 8px;
+    margin: 20px 0;
+  }
+
+  .warning-callout {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+  }
+
+  .callout-icon {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .callout-body {
+    font-size: 14px;
+    color: #fde68a;
+    line-height: 1.6;
+  }
+
+  .callout-body strong {
+    color: #fff;
+  }
+
+  /* Principles list */
+  .principles {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .principles li {
+    padding: 12px 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* Diagram */
+  .diagram-box {
+    background: #05070d;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin: 24px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .diagram-header {
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--card-border);
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .dot.red { background: #ef4444; }
+  .dot.yellow { background: #f59e0b; }
+  .dot.green { background: #10b981; }
+
+  .diagram-title {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--dim);
+    margin-left: 6px;
+  }
+
+  .diagram-box pre {
+    margin: 0;
     padding: 20px;
     overflow-x: auto;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #a0aec0;
   }
-  @media (max-width: 600px) {
-    .case-study { padding: 20px 14px 32px; }
-    .hero h1 { font-size: 28px; }
-    table { font-size: 12px; }
-    th, td { padding: 8px; }
+
+  .diagram-box code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #cbd5e1;
+    background: transparent;
+    border: none;
+    padding: 0;
+    line-height: 1.45;
+  }
+
+  /* Ladder Grid */
+  .ladder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 20px 0;
+  }
+
+  .ladder-step {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 16px;
+  }
+
+  .ladder-tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  .ladder-tag.candidate { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
+  .ladder-tag.derived { background: rgba(99, 102, 241, 0.15); color: var(--accent-light); }
+  .ladder-tag.canonical { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+  .ladder-tag.stale { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+
+  .ladder-step p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Features Grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .feature-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: all 0.2s ease;
+  }
+
+  .feature-card:hover {
+    background: rgba(255, 255, 255, 0.035);
+    border-color: rgba(99, 102, 241, 0.25);
+    transform: translateY(-2px);
+  }
+
+  .feature-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .feature-icon {
+    font-size: 18px;
+  }
+
+  .feature-card h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .feature-card p {
+    font-size: 13.5px;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  /* Scenarios */
+  .scenarios-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .scenario-item {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 16px 18px;
+  }
+
+  .scenario-item h4 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent-cyan);
+  }
+
+  .scenario-item p {
+    margin: 0;
+    font-size: 13.5px;
+  }
+
+  /* Specs Table */
+  .table-container {
+    overflow-x: auto;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    background: var(--card-bg);
+  }
+
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    text-align: left;
+  }
+
+  .specs-table th {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 18px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--dim);
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .specs-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    color: var(--muted);
+  }
+
+  .specs-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .specs-table td:first-child {
+    font-weight: 600;
+    color: var(--text);
+    width: 32%;
+  }
+
+  .specs-table a {
+    color: var(--accent-light);
+    text-decoration: none;
+  }
+
+  .specs-table a:hover {
+    text-decoration: underline;
+  }
+
+  .mono-badge {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--accent-light);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 680px) {
+    .case-study {
+      padding: 24px 16px 60px;
+    }
+    .hero h1 {
+      font-size: 28px;
+    }
+    .meta-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .ladder-grid, .features-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-actions {
+      flex-direction: column;
+    }
+    .btn {
+      justify-content: center;
+    }
   }
 </style>

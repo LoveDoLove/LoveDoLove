@@ -1,224 +1,179 @@
 ---
-const achievements = [
-  "AWS Academy Graduate (Cloud Architect, Cloud Web Application Builder, Cloud Foundations) and AWS Educate Cloud 101 certifications (2024-2025)",
-  "Completed Cisco Networking Academy coursework (no official CCNA certification)",
-  "Expanded expertise in cloud architecture, enterprise networking, and IT infrastructure through industry-recognized training and coursework",
-  "Automated cross-platform workflows for Windows, Linux, and FreeBSD, increasing efficiency and reliability",
-  "Built and optimized CI/CD pipelines to accelerate deployments and ensure robust delivery",
-  "Published developer tools, templates, and guides adopted by the community",
-  "Led and contributed to open-source projects, earning recognition from developers worldwide",
-  "Engineered scalable, secure cloud infrastructure for high-impact web applications",
-];
-
-const experience = [
-  {
-    role: "Cloud & Network Engineer Intern",
-    company: "Sangfor Technologies",
-    period: "2023–2024",
-    details: [
-      "Triaged L1/L2 global incidents for HCI / Cloud Platform / VDI (95%+ SLA adherence)",
-      "Led storage split-brain recovery and Linux kernel diagnostics",
-      "Automated Git-to-AWS CodeCommit migrations",
-    ],
-  },
-];
-
-const education = [
-  "Bachelor of Information Technology (Honours) in Software Systems Development — TARUMT",
-];
 ---
 
-<section class="card about">
-  <h2>About</h2>
-  <p class="about-text">
-    Software Engineer focused on AI coding agents, developer tooling, and cloud infrastructure. I build engineering intelligence that makes AI-assisted development trustworthy, tools that reduce the gap between intent and running code, and cloud systems that scale reliably on Cloudflare and modern platforms.
-  </p>
-
-  <h3>What I Build</h3>
-  <div class="build-grid">
-    <div class="build-item">
-      <strong>AI Coding Agents</strong>
-      <span>Persistent engineering memory, structural code intelligence, evidence-backed automation — making agents trustworthy over long horizons</span>
-    </div>
-    <div class="build-item">
-      <strong>Developer Tooling</strong>
-      <span>MCP bridges, CLI plugins, build automation, cross-platform utilities — reducing the gap between intent and running code</span>
-    </div>
-    <div class="build-item">
-      <strong>Cloud Infrastructure</strong>
-      <span>Cloudflare Workers, edge caching, load balancing, DNS automation, Workers-native deployments — serverless-first, globally distributed</span>
-    </div>
-    <div class="build-item">
-      <strong>Systems & Automation</strong>
-      <span>CI/CD pipelines, infrastructure-as-code, Windows/Linux/FreeBSD build systems — reliable, repeatable, auditable</span>
-    </div>
+<section class="card about-card" id="about">
+  <div class="card-header-row">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+      </svg>
+      Engineering Philosophy & Domains
+    </h2>
+    <span class="section-eyebrow">Architectural Principles</span>
   </div>
 
-  <h3>Experience</h3>
-  <div class="experience-list">
-    {experience.map((exp) => (
-      <div class="experience-item">
-        <div class="experience-header">
-          <strong>{exp.role}</strong>
-          <span class="experience-period">{exp.period}</span>
-        </div>
-        <p class="experience-company">{exp.company}</p>
-        <ul class="experience-details">
-          {exp.details.map((d) => <li>{d}</li>)}
-        </ul>
+  <div class="lead-quote">
+    <p>
+      Autonomous software development with AI requires more than wider context windows.
+      It demands <strong>epistemic discipline</strong>: strictly separating verified repository truth from transient agent memory, navigating codebases via structural AST graphs rather than noisy search, and deploying deterministic edge infrastructure that runs without friction.
+    </p>
+  </div>
+
+  <div class="domains-grid">
+    <div class="domain-box">
+      <div class="domain-header">
+        <span class="domain-tag">01 · Agent Epistemics</span>
+        <h3>Dual-Brain Memory Systems</h3>
       </div>
-    ))}
+      <p class="domain-desc">
+        Coding agents routinely suffer from trust drift, conflating past speculative dialogue with ground truth. My architecture decouples repository truth (git history, ASTs, passing tests) from epistemic memory (causal facets, negative lessons, and trust decay).
+      </p>
+      <div class="domain-tech">
+        <span>Veyra Engine</span>
+        <span>Epistemic Ladder</span>
+        <span>Causal Incident Learning</span>
+        <span>Anti-Hallucination</span>
+      </div>
+    </div>
+
+    <div class="domain-box">
+      <div class="domain-header">
+        <span class="domain-tag">02 · Code Intelligence</span>
+        <h3>AST Graph Navigation</h3>
+      </div>
+      <p class="domain-desc">
+        Shifting agent exploration from brute-force token-expensive regex/grep to structural call-graph traversal. Parsing symbols, inbound/outbound references, and hierarchical architecture to provide accurate blast-radius analysis within strict token budgets.
+      </p>
+      <div class="domain-tech">
+        <span>Model Context Protocol (MCP)</span>
+        <span>AST Call Graph</span>
+        <span>Blast-Radius Analysis</span>
+        <span>DeepSeek Harness</span>
+      </div>
+    </div>
+
+    <div class="domain-box">
+      <div class="domain-header">
+        <span class="domain-tag">03 · Edge & Cloud</span>
+        <h3>Resilient Systems & Tooling</h3>
+      </div>
+      <p class="domain-desc">
+        Building high-availability serverless infrastructure and developer tooling. Designing dynamic multi-tier caches, multi-origin geo-steering load balancers on Cloudflare Workers, and native system daemon wrappers for FreeBSD.
+      </p>
+      <div class="domain-tech">
+        <span>Cloudflare Workers</span>
+        <span>Edge Geo-Steering</span>
+        <span>Multi-Tier Caching</span>
+        <span>FreeBSD & UNIX</span>
+      </div>
+    </div>
   </div>
-
-  <h3>Education</h3>
-  <ul class="education-list">
-    {education.map((e) => <li>{e}</li>)}
-  </ul>
-
-  <h3>Achievements</h3>
-  <ul class="achievements-list">
-    {achievements.map((a) => (
-      <li>{a}</li>
-    ))}
-  </ul>
 </section>
 
 <style>
-  .about {
-    animation: fadeUp 0.5s ease both;
+  .about-card {
+    margin-bottom: 32px;
   }
-  .about-text {
-    color: #9ca3af;
+
+  .title-icon {
+    color: var(--accent-cyan);
+  }
+
+  .lead-quote {
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 24px;
+  }
+
+  .lead-quote p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
     line-height: 1.7;
-    margin: 0 0 18px 0;
-    max-width: 680px;
-  }
-  h3 {
-    margin: 24px 0 10px 0;
-    font-size: 16px;
-    color: #e6eef8;
-  }
-  h3:first-of-type {
-    margin-top: 0;
   }
 
-  .build-grid {
+  .lead-quote strong {
+    color: var(--text);
+  }
+
+  .domains-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 12px;
-    margin-bottom: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
-  .build-item {
+
+  .domain-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding: 12px 14px;
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 8px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .build-item strong {
-    color: #e6eef8;
-    font-size: 13px;
+
+  .domain-box:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .domain-header {
+    margin-bottom: 12px;
+  }
+
+  .domain-tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-  .build-item span {
-    color: #9ca3af;
-    font-size: 12px;
-    line-height: 1.5;
+    letter-spacing: 0.06em;
+    color: var(--accent-cyan);
+    margin-bottom: 6px;
   }
 
-  .experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  .experience-item {
-    padding: 12px 14px;
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 8px;
-  }
-  .experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
-    margin-bottom: 4px;
-  }
-  .experience-header strong {
-    color: #e6eef8;
-    font-size: 13px;
-  }
-  .experience-period {
-    color: #7c3aed;
-    font-size: 12px;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-  .experience-company {
-    color: #9ca3af;
-    font-size: 12px;
-    margin: 0 0 6px 0;
-  }
-  .experience-details {
+  .domain-box h3 {
     margin: 0;
-    padding-left: 18px;
-    color: #9ca3af;
-    font-size: 12px;
-    line-height: 1.6;
-  }
-  .experience-details li {
-    margin: 4px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
   }
 
-  .education-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 16px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .education-list li {
-    color: #9ca3af;
+  .domain-desc {
     font-size: 13px;
+    color: var(--muted);
     line-height: 1.6;
-    padding-left: 18px;
-    position: relative;
-  }
-  .education-list li::before {
-    content: "▸";
-    position: absolute;
-    left: 0;
-    color: #7c3aed;
+    margin: 0 0 16px;
+    flex: 1;
   }
 
-  .achievements-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .domain-tech {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 6px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
-  .achievements-list li {
-    color: #9ca3af;
-    font-size: 13px;
-    line-height: 1.6;
-    padding-left: 18px;
-    position: relative;
+
+  .domain-tech span {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--badge-text);
+    background: var(--badge-bg);
+    border: 1px solid var(--badge-border);
+    padding: 2px 7px;
+    border-radius: 4px;
   }
-  .achievements-list li::before {
-    content: "▸";
-    position: absolute;
-    left: 0;
-    color: #7c3aed;
-  }
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 768px) {
+    .domains-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

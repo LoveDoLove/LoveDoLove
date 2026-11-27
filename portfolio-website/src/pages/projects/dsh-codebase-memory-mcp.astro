@@ -1,8 +1,8 @@
 ---
 import Footer from "../../components/Footer.astro";
 
-const title = "dsh-codebase-memory-mcp — Code Graph Bridge for DeepSeek Harness | Case Study";
-const description = "How dsh-codebase-memory-mcp bridges DeepSeek Harness to codebase-memory-mcp: six native knowledge-graph code tools, auto-started daemon with Web UI, system-prompt guidance for graph-vs-grep decisions, graceful degradation.";
+const title = "dsh-codebase-memory-mcp — Code Graph Bridge | Technical Case Study";
+const description = "How dsh-codebase-memory-mcp brings structural AST code knowledge graphs to DeepSeek Harness: 6 native tools, daemon orchestration, and graph-vs-grep heuristics.";
 const canonical = "https://portfolio.lovedolove.qzz.io/projects/dsh-codebase-memory-mcp";
 ---
 
@@ -18,190 +18,338 @@ const canonical = "https://portfolio.lovedolove.qzz.io/projects/dsh-codebase-mem
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "dsh-codebase-memory-mcp",
+        "description": "Model Context Protocol bridge bringing AST code knowledge graphs to DeepSeek Harness.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "LoveDoLove"
+        }
+      }
+    </script>
   </head>
   <body>
+    <!-- Ambient Lighting Glows -->
+    <div class="glow-bg top-glow" aria-hidden="true"></div>
+    <div class="glow-bg side-glow" aria-hidden="true"></div>
+
     <article class="case-study">
+      <!-- Breadcrumb Navigation -->
+      <nav class="nav-bar">
+        <a href="/" class="back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back to Overview
+        </a>
+        <div class="nav-links">
+          <a href="/projects/veyra" class="nav-prev">← Previous Study: Veyra</a>
+        </div>
+      </nav>
+
+      <!-- Hero Header -->
       <header class="hero">
-        <a href="/" class="back">← Portfolio</a>
-        <h1>dsh-codebase-memory-mcp</h1>
-        <p class="positioning">Native MCP Bridge for DeepSeek Harness</p>
-        <p class="description">
-          A standalone bridge plugin that registers six knowledge-graph code tools on the DeepSeek Harness tool
-          surface, auto-starts the <code>codebase-memory-mcp</code> daemon with its graph-visualization Web UI,
-          injects system-prompt guidance for graph-vs-grep decisions, and ships a bundled agent skill plus a
-          <code>/cbm</code> status command.
+        <div class="eyebrow-container">
+          <span class="badge-flagship">FLAGSHIP CASE STUDY</span>
+          <span class="badge-version">v0.1.10 Plugin</span>
+          <span class="badge-tools">6 AST Tools</span>
+        </div>
+        <h1>dsh-codebase-memory-mcp: Code Graph Bridge</h1>
+        <p class="subtitle">
+          Bridging DeepSeek Harness AI agents to structural AST knowledge graphs with native tool registration, automated background daemon orchestration, and graph-vs-grep heuristics.
         </p>
-        <div class="links">
-          <a href="https://github.com/LoveDoLove/dsh-codebase-memory-mcp" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.npmjs.com/package/@lovedolove/dsh-codebase-memory-mcp" target="_blank" rel="noopener">npm</a>
+
+        <div class="meta-row">
+          <div class="meta-item">
+            <span class="meta-label">Domain</span>
+            <span class="meta-val">Code Intelligence & MCP</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Visual Interface</span>
+            <span class="meta-val">Web Visualizer on <code>:9749</code></span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Integration</span>
+            <span class="meta-val">DSH Native Agent Plugin</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Protocol</span>
+            <span class="meta-val">Model Context Protocol</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="https://github.com/LoveDoLove/dsh-codebase-memory-mcp" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub Repository
+          </a>
+          <a href="https://www.npmjs.com/package/@lovedolove/dsh-codebase-memory-mcp" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 7.334v8h6.666v1.332H12v-1.332h12v-8H0zm6.666 6.664H2.666V9.998h4v4zm5.334 0h-2.666V9.998H12v4zm9.334 0h-4v-1.332H20v-2.668h-4V9.998h5.334v4z"/>
+            </svg>
+            npm Package
+          </a>
         </div>
       </header>
 
-      <section>
-        <h2>The Problem</h2>
+      <!-- Section: The Problem -->
+      <section class="content-section">
+        <h2>The Architectural Problem: The Token Cost of Naive Search</h2>
         <p>
-          When a coding agent needs structural facts about a codebase — who calls <code>login()</code>, what
-          <code>AuthService</code> exposes, where definitions live — text search (<code>grep</code>, <code>read</code>)
-          returns noisy results and burns ~80K tokens. <code>codebase-memory-mcp</code> provides an AST-level
-          knowledge graph with call tracing, but it has no native integration with DeepSeek Harness.
+          When an AI coding agent needs structural answers about a repository — such as <em>"who calls <code>processPayment()</code>"</em>, <em>"what interface does <code>AuthService</code> satisfy"</em>, or <em>"what is the blast radius of modifying this schema"</em> — traditional tools fail:
         </p>
+
+        <div class="comparison-grid">
+          <div class="comp-card bad">
+            <div class="comp-title">
+              <span class="comp-badge bad">Text Grep & Blind Reading</span>
+            </div>
+            <ul>
+              <li>Returns hundreds of noisy string matches across comments, tests, and docs.</li>
+              <li>Requires loading complete multi-thousand line files into context.</li>
+              <li>Cannot compute multi-hop call hierarchies or blast radius.</li>
+              <li>Slow lexical scanning over large monorepos.</li>
+            </ul>
+          </div>
+
+          <div class="comp-card good">
+            <div class="comp-title">
+              <span class="comp-badge good">AST Knowledge Graph</span>
+            </div>
+            <ul>
+              <li>Returns exact symbol declarations and precise syntax trees.</li>
+              <li>Surgical symbol snippet extraction retrieves exact definitions with minimal context overhead.</li>
+              <li>Traces multi-hop inbound and outbound call paths deterministically.</li>
+              <li>Zero noise: comments, strings, and irrelevant files are filtered.</li>
+            </ul>
+          </div>
+        </div>
+
         <p>
-          Without a bridge:
+          While the upstream <code>codebase-memory-mcp</code> daemon creates the AST graph, it had no integration with DeepSeek Harness. Agents lacked native access, had no automated daemon lifecycle, and lacked decision heuristics on when to prefer graph navigation over raw file grep.
         </p>
-        <ul>
-          <li>The subprocess must be started, handshake negotiated, and reconnected manually</li>
-          <li>Tools are not registered on the DSH tool surface</li>
-          <li>The model does not know when to prefer the graph over grep</li>
-          <li>No agent skill, no slash command, no graceful degradation when the binary is missing</li>
-        </ul>
       </section>
 
-      <section>
-        <h2>Core Principles</h2>
-        <ul class="principles">
-          <li><strong>Bridge, not fork.</strong> Wrap the upstream daemon — index, maintain, and evolve. Do not
-          reimplement code indexing.</li>
-          <li><strong>Graceful degradation.</strong> Only tools is a hard dependency; systemPrompt, skills, and
-          commands attach via deferred injection. A missing service skips that feature.</li>
-          <li><strong>Structured guidance.</strong> The model receives a policy section explaining when graph
-          queries outperform grep, with concrete workflow steps.</li>
-          <li><strong>Cross-platform executable detection.</strong> CBM_EXE override, user/system directories, PATH
-          search, and a WSL interop fallback.</li>
-        </ul>
-      </section>
+      <!-- Section: Topology -->
+      <section class="content-section">
+        <h2>Architecture & Daemon Lifecycle Topology</h2>
+        <p>
+          <code>dsh-codebase-memory-mcp</code> sits as a native plugin within the DeepSeek Harness runtime, managing child processes, bridging JSON-RPC over MCP, and providing zero-config execution:
+        </p>
 
-      <section>
-        <h2>Architecture</h2>
-        <div class="diagram">
-          <pre>{`
-┌──────────────────────────────────────────────────────────────────────┐
-│  DeepSeek Harness — Cordis plugin (src/index.mjs)                     │
-│                                                                      │
-│  apply(ctx, config):                                                 │
-│    1. cbmApply(ctx) → register 6 cbm_* tools + auto-start daemon     │
-│    2. ctx.inject(['systemPrompt']) → register guidance               │
-│    3. ctx.inject(['skills']) → register bundled skill                │
-│    4. ctx.inject(['commands']) → register /cbm                       │
-└──────────────────────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│  stdio JSON-RPC 2.0 client (src/bridge.mjs)                          │
-│    • spawn(exePath, ['--ui=true']) — child process management        │
-│    • MCP handshake (2025-03-26) — initialize on startup              │
-│    • Persistent client with automatic restart on exit                │
-│    • Deferred tool registration if ctx.tools not ready               │
-└──────────────────────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│  codebase-memory-mcp native daemon                                   │
-│    • AST-level code indexing (symbols, call graphs, hierarchies)      │
-│    • HTTP graph visualization Web UI at http://localhost:9749/       │
-└──────────────────────────────────────────────────────────────────────┘
-          `}</pre>
+        <div class="diagram-box">
+          <div class="diagram-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="diagram-title">Daemon Lifecycle & MCP Bridge</span>
+          </div>
+          <pre><code>+-------------------------------------------------------------+
+|                     DeepSeek Harness Agent                  |
+|                   (Evaluates Graph Heuristics)              |
++-------------------------------------------------------------+
+                               |
+                               | Calls cbm_* SDK functions
+                               v
++-------------------------------------------------------------+
+|               dsh-codebase-memory-mcp (Plugin)              |
+|                                                             |
+|  - Lifecycle Manager: Spawns/monitors daemon on :9749       |
+|  - Health Ping: Verifies JSON-RPC connectivity              |
+|  - Prompt Shaping: Injects graph-vs-grep behavioral rules   |
+|  - Degradation Guard: Falls back to grep if daemon fails    |
++-------------------------------------------------------------+
+                               |
+                               | JSON-RPC over Model Context Protocol
+                               v
++-------------------------------------------------------------+
+|                 codebase-memory-mcp Daemon                  |
+|                                                             |
+|  - Tree-sitter AST Parser (TypeScript, Python, Go, Rust)    |
+|  - Embedded Graph Store (Call paths, symbols, interfaces)   |
+|  - Web Visualizer Dashboard (http://localhost:9749/)        |
++-------------------------------------------------------------+</code></pre>
         </div>
       </section>
 
-      <section>
-        <h2>Six Knowledge-Graph Code Tools</h2>
-        <table>
-          <thead>
-            <tr><th>Tool</th><th>What it does</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>cbm_projects</code></td><td>List all projects currently indexed in codebase-memory-mcp</td></tr>
-            <tr><td><code>cbm_search</code></td><td>Find symbols, functions, classes, or files by name/label/regex</td></tr>
-            <tr><td><code>cbm_snippet</code></td><td>Get exact source code snippet for a qualified name</td></tr>
-            <tr><td><code>cbm_trace</code></td><td>Trace inbound/outbound call paths through the knowledge graph</td></tr>
-            <tr><td><code>cbm_arch</code></td><td>Get architectural summary of a directory: key components, entry points, dependencies</td></tr>
-            <tr><td><code>cbm_search_code</code></td><td>Fast textual regex search over indexed repository files</td></tr>
-          </tbody>
-        </table>
+      <!-- Section: Native Tools -->
+      <section class="content-section">
+        <h2>The 6 Native Graph Intelligence Tools</h2>
         <p>
-          The bundled skill's guidance notes that graph queries return precise structural results in
-          ~500 tokens vs ~80K for grep.
+          The plugin registers six specialized tools directly into the DSH tool registry, allowing the LLM to navigate code with structural precision:
         </p>
+
+        <div class="tools-grid">
+          <div class="tool-card">
+            <span class="tool-name">cbm_trace</span>
+            <span class="tool-desc">
+              Traces inbound and outbound call paths through the AST graph with configurable hop depth. Perfect for blast-radius analysis before refactoring.
+            </span>
+          </div>
+
+          <div class="tool-card">
+            <span class="tool-name">cbm_search</span>
+            <span class="tool-desc">
+              Discovers symbols, classes, interfaces, or files by name pattern or AST label. Eliminates blind directory scanning.
+            </span>
+          </div>
+
+          <div class="tool-card">
+            <span class="tool-name">cbm_snippet</span>
+            <span class="tool-desc">
+              Fetches the exact source definition of a qualified symbol without reading thousands of surrounding lines into context.
+            </span>
+          </div>
+
+          <div class="tool-card">
+            <span class="tool-name">cbm_arch</span>
+            <span class="tool-desc">
+              Provides architectural summaries of a directory, highlighting key components, entry points, and inter-module dependencies.
+            </span>
+          </div>
+
+          <div class="tool-card">
+            <span class="tool-name">cbm_search_code</span>
+            <span class="tool-desc">
+              Fast regex search over indexed repository files with immediate file-pattern filtering.
+            </span>
+          </div>
+
+          <div class="tool-card">
+            <span class="tool-name">cbm_projects</span>
+            <span class="tool-desc">
+              Lists all repositories currently indexed in the active codebase-memory graph database.
+            </span>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>System-Prompt Guidance</h2>
+      <!-- Section: Graph vs Grep Heuristics -->
+      <section class="content-section">
+        <h2>Decision Heuristics: Graph vs. Grep</h2>
         <p>
-          The plugin injects a <em>Codebase Memory — Knowledge Graph Policy</em> section that tells the model:
+          A critical innovation in <code>dsh-codebase-memory-mcp</code> is teaching the agent <em>when</em> to use structural intelligence versus raw text scanning. The plugin injects explicit behavioral rules into the agent runtime:
         </p>
-        <ul>
-          <li>Prefer <code>cbm_trace</code> for caller/callee relationships and blast-radius analysis</li>
-          <li>Prefer <code>cbm_search</code> to discover functions, classes, interfaces by name or AST label</li>
-          <li>Prefer <code>cbm_snippet</code> to inspect definitions without loading entire files</li>
-          <li>Prefer <code>cbm_arch</code> for directory-level component dependencies</li>
-          <li>Use <code>grep</code>/<code>read</code> only for exact string literals or non-code assets</li>
-        </ul>
-        <p>
-          This guidance is wired through <code>ctx.inject(['systemPrompt'])</code> and registered at
-          order 3040, so it composes with other DSH system-prompt sections.
-        </p>
+
+        <div class="table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Engineering Question</th>
+                <th>Recommended Tool</th>
+                <th>Architectural Rationale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>"Who calls function <code>X</code>?"</td>
+                <td><span class="highlight-tool">cbm_trace</span></td>
+                <td>AST call graph reveals true callers; grep matches comments, variable names, and tests.</td>
+              </tr>
+              <tr>
+                <td>"What does class <code>Y</code> look like?"</td>
+                <td><span class="highlight-tool">cbm_snippet</span></td>
+                <td>Pulls the isolated class definition without dumping the whole multi-thousand line file into context.</td>
+              </tr>
+              <tr>
+                <td>"How is directory <code>Z</code> organized?"</td>
+                <td><span class="highlight-tool">cbm_arch</span></td>
+                <td>Extracts component boundaries and dependency flow directly from AST imports.</td>
+              </tr>
+              <tr>
+                <td>"Find symbol or interface by pattern"</td>
+                <td><span class="highlight-tool">cbm_search</span></td>
+                <td>Filters by AST label (Function, Class, Interface) to drop noise.</td>
+              </tr>
+              <tr>
+                <td>"Find exact string literal or asset path"</td>
+                <td><span class="dim-tool">grep / cbm_search_code</span></td>
+                <td>AST is blind to non-code assets, config keys, and prose literals. Grep remains best for raw text.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
-      <section>
-        <h2>Lifecycle Management</h2>
-        <p>
-          The stdio JSON-RPC client (<code>src/bridge.mjs</code>) manages:
-        </p>
-        <ul>
-          <li><strong>Eager start</strong> — spawns the daemon with <code>--ui=true</code> on plugin load (skipped in test runs)</li>
-          <li><strong>MCP handshake</strong> — sends <code>initialize</code> with <code>protocolVersion: '2025-03-26'</code></li>
-          <li><strong>Automatic restart</strong> — if the child exits and pending promises are rejected, the client can be restarted via <code>getOrCreateClient()</code></li>
-          <li><strong>Graceful disposal</strong> — on plugin shutdown, pending promises are cleared and the child process receives SIGTERM</li>
-        </ul>
-      </section>
+      <!-- Section: Specifications -->
+      <section class="content-section">
+        <h2>Technical Specifications</h2>
 
-      <section>
-        <h2>Graceful Degradation</h2>
-        <p>
-          The plugin declares <code>inject: ['tools']</code> as the only hard dependency. System-prompt,
-          skills, and commands are attached via deferred <code>ctx.inject()</code> — if the host service is
-          unavailable, the injection silently skips. When the <code>codebase-memory-mcp</code> binary is not
-          found, the daemon does not start, <code>cbm_*</code> tools are not registered, and the <code>/cbm</code>
-          command reports the missing executable with installation guidance.
-        </p>
-      </section>
-
-      <section>
-        <h2>Engineering Constraints</h2>
-        <table>
-          <thead>
-            <tr><th>Constraint</th><th>Rationale</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Bridge, not fork</td><td>Upstream daemon handles indexing; the bridge wires it to DSH</td></tr>
-            <tr><td>Deferred injection</td><td>Tools are hard; systemPrompt/skills/commands are optional — missing host services degrade gracefully</td></tr>
-            <tr><td>Cross-platform exe discovery</td><td>Windows, Linux, WSL, macOS all supported via <code>CBM_EXE</code>, PATH, user/system dirs</td></tr>
-            <tr><td>stdio JSON-RPC 2.0</td><td>MCP-compatible protocol, preserves upstream binary's transport</td></tr>
-            <tr><td>MCP handshake <code>2025-03-26</code></td><td>Matches the upstream protocol version tested with <code>0.11.0</code></td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Current State</h2>
-        <table>
-          <thead>
-            <tr><th>Attribute</th><th>Value</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Version</td><td>0.1.4</td></tr>
-            <tr><td>Status</td><td>Published, CI on Node 20/22/24</td></tr>
-            <tr><td>Repository</td><td><a href="https://github.com/LoveDoLove/dsh-codebase-memory-mcp">LoveDoLove/dsh-codebase-memory-mcp</a></td></tr>
-            <tr><td>npm</td><td><a href="https://www.npmjs.com/package/@lovedolove/dsh-codebase-memory-mcp">@lovedolove/dsh-codebase-memory-mcp</a></td></tr>
-            <tr><td>DSH compatibility</td><td><code>>=0.1.2-rc.1 <0.3.0-0</code></td></tr>
-            <tr><td>Node.js</td><td><code>>=18.0.0 <25.0.0</code></td></tr>
-            <tr><td>License</td><td>MIT</td></tr>
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Specification / Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Version</td>
+                <td><span class="mono-badge">v0.1.10</span></td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td>Active development on <code>0.1.x</code></td>
+              </tr>
+              <tr>
+                <td>Repository</td>
+                <td><a href="https://github.com/LoveDoLove/dsh-codebase-memory-mcp" target="_blank" rel="noopener noreferrer">github.com/LoveDoLove/dsh-codebase-memory-mcp</a></td>
+              </tr>
+              <tr>
+                <td>npm Registry</td>
+                <td><a href="https://www.npmjs.com/package/@lovedolove/dsh-codebase-memory-mcp" target="_blank" rel="noopener noreferrer">@lovedolove/dsh-codebase-memory-mcp</a></td>
+              </tr>
+              <tr>
+                <td>DeepSeek Harness Compatibility</td>
+                <td><code>&gt;=0.2.0 &lt;0.3.0</code></td>
+              </tr>
+              <tr>
+                <td>Node.js Bounds</td>
+                <td><code>&gt;=18.0.0 &lt;25.0.0</code></td>
+              </tr>
+              <tr>
+                <td>Test Suite Verification</td>
+                <td><strong>44 passing tests</strong> across 3 test suites</td>
+              </tr>
+              <tr>
+                <td>Upstream Dependency</td>
+                <td><code>codebase-memory-mcp</code> daemon</td>
+              </tr>
+              <tr>
+                <td>Local Web Dashboard</td>
+                <td><code>http://localhost:9749/</code></td>
+              </tr>
+              <tr>
+                <td>Fault Tolerance</td>
+                <td>Auto-start on demand, health ping verification, graceful degradation on failure</td>
+              </tr>
+              <tr>
+                <td>License</td>
+                <td>MIT License</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <Footer />
@@ -211,50 +359,507 @@ const canonical = "https://portfolio.lovedolove.qzz.io/projects/dsh-codebase-mem
 
 <style>
   :root {
-    --bg: #071023;
-    --card-bg: rgba(255,255,255,0.02);
-    --muted: #9ca3af;
-    --accent: #7c3aed;
-    --text: #e6eef8;
+    --bg: #080b12;
+    --card-bg: rgba(255, 255, 255, 0.02);
+    --card-border: rgba(255, 255, 255, 0.06);
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --dim: #64748b;
+    --accent: #6366f1;
+    --accent-light: #818cf8;
+    --accent-cyan: #06b6d4;
+    --accent-emerald: #10b981;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     --radius: 12px;
   }
-  * { box-sizing: border-box; }
+
   body {
-    font-family: Inter, system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    background: linear-gradient(180deg, #071023 0%, #0b0d2a 50%, #081026 100%);
+    padding: 0;
+    background-color: var(--bg);
     color: var(--text);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.08) 0%, transparent 40%),
+      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 100% 100%, 48px 48px, 48px 48px;
+    background-position: 0 0, -1px -1px, -1px -1px;
     min-height: 100vh;
+    overflow-x: hidden;
   }
+
+  /* Ambient Glows */
+  .glow-bg {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(140px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .top-glow {
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, rgba(99, 102, 241, 0.05) 60%, transparent 80%);
+  }
+
+  .side-glow {
+    top: 600px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
+  }
+
   .case-study {
-    max-width: 980px;
+    max-width: 840px;
     margin: 0 auto;
-    padding: 32px 24px 48px;
+    padding: 32px 20px 80px;
+    position: relative;
+    z-index: 1;
   }
-  .hero { margin-bottom: 40px; }
-  .back { color: var(--accent); text-decoration: none; font-size: 14px; }
-  .hero h1 { font-size: 36px; margin: 12px 0 4px; letter-spacing: -0.02em; }
-  .positioning { color: var(--accent); font-size: 16px; margin: 0 0 16px; font-weight: 500; }
-  .description { color: var(--muted); max-width: 720px; margin: 0 0 20px; }
-  .links { display: flex; gap: 12px; }
-  .links a { background: var(--accent); color: #fff; padding: 8px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; }
-  section { margin-bottom: 36px; }
-  h2 { font-size: 22px; margin: 0 0 14px; letter-spacing: -0.01em; }
-  p { margin: 0 0 14px; color: var(--muted); }
-  ul, ol { color: var(--muted); padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; }
-  th, td { border: 1px solid rgba(255,255,255,0.06); padding: 10px 12px; text-align: left; vertical-align: top; }
-  th { background: rgba(124,58,237,0.08); color: var(--text); font-weight: 600; }
-  td { color: var(--muted); }
-  code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
-  .principles li strong { color: var(--text); }
-  .diagram pre { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; overflow-x: auto; font-size: 12px; line-height: 1.4; color: #a0aec0; }
-  @media (max-width: 600px) {
-    .case-study { padding: 20px 14px 32px; }
-    .hero h1 { font-size: 28px; }
-    table { font-size: 12px; }
-    th, td { padding: 8px; }
+
+  /* Navigation */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .back-link, .nav-prev {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover, .nav-prev:hover {
+    color: var(--accent-cyan);
+  }
+
+  /* Hero Section */
+  .hero {
+    margin-bottom: 48px;
+  }
+
+  .eyebrow-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .badge-flagship {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--accent-cyan);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    padding: 3px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  .badge-version {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+    border: 1px solid var(--card-border);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
+  .badge-tools {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-emerald);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 16px;
+    letter-spacing: -0.025em;
+    color: var(--text);
+  }
+
+  .subtitle {
+    font-size: 17px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 28px;
+  }
+
+  .meta-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    margin-bottom: 24px;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .meta-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .meta-val {
+    font-size: 12.5px;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .meta-val code {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent-cyan);
+    background: rgba(6, 182, 212, 0.1);
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background: var(--accent-cyan);
+    color: #080b12;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(6, 182, 212, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: #22d3ee;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--card-border);
+    color: var(--text);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  /* Content Sections */
+  .content-section {
+    margin-bottom: 48px;
+  }
+
+  .content-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: var(--text);
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 10px;
+  }
+
+  .content-section p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0 0 16px;
+  }
+
+  .content-section strong {
+    color: var(--text);
+  }
+
+  .content-section code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--accent-cyan);
+  }
+
+  /* Comparison Grid */
+  .comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .comp-card {
+    border-radius: var(--radius);
+    padding: 20px;
+    background: var(--card-bg);
+  }
+
+  .comp-card.bad {
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-left: 3px solid #ef4444;
+  }
+
+  .comp-card.good {
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    border-left: 3px solid var(--accent-cyan);
+    background: rgba(6, 182, 212, 0.02);
+  }
+
+  .comp-title {
+    margin-bottom: 12px;
+  }
+
+  .comp-badge {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .comp-badge.bad { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+  .comp-badge.good { background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); }
+
+  .comp-card ul {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+
+  /* Diagram */
+  .diagram-box {
+    background: #05070d;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin: 24px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .diagram-header {
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--card-border);
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .dot.red { background: #ef4444; }
+  .dot.yellow { background: #f59e0b; }
+  .dot.green { background: #10b981; }
+
+  .diagram-title {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--dim);
+    margin-left: 6px;
+  }
+
+  .diagram-box pre {
+    margin: 0;
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  .diagram-box code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    line-height: 1.45;
+    color: #94a3b8;
+  }
+
+  /* Tools Grid */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .tool-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all 0.2s ease;
+  }
+
+  .tool-card:hover {
+    border-color: rgba(6, 182, 212, 0.3);
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .tool-name {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-cyan);
+  }
+
+  .tool-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* Specs Table */
+  .table-container {
+    overflow-x: auto;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    background: var(--card-bg);
+    margin-top: 16px;
+  }
+
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    text-align: left;
+  }
+
+  .specs-table th {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 18px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--dim);
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .specs-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    color: var(--muted);
+  }
+
+  .specs-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .specs-table td:first-child {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .specs-table a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+  }
+
+  .specs-table a:hover {
+    text-decoration: underline;
+  }
+
+  .highlight-tool {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    background: rgba(6, 182, 212, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .dim-tool {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--dim);
+  }
+
+  .mono-badge {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--accent-cyan);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 680px) {
+    .case-study {
+      padding: 24px 16px 60px;
+    }
+    .hero h1 {
+      font-size: 28px;
+    }
+    .meta-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .comparison-grid, .tools-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-actions {
+      flex-direction: column;
+    }
+    .btn {
+      justify-content: center;
+    }
   }
 </style>

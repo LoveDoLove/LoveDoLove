@@ -1,190 +1,558 @@
 ---
-const projects = [
-  {
-    name: "Veyra",
-    href: "/projects/veyra",
-    externalHref: "https://github.com/LoveDoLove/Veyra",
-    tech: "TypeScript, Node.js, SQLite/FTS5, MCP, Cordis",
-    problem: "Coding agents re-learn the same repository facts every session and write conflicting memory files with no validation.",
-    solution: "Dual-Brain architecture: (1) Veyra Memory — persistent, evidence-backed engineering lessons with validation states (unverified → reviewed → verified) and authority levels (candidate → derived → canonical); (2) Code Intelligence — AST-level structural facts (symbols, call graphs, hierarchies) derived live from the repo via codebase-memory-mcp. Hybrid search combines FTS5 BM25, semantic overlap, intent affinity, and relationship-graph cohesion. Code Intelligence flags stale memories when evidence anchors point to modified code.",
-    flagship: true,
-  },
-  {
-    name: "dsh-codebase-memory-mcp",
-    href: "/projects/dsh-codebase-memory-mcp",
-    externalHref: "https://github.com/LoveDoLove/dsh-codebase-memory-mcp",
-    tech: "TypeScript, MCP, Cordis, stdio JSON-RPC",
-    problem: "No native bridge between DeepSeek Harness and codebase-memory-mcp for structural code queries.",
-    solution: "MCP bridge plugin registering six knowledge-graph code tools (cbm_projects, cbm_search, cbm_snippet, cbm_arch, cbm_trace, cbm_search_code) on the DSH tool surface. Auto-starts the daemon with Web UI over stdio JSON-RPC 2.0, injects system-prompt guidance for graph-vs-grep decisions, bundles a native agent skill (codebase-memory), provides /cbm slash command. Graceful degradation: only tools is a hard dependency; systemPrompt, skills, commands attach via deferred injection.",
-    flagship: true,
-  },
-  {
-    name: "cloudflare-load-balancer",
-    href: "https://github.com/LoveDoLove/cloudflare-load-balancer",
-    tech: "JavaScript, Cloudflare Workers, Wrangler",
-    problem: "Need zero-cold-start HTTP load balancing at the edge with weighted distribution and failover.",
-    solution: "Production-ready Cloudflare Worker load balancer with weighted traffic distribution across origins, failover to backup servers, maintenance-mode routing, and health-check integration.",
-  },
-  {
-    name: "cloudflare-smart-cache",
-    href: "https://github.com/LoveDoLove/cloudflare-smart-cache",
-    tech: "PHP, TypeScript, JavaScript, Cloudflare API",
-    problem: "WordPress sites need edge HTML caching with automatic, granular purging and zero-config admin controls.",
-    solution: "All-in-one Cloudflare cache solution: edge HTML caching, automatic purging on content changes, AJAX admin controls, API token support, comprehensive logging. Modular architecture for maintainable cache invalidation strategies.",
-  },
-  {
-    name: "cf-best-domain",
-    href: "https://github.com/LoveDoLove/cf-best-domain",
-    tech: "Python, Cloudflare API, GitHub Actions",
-    problem: "Manual DNS A-record management and IP selection for Cloudflare is error-prone and slow.",
-    solution: "Automated tool that collects and tests Cloudflare IP ranges, selects lowest-latency IPs, and updates DNS records programmatically. Designed for scheduled runs via GitHub Actions or Workers Cron Triggers.",
-  },
-  {
-    name: "alist-freebsd",
-    href: "https://github.com/LoveDoLove/alist-freebsd",
-    tech: "Shell, GitHub Actions, FreeBSD toolchain",
-    problem: "Upstream Alist lacks FreeBSD build support and CI automation.",
-    solution: "Build wrapper and CI automation producing runnable FreeBSD binaries from upstream source. Custom build.sh and GitHub Actions workflows demonstrating cross-platform build engineering for non-Linux targets.",
-  },
-];
 ---
 
-<section class="card">
-  <h2>Selected Engineering Work</h2>
-  <p class="section-note">Curated projects demonstrating depth across AI coding agents, developer tooling, and Cloudflare infrastructure.</p>
-  <div class="project-list">
-    {projects.map((p) => {
-      const isInternal = p.href.startsWith('/');
-      return (
-        <a
-          href={p.href}
-          class="project-item"
-          target={isInternal ? undefined : "_blank"}
-          rel={isInternal ? undefined : "noopener"}
-          data-flagship={p.flagship ? "true" : "false"}
-        >
-          <div class="project-body">
-            <div class="project-header">
-              <span class="project-name">{p.name}</span>
-              {p.flagship && <span class="project-badge">Flagship</span>}
-            </div>
-            <span class="project-tech">{p.tech}</span>
-            <div class="project-problem-solution">
-              <p class="project-problem"><strong>Problem:</strong> {p.problem}</p>
-              <p class="project-solution"><strong>Solution:</strong> {p.solution}</p>
-            </div>
-          </div>
-          <span class="project-arrow">&rarr;</span>
-          {p.externalHref && (
-            <a href={p.externalHref} class="github-link" target="_blank" rel="noopener" aria-label="View on GitHub">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            </a>
-          )}
+<section class="card featured-card" id="featured-projects">
+  <div class="card-header-row">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      </svg>
+      Featured & Flagship Projects
+    </h2>
+    <span class="section-eyebrow">Curated Engineering Showcase</span>
+  </div>
+
+  <p class="section-intro">
+    A curated portfolio of systems and tools designed to solve high-friction bottlenecks in autonomous agent cognition, codebase navigation, and edge infrastructure.
+  </p>
+
+  <!-- Flagship Section: Primary Case Studies -->
+  <div class="flagship-container">
+    <!-- Project 1: Veyra -->
+    <article class="flagship-item flagship-primary">
+      <div class="flagship-top">
+        <div class="flagship-badges">
+          <span class="pill-badge pill-flagship">Flagship Project</span>
+          <span class="pill-badge pill-tech">Epistemic Memory</span>
+          <span class="pill-badge pill-status">v0.7.0 Production</span>
+        </div>
+        <span class="repo-meta">Open Source · DSH Native Plugin</span>
+      </div>
+
+      <h3 class="flagship-title">
+        <a href="/projects/veyra">Veyra — Engineering Intelligence for Coding Agents</a>
+      </h3>
+
+      <p class="flagship-desc">
+        Solves the coding-agent trust crisis and context amnesia through a <strong>Dual-Brain epistemic architecture</strong>. Strictly separates authoritative repository truth (git history, live code, passing tests) from learned engineering memory (causal facets, negative lessons, and trust decay).
+      </p>
+
+      <div class="capabilities-box">
+        <span class="cap-header">Core Architectural Capabilities</span>
+        <ul class="cap-list">
+          <li><strong>Dual-Brain Truth Separation:</strong> Live repository code and tests remain absolute ground truth; memory serves as advisory historical guidance.</li>
+          <li><strong>Three-Axis Epistemic Model:</strong> Authority (<code>candidate → derived → canonical</code>), Validation (<code>unverified → reviewed → verified</code>), and Confidence.</li>
+          <li><strong>Read-Time Trust Projection:</strong> Dynamic classification against git repository state (<code>trusted</code>, <code>review_required</code>, <code>stale</code>, <code>contradicted</code>, <code>insufficient_evidence</code>).</li>
+        </ul>
+      </div>
+
+      <div class="project-footer">
+        <div class="stack-tags">
+          <span>Node.js (ESM)</span>
+          <span>node:sqlite</span>
+          <span>FTS5 Search</span>
+          <span>DeepSeek Harness</span>
+          <span>MCP Bridge</span>
+        </div>
+        <div class="project-actions">
+          <a href="/projects/veyra" class="btn-action btn-study">
+            <span>Technical Case Study</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 19 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://github.com/LoveDoLove/Veyra" target="_blank" rel="noopener noreferrer" class="btn-action btn-gh">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2: dsh-codebase-memory-mcp -->
+    <article class="flagship-item flagship-secondary">
+      <div class="flagship-top">
+        <div class="flagship-badges">
+          <span class="pill-badge pill-graph">Codebase Intelligence</span>
+          <span class="pill-badge pill-tech">MCP Bridge</span>
+          <span class="pill-badge pill-status">v0.1.10 Plugin</span>
+        </div>
+        <span class="repo-meta">DeepSeek Harness Plugin</span>
+      </div>
+
+      <h3 class="flagship-title">
+        <a href="/projects/dsh-codebase-memory-mcp">dsh-codebase-memory-mcp — Code Graph Bridge</a>
+      </h3>
+
+      <p class="flagship-desc">
+        Model Context Protocol (MCP) bridge bringing <strong>structural AST code knowledge graphs</strong> to DeepSeek Harness. Replaces unstructured grep searches with deterministic symbol discovery, call-graph tracing, and blast-radius analysis.
+      </p>
+
+      <div class="capabilities-box">
+        <span class="cap-header">Core Architectural Capabilities</span>
+        <ul class="cap-list">
+          <li><strong>6 Native Graph Tools:</strong> Direct access to <code>cbm_trace</code>, <code>cbm_search</code>, <code>cbm_snippet</code>, <code>cbm_arch</code>, <code>cbm_search_code</code>, and <code>cbm_projects</code>.</li>
+          <li><strong>System Prompt Heuristics:</strong> Injects decision rules guiding agents to prefer structural graph exploration over flat file reading.</li>
+          <li><strong>Autonomous Daemon Lifecycle:</strong> Automatic background server orchestration, health monitoring on <code>:9749</code>, and graceful degradation.</li>
+        </ul>
+      </div>
+
+      <div class="project-footer">
+        <div class="stack-tags">
+          <span>Node.js (ESM)</span>
+          <span>Model Context Protocol</span>
+          <span>AST Code Graph</span>
+          <span>DeepSeek Harness</span>
+          <span>Web UI (:9749)</span>
+        </div>
+        <div class="project-actions">
+          <a href="/projects/dsh-codebase-memory-mcp" class="btn-action btn-study">
+            <span>Technical Case Study</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 19 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://github.com/LoveDoLove/dsh-codebase-memory-mcp" target="_blank" rel="noopener noreferrer" class="btn-action btn-gh">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Secondary Projects Grid: Edge & Systems -->
+  <div class="secondary-header">
+    <h3>Edge Infrastructure & Systems Engineering</h3>
+    <span class="secondary-subtitle">Production edge workers, network tools, and UNIX services</span>
+  </div>
+
+  <div class="projects-grid">
+    <!-- Project 3: cloudflare-load-balancer -->
+    <div class="project-mini-card">
+      <div class="mini-top">
+        <span class="pill-badge pill-edge">Edge Routing</span>
+        <a href="https://github.com/LoveDoLove/cloudflare-load-balancer" target="_blank" rel="noopener noreferrer" class="mini-link">
+          GitHub ↗
         </a>
-      );
-    })}
+      </div>
+      <h4 class="mini-title">
+        <a href="https://github.com/LoveDoLove/cloudflare-load-balancer" target="_blank" rel="noopener noreferrer">
+          cloudflare-load-balancer
+        </a>
+      </h4>
+      <p>
+        Cloudflare Worker-based geo-steering multi-origin load balancer. Features background health checking, latency-aware geographical routing, automatic failover, and low-latency serverless edge execution.
+      </p>
+      <div class="mini-footer">
+        <div class="mini-tags">
+          <span>Cloudflare Workers</span>
+          <span>JavaScript</span>
+          <span>Geo-Steering</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4: cloudflare-smart-cache -->
+    <div class="project-mini-card">
+      <div class="mini-top">
+        <span class="pill-badge pill-edge">Edge Performance</span>
+        <a href="https://github.com/LoveDoLove/cloudflare-smart-cache" target="_blank" rel="noopener noreferrer" class="mini-link">
+          GitHub ↗
+        </a>
+      </div>
+      <h4 class="mini-title">
+        <a href="https://github.com/LoveDoLove/cloudflare-smart-cache" target="_blank" rel="noopener noreferrer">
+          cloudflare-smart-cache
+        </a>
+      </h4>
+      <p>
+        Intelligent edge caching engine for Cloudflare Workers. Implements stale-while-revalidate, dynamic cache-tag invalidation, bypass rules, and cache-hit analytics.
+      </p>
+      <div class="mini-footer">
+        <div class="mini-tags">
+          <span>Cloudflare Workers</span>
+          <span>Cache API</span>
+          <span>SWR Caching</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5: cf-best-domain -->
+    <div class="project-mini-card">
+      <div class="mini-top">
+        <span class="pill-badge pill-net">Network Intelligence</span>
+        <a href="https://github.com/LoveDoLove/cf-best-domain" target="_blank" rel="noopener noreferrer" class="mini-link">
+          GitHub ↗
+        </a>
+      </div>
+      <h4 class="mini-title">
+        <a href="https://github.com/LoveDoLove/cf-best-domain" target="_blank" rel="noopener noreferrer">
+          cf-best-domain
+        </a>
+      </h4>
+      <p>
+        Cloudflare speed-test intelligence CLI tool. Tests and ranks Cloudflare Anycast CDN IP endpoints by latency and packet loss, automatically selecting optimal routes.
+      </p>
+      <div class="mini-footer">
+        <div class="mini-tags">
+          <span>Shell / CLI</span>
+          <span>Anycast CDN</span>
+          <span>Network Testing</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6: alist-freebsd -->
+    <div class="project-mini-card">
+      <div class="mini-top">
+        <span class="pill-badge pill-sys">UNIX Systems</span>
+        <a href="https://github.com/LoveDoLove/alist-freebsd" target="_blank" rel="noopener noreferrer" class="mini-link">
+          GitHub ↗
+        </a>
+      </div>
+      <h4 class="mini-title">
+        <a href="https://github.com/LoveDoLove/alist-freebsd" target="_blank" rel="noopener noreferrer">
+          alist-freebsd
+        </a>
+      </h4>
+      <p>
+        FreeBSD service port and daemon package for AList. Implements native FreeBSD rc.d init scripts, automated service lifecycle management, and clean user isolation.
+      </p>
+      <div class="mini-footer">
+        <div class="mini-tags">
+          <span>FreeBSD</span>
+          <span>rc.d Init</span>
+          <span>Shell</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <style>
-  .card-note {
-    color: #9ca3af;
-    font-size: 13px;
-    margin: 0 0 14px 0;
+  .featured-card {
+    margin-bottom: 32px;
   }
-  .project-list {
+
+  .title-icon {
+    color: var(--accent-light);
+  }
+
+  .section-intro {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 24px;
+    line-height: 1.6;
+  }
+
+  .flagship-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    margin-bottom: 36px;
   }
-  .project-item {
+
+  .flagship-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: all 0.25s ease;
+    position: relative;
+  }
+
+  .flagship-primary {
+    border-left: 3px solid var(--accent);
+  }
+
+  .flagship-secondary {
+    border-left: 3px solid var(--accent-cyan);
+  }
+
+  .flagship-item:hover {
+    background: rgba(255, 255, 255, 0.035);
+    border-color: rgba(99, 102, 241, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .flagship-top {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    gap: 16px;
-    padding: 16px 18px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.02);
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .flagship-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .pill-badge {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .pill-flagship { background: rgba(99, 102, 241, 0.15); color: var(--accent-light); }
+  .pill-graph { background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); }
+  .pill-tech { background: rgba(255, 255, 255, 0.05); color: var(--muted); }
+  .pill-status { background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald); }
+  .pill-edge { background: rgba(245, 158, 11, 0.12); color: #fbbf24; }
+  .pill-net { background: rgba(59, 130, 246, 0.12); color: #60a5fa; }
+  .pill-sys { background: rgba(168, 85, 247, 0.12); color: #c084fc; }
+
+  .repo-meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--dim);
+  }
+
+  .flagship-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+
+  .flagship-title a {
+    color: var(--text);
     text-decoration: none;
-    transition: background 0.2s ease, border-color 0.2s ease;
-    border: 1px solid transparent;
+    transition: color 0.15s ease;
   }
-  .project-item:hover {
-    background: rgba(124,58,237,0.06);
-    border-color: rgba(124,58,237,0.12);
+
+  .flagship-title a:hover {
+    color: var(--accent-cyan);
   }
-  .project-item[data-flagship="true"] {
-    border-color: rgba(124,58,237,0.15);
-    background: linear-gradient(180deg, rgba(124,58,237,0.04), rgba(255,255,255,0.01));
+
+  .flagship-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 16px;
   }
-  .project-body {
+
+  .flagship-desc strong {
+    color: var(--text);
+  }
+
+  .capabilities-box {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+  }
+
+  .cap-header {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .cap-list {
+    margin: 0;
+    padding-left: 18px;
     display: flex;
     flex-direction: column;
     gap: 6px;
-    min-width: 0;
-    flex: 1;
+    color: var(--muted);
+    font-size: 13px;
   }
-  .project-header {
+
+  .cap-list li strong {
+    color: var(--text);
+  }
+
+  .project-footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .stack-tags span {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: var(--muted);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .project-actions {
+    display: flex;
     gap: 8px;
   }
-  .project-name {
+
+  .btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
     font-weight: 600;
-    color: #e6eef8;
-    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
   }
-  .project-badge {
-    font-size: 10px;
-    font-weight: 600;
-    color: #7c3aed;
-    background: rgba(124,58,237,0.12);
-    padding: 2px 6px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+
+  .btn-study {
+    background: var(--accent);
+    color: #fff;
   }
-  .project-tech {
-    font-size: 11px;
-    color: #7c3aed;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin-top: -2px;
+
+  .btn-study:hover {
+    background: var(--accent-light);
+    transform: translateY(-1px);
   }
-  .project-problem-solution {
+
+  .btn-gh {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text);
+  }
+
+  .btn-gh:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Secondary Grid */
+  .secondary-header {
+    margin: 32px 0 16px;
+  }
+
+  .secondary-header h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: var(--text);
+  }
+
+  .secondary-subtitle {
+    font-size: 12.5px;
+    color: var(--dim);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .project-mini-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
+    transition: all 0.2s ease;
   }
-  .project-problem,
-  .project-solution {
-    font-size: 12px;
-    color: #9ca3af;
+
+  .project-mini-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .mini-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mini-link {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--dim);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .mini-link:hover {
+    color: var(--accent-cyan);
+  }
+
+  .mini-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .mini-title a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .mini-title a:hover {
+    color: var(--accent-cyan);
+  }
+
+  .project-mini-card p {
+    font-size: 13px;
+    color: var(--muted);
     line-height: 1.5;
     margin: 0;
+    flex-grow: 1;
   }
-  .project-problem strong,
-  .project-solution strong {
-    color: #d1d5db;
-    font-weight: 500;
+
+  .mini-footer {
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
   }
-  .project-arrow {
-    color: #7c3aed;
-    font-size: 18px;
-    flex-shrink: 0;
-    opacity: 0;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+
+  .mini-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
   }
-  .project-item:hover .project-arrow {
-    opacity: 1;
-    transform: translateX(3px);
+
+  .mini-tags span {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--dim);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2px 6px;
+    border-radius: 3px;
   }
-  @media (max-width: 600px) {
-    .project-item {
+
+  @media (max-width: 720px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    .flagship-top {
       flex-direction: column;
       align-items: flex-start;
-      gap: 10px;
     }
-    .project-arrow { display: none; }
+    .project-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 </style>
